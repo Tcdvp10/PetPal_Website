@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pet Pal</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h2>Pet Pal</h2>
-            </header>
+
+<head>
+    <title>Pet Pal</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Pet Pal</h2>
+            <ul>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="caretips.html">Caretips & Training</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+
+            <form class="search-container" action="/search" method="GET">
+                <input type="text" name="search" placeholder="Search...">
+                <!--Needs to be submitted when clicked enter-->
+            </form>
+            <!--Clickable cart icon which directs to checkout page-->
+        </header>
+
+        <div class="hero-image">
+            <h1>Welcome to PetPal!</h1>
+            <!--Hero images goes here-->
+
+
         </div>
-    </body>
+        <div class="quick-access">
+            <h2>Quick Access / Popular Sections</h2>
+            <div class="cards">
+                <div id="card1">
+                    <!--Image goes here-->
+                    <p>Learn more about Breeds</p>
+                </div>
+                <div id="card2">
+                    <!--Image goes here-->
+                    <p>Discover care tips </p>
+                </div>
+                <div id="card3">
+                    <!--Image goes here-->
+                    <p>Explore Accessories </p>
+                </div>
+            </div>
+        </div>
+        <div class="featured-breeds">
+            <h2>Featured Breeds</h2>
+            <div class="cards">
+                <div id="card1">
+                    <!--Image goes here-->
+                    <p>Bernese Mountain Dog</p>
+                    <!--Basically a slide show of different featured breeds-->
+                </div>
+            </div>
+        </div>
+        <div class="dogcare-highlights">
+            <h2>Featured Breeds</h2>
+            <div class="cards">
+                <div id="card1">
+                    <!--Image goes here-->
+                    <p>Grooming</p>
+                </div>
+                <div id="card2">
+                    <!--Image goes here-->
+                    <p>Nutrition</p>
+                </div>
+                <div id="card3">
+                    <!--Image goes here-->
+                    <p>Health</p>
+                </div>
+                <div id="card4">
+                    <!--Image goes here-->
+                    <p>Exercise</p>
+                </div>
+            </div>
+        </div>
+        <div class="happy-tails">
+            <h2>“Happy Tails” Stories</h2>
+            <div class="section">
+                <div id="card1">
+                    <!--Image goes here-->
+                    <p>some stories (to be edited)</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="demo-video">
+            <h2>Ready to Start your Dog Journey?</h2>
+            <div id="video1">
+                <!--Video goes here-->
+                <p><a href="breeds.html">Find a Breed</a></p>
+                <p><a href="breeds.html">Shop our Products</a></p>
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+
 </html>
