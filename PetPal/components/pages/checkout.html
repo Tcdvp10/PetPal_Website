@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <head>Checkout</head>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Checkout list</h1>
+            <p class="tagline">You're one step away to getting that accesory for your furry friend</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">PetPal</a></li>
+                    <li><a href="breeds.html">Breeds</a></li>
+                    <li><a href="caretips&training.html">Caretips & Training</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+                <form class="search-container" action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Search..." required>
+                    <button type="submit">
+                        <img src="" alt="Search" class="search-image-button" />
+                    </button>
+                </form>
+
+                <img><!--Add image which is linked to going back to the checkout and takes the user back when clicked on-->
+                <a href="checkout.html">Checkout</a>
+            </nav>
+        </header>
+        <section id="order-summary">
+            <h3>Order Summary</h3>
+            <ul id="cart-items">
+                <!-- Products will be dynamically inserted here -->
+            </ul>
+            <p><strong>Total: $<span id="total-price">0.00</span></strong></p>
+        </section>
+
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <h3>Billing Details</h3>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+
+            <h3>Payment Details</h3>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" maxlength="16" required>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" maxlength="3" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✅ Payment Done! Thank you for your purchase.
+        </div>
+
+        <div class="extra-content" id="extraContent">
+            <h3>More Content Here</h3>
+            <p>You can add additional details, download links, or order confirmation info here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
