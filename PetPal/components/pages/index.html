@@ -5,19 +5,283 @@
     <title>Pet Pal - Home Page</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8ec;
+            margin: 0;
+            padding: 0;
+            color: #5a3d0b;
+        }
 
+        .hero-image {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .hero-image h1 {
+            color: #3a9995;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-image h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            color: #8a5200;
+            font-size: 1.6rem;
+            margin: 40px 0 20px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 20px 40px;
+        }
+
+        .quick-access-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0 20px 40px;
+        }
+
+
+        .quick-access-section .card {
+            width: 400px;
+        }
+
+
+        .card {
+            background: #fff;
+            width: 300px;
+            height: 300px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            text-decoration: none;
+            color: #3a2c00;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .card p {
+            font-weight: 600;
+            padding: 12px 10px 16px;
+            margin: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%;
+            }
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            padding: 10px 56px;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .breed-box {
+            flex: 0 0 200px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #3a2c00;
+            transition: transform 0.3s ease;
+        }
+
+        .breed-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .breed-box img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .breed-box p {
+            font-weight: 600;
+            margin: 10px 0 14px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            width: 44px;
+            height: 44px;
+            display: grid;
+            place-items: center;
+            background: #3a9995;
+            border: none;
+            color: #fff;
+            font-size: 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, .12);
+            transition: background .25s ease, transform .25s ease, opacity .25s ease;
+        }
+
+        .btn:hover {
+            background: #318582;
+            transform: translateY(-50%) scale(1.04);
+        }
+
+        .btn.prev {
+            left: 10px;
+        }
+
+        .btn.next {
+            right: 10px;
+        }
+
+        @media (max-width: 640px) {
+            .btn {
+                opacity: .85;
+            }
+        }
+
+        button {
+            background-color: #8a5200;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px;
+            width: 15%;
+        }
+
+        button a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero-video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .dog-journey {
+            background-color: #f8f8ec;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .dog-journey h2 {
+            color: #8a5200;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-video {
+            width: 100%;
+            max-width: 900px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 14px;
+            display: block;
+            margin: 0 auto 25px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buttons container */
+        .journey-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual buttons */
+        .journey-btn {
+            background-color: #a6651f;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .journey-btn:hover {
+            background-color: #8a5200;
+            /* darker brown on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div class="logo"><a href="index.html">PetPal</a></div>
-            <nav class="nav-links">
-                <a href="breeds.html">Breeds</a>
-                <a href="caretips.html">Caretips & Training</a>
-                <a href="shop.html">Shop</a>
-                <a href="about.html">About</a>
+            <nav class="nav">
+                <div class="logo"><a href="index.html">PetPal</a></div>
+                <div class="nav-links">
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
             </nav>
 
             <div style="display:flex; align-items:center;">
@@ -49,75 +313,151 @@
             <img src="https://as2.ftcdn.net/v2/jpg/00/40/41/59/1000_F_40415982_v0Z17uaeDwEYIPouQzinlYbrggnbgPMS.jpg"
                 alt="picture of happy dogs">
         </div>
-        <div class="quick-access">
-            <h2>Quick Access / Popular Sections</h2>
-            <div class="cards">
-                <div id="card1">
-                    <!--Image goes here-->
-                    <p>Learn more about Breeds</p>
-                </div>
-                <div id="card2">
-                    <!--Image goes here-->
-                    <p>Discover care tips </p>
-                </div>
-                <div id="card3">
-                    <!--Image goes here-->
-                    <p>Explore Accessories </p>
-                </div>
-            </div>
-        </div>
-        <div class="featured-breeds">
-            <h2>Featured Breeds</h2>
-            <div class="cards">
-                <div id="card1">
-                    <!--Image goes here-->
-                    <p>Bernese Mountain Dog</p>
-                    <!--Basically a slide show of different featured breeds-->
-                </div>
-            </div>
-        </div>
-        <div class="dogcare-highlights">
-            <h2>Featured Breeds</h2>
-            <div class="cards">
-                <div id="card1">
-                    <!--Image goes here-->
-                    <p>Grooming</p>
-                </div>
-                <div id="card2">
-                    <!--Image goes here-->
-                    <p>Nutrition</p>
-                </div>
-                <div id="card3">
-                    <!--Image goes here-->
-                    <p>Health</p>
-                </div>
-                <div id="card4">
-                    <!--Image goes here-->
-                    <p>Exercise</p>
-                </div>
-            </div>
-        </div>
-        <div class="happy-tails">
-            <h2>“Happy Tails” Stories</h2>
-            <div class="section">
-                <div id="card1">
-                    <!--Image goes here-->
-                    <p>some stories (to be edited)</p>
+        <!-- Quick Access / Popular Sections -->
+        <h2>Quick Access / Popular Sections</h2>
+        <div class="quick-access-section">
+            <a href="#" class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/04/09/97/36/1000_F_409973641_WqLGwCQQZvRk21mzJDTxu9uJzxR7kDe6.jpg"
+                    alt="">
+                <p>Learn about Breeds</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/04/86/62/64/1000_F_486626413_I6oRLVL4yCX1mI8wcTkcVaYISfebY3SK.jpg"
+                    alt="">
+                <p>Discover care tips</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/04/63/71/22/1000_F_463712286_dFYxmvjf6qZ8yR14yvNd74qq7F4wYGpZ.jpg"
+                    alt="">
+                <p>Explore Accessories</p>
+            </a>
 
-                </div>
-            </div>
         </div>
-        <div class="demo-video">
+
+        <!-- Featured Breeds -->
+        <h2>Featured Breeds</h2>
+        <div class="carousel-container">
+            <button class="btn prev">&#8249;</button>
+            <div class="carousel">
+                <a href="#" class="breed-box">
+                    <img src="https://as1.ftcdn.net/v2/jpg/01/96/69/80/1000_F_196698075_rEAp39bGvlM9NpF0rq1gPnMysbEcGR4x.jpg"
+                        alt="Bernese Mountain Dog">
+                    <p>Bernese Mountain Dog</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/98/31/60/1000_F_398316054_3eiS8YB6PRAnGBqbu7C2vdAJu16XcRoW.jpg"
+                        alt="Golden Retriever">
+                    <p>Golden Retriever</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://as1.ftcdn.net/v2/jpg/05/02/62/54/1000_F_502625438_wyU3yO0IOXYJQNLj9eDVxtUs39MuC4Mf.jpg"
+                        alt="German Shepherd">
+                    <p>German Shepherd</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://t3.ftcdn.net/jpg/04/20/65/04/240_F_420650482_Qh54gH5BOd9pKH4viCBtiWnMe92Zesav.jpg"
+                        alt="Shiba Inu">
+                    <p>Shiba Inu</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/82/54/32/1000_F_382543265_xOxH8CM08gTsv1AmCyHaVZwMb6MIwaOj.jpg"
+                        alt="Beagle">
+                    <p>Beagle</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://as2.ftcdn.net/v2/jpg/03/15/97/33/1000_F_315973318_WSFwoS7ndWE2EUBXTaaVeMYo0aEs8AmV.jpg"
+                        alt="Corgi">
+                    <p>Corgi</p>
+                </a>
+                <a href="#" class="breed-box">
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/03/12/61/1000_F_603126127_uL0LrlwSGhGxWUwtSoj8VLsesuz2tp3x.jpg"
+                        alt="Poodle">
+                    <p>Poodle</p>
+                </a>
+            </div>
+            <button class="btn next">&#8250;</button>
+        </div>
+
+
+        <!-- Dog Care Highlights -->
+        <h2>Dog Care Highlights</h2>
+        <div class="section">
+            <a href="#" class="card">
+                <img src="https://as2.ftcdn.net/v2/jpg/05/96/23/17/1000_F_596231770_jC4eggnyUXEhkbzil3xEsHRtEHEJ9C7K.jpg"
+                    alt="Grooming">
+                <p>Grooming</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://as2.ftcdn.net/v2/jpg/17/44/53/05/1000_F_1744530588_f21sAhHbjHAEy54LZTLIthd3dI3voYBn.jpg"
+                    alt="Nutrition">
+                <p>Nutrition</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://as2.ftcdn.net/v2/jpg/01/08/58/79/1000_F_108587945_0LgTIwmoeDvcA58WhhHsbVNKWs4TX9kO.jpg"
+                    alt="Health">
+
+                <p>Health</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://as2.ftcdn.net/v2/jpg/05/64/88/59/1000_F_564885937_uQbOSn4Vuk5wPE02eNtsNCEbxqVkK6mi.jpg"
+                    alt="Exercise">
+                <p>Exercise</p>
+            </a>
+        </div>
+        <section class="demo-video">
             <h2>Ready to Start your Dog Journey?</h2>
             <div id="video1">
-                <!--Video goes here-->
-                <p><a href="breeds.html">Find a Breed</a></p>
-                <p><a href="breeds.html">Shop our Products</a></p>
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="clip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="journey-buttons">
+                    <a href="breeds.html" class="journey-btn">Find a Breed</a>
+                    <a href="shop.html" class="journey-btn">Shop our Products</a>
+                </div>
             </div>
-        </div>
+        </section>
         <footer>
 
         </footer>
+        <script>
+            const carousel = document.querySelector('.carousel');
+            const next = document.querySelector('.next');
+            const prev = document.querySelector('.prev');
+
+            next.addEventListener('click', () => {
+                carousel.scrollBy({ left: 250, behavior: 'smooth' });
+            });
+
+            prev.addEventListener('click', () => {
+                carousel.scrollBy({ left: -250, behavior: 'smooth' });
+            });
+
+            // --- Auto-scroll feature ---
+            let autoScroll = setInterval(() => {
+                // move forward every 3 seconds
+                carousel.scrollBy({ left: 250, behavior: 'smooth' });
+
+                // if scrolled to end, go back to start
+                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 5) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                }
+            }, 3000);
+
+            // pause when user interacts
+            carousel.addEventListener('mouseenter', () => clearInterval(autoScroll));
+            carousel.addEventListener('mouseleave', () => {
+                autoScroll = setInterval(() => {
+                    carousel.scrollBy({ left: 250, behavior: 'smooth' });
+                    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 5) {
+                        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                    }
+                }, 3000);
+            });
+
+        </script>
+
     </div>
 </body>
 
