@@ -1,12 +1,16 @@
 body {
-  margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f8f8ec;
-
-  /* off-white background */
+  margin: 0;
+  padding: 0;
+  color: #5a3d0b;
 }
 
 header {
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 50px;
   background-color: #61a6ab;
   color: #f1f2e0;
   padding: 15px 40px;
@@ -45,6 +49,13 @@ header {
 
 .nav-links a {
   text-decoration: none;
+  color: #f8f8ec;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
   color: #f8f8ec;
   font-weight: 500;
   font-size: 16px;
