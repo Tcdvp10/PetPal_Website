@@ -72,12 +72,6 @@ const checkoutForm = document.getElementById('checkoutForm');
 if (checkoutForm) {
     checkoutForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        // Simple simulation of payment
-        const successMsg = document.getElementById('successMessage');
-        const extraContent = document.getElementById('extraContent');
-
-        successMsg.style.display = 'block';
-        extraContent.style.display = 'block';
 
         // Clear cart
         cart = [];
@@ -88,6 +82,9 @@ if (checkoutForm) {
 
         // Optionally, reset form
         checkoutForm.reset();
+
+        //redirection to success page
+        window.location.href = 'success.html';
     });
 }
 
