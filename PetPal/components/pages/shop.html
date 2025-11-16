@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
     <title>Pet Pal - Shop</title>
 </head>
 
@@ -38,76 +38,139 @@
                 </i>
         </header>
 
+        <!--Section that builds the structure for the slideshow in the shop webpage and the title on the webpage.-->
+        <section class="hero-section">
+            <div class="slideshow">
+                <figure class="slide"
+                    style="background-image: url(https://thumbs.dreamstime.com/b/adopt-pet-concept-happy-excited-dog-running-leash-ground-jack-russell-terrier-park-124602849.jpg);">
+                </figure>
+                <figure class="slide"
+                    style="background-image: url(https://c.pxhere.com/photos/d4/d5/animals_bed_calm_dog_dogs_pets_relax_sleeping-938481.jpg!d);">
+                </figure>
+                <figure class="slide"
+                    style="background-image: url(https://img.freepik.com/premium-photo/dog-eating-from-green-bowl_988095-8001.jpg);">
+                </figure>
+            </div>
+            <h2 class="hero-title">Shop Now</h2>
+            <h5 class="hero-title">"Everything your furry friend needs."</h5>
+        </section>
+
         <!--Background images for the header of the shop page-->
-        <h1>Everything your furry friend needs</h1>
-        <h2>Shop now</h2>
+        <h1 class="title-under-slideshow">Our Products</h1>
+
+        <!-- FILTER BUTTON ADDED HERE -->
+        <div class="filter-container">
+            <button class="filter-btn" id="toggleFilter">Filters ▼</button>
+
+            <div class="filter-panel" id="filterPanel">
+                <h3>Filter Products</h3>
+
+                <div class="filter-group">
+                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+                    <label><input type="checkbox" name="category" value="toys"> Toys</label>
+                    <label><input type="checkbox" name="category" value="feeding"> Feeding</label>
+                </div>
+
+                <div class="filter-group">
+                    <label>Price Range:</label>
+                    <input type="number" placeholder="Min" id="minPrice">
+                    <input type="number" placeholder="Max" id="maxPrice">
+                </div>
+
+                <button id="applyFilters">Apply Filters</button>
+            </div>
+        </div>
+        <!--END FILTER BUTTON -->
 
         <section class="products">
-            <h2>Our Products</h2>
-
-            <section id="filter-section">
-                <h2>Filter By</h2>
-
-                <form>
-                    <!-- Category Filter -->
-                    <label for="category">Category:</label>
-                    <select id="category" name="category">
-                        <option value="">All</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="clothing">Clothing</option>
-                        <option value="books">Books</option>
-                    </select>
-
-                    <!-- Price Range Filter -->
-                    <fieldset>
-                        <legend>Price Range:</legend>
-                        <label><input type="radio" name="price" value="low" /> $0 - $50</label><br />
-                        <label><input type="radio" name="price" value="mid" /> $50 - $200</label><br />
-                        <label><input type="radio" name="price" value="high" /> $200+</label>
-                    </fieldset>
-
-                    <!-- Availability -->
-                    <label>
-                        <input type="checkbox" name="in-stock" /> In Stock Only
-                    </label>
-
-                    <!-- Filter Button -->
-                    <button type="submit">Apply Filters</button>
-
-                    <!--Feel free to add more filters for each of the sections to filter the products by.-->
-                </form>
-            </section>
-
+            <!--location of the code for the filter button-->
             <!--The code to be used on product boxes, (product-boxes) the containers for the products being sold-->
             <div class="product-box">
                 <h3>Dog collar</h3>
                 <a href="#">
                     <picture>
-                        <source srcset="null" media="size">
-                        <img src="null" alt="dog collar">
+                        <source srcset="https://m.media-amazon.com/images/I/71BAkL-NeNL._AC_SX679_.jpg" media="size">
+                        <img src="https://m.media-amazon.com/images/I/71BAkL-NeNL._AC_SX679_.jpg" alt="dog collar">
                     </picture>
                 </a>
-                <p class="price">Price</p>
-                <p>A furry accesory to keep your furry friend looking good and stylish all the time</p>
-                <a class="buy-now" href="#">Buy now</a>
+                <p class="price">$8.00</p>
+                <p>A furry accesory to keep your furry friend looking good and stylish all the time.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
             </div>
-
 
             <div class="product-box">
                 <h3>Dog bowl</h3>
                 <a href="#">
                     <picture>
-                        <source srcset="null" media="size">
-                        <img src="null" alt="dog bowl">
+                        <source srcset="https://m.media-amazon.com/images/I/61S5XrItojL.jpg" media="size">
+                        <img src="https://m.media-amazon.com/images/I/61S5XrItojL.jpg" alt="dog bowl">
+                    </picture>
+                </a>
+                <p class="price">$15.00</p>
+                <p>A comfortable place to keep your dog fed and on a full stomach.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
+            </div>
+
+            <div class="product-box">
+                <h3>Automatic Dog feeder</h3>
+                <a href="#">
+                    <picture>
+                        <source srcset="https://m.media-amazon.com/images/I/61-ccY11Z9L._AC_SX679_.jpg" media="size">
+                        <img src="https://m.media-amazon.com/images/I/61-ccY11Z9L._AC_SX679_.jpg"
+                            alt="Automatic dog feeder">
+                    </picture>
+                </a>
+                <p class="price">$45.00</p>
+                <p>A comfortable place to keep your dog fed and on a full stomach without any effort.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
+            </div>
+
+            <div class="product-box">
+                <h3>Dog tracker</h3>
+                <a href="#">
+                    <picture>
+                        <source
+                            srcset="https://spotonfence.com/cdn/shop/products/Collar_Phone_v01_c2dea215-a12e-45ab-971c-b79c38beda41.png?v=1669928541"
+                            media="size">
+                        <img src="https://spotonfence.com/cdn/shop/products/Collar_Phone_v01_c2dea215-a12e-45ab-971c-b79c38beda41.png?v=1669928541"
+                            alt="dog tracker">
                     </picture>
                 </a>
                 <p class="price">Price</p>
-                <p>A comfortable place to keep your dog fed and on a full stomach</p>
-                <a class="buy-now" href="#">Buy now</a>
+                <p>An efficient way to keep track of your favourite buddy.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
             </div>
 
-            <!--Must copy code for the product boxes and use it on the content for each of the shop products-->
+            <div class="product-box">
+                <h3>Ball toy</h3>
+                <a href="#">
+                    <picture>
+                        <source srcset="https://m.media-amazon.com/images/I/71e7M8gC7VS._AC_SL1500_.jpg" media="size">
+                        <img src="https://m.media-amazon.com/images/I/71e7M8gC7VS._AC_SL1500_.jpg" alt="dog bowl">
+                    </picture>
+                </a>
+                <p class="price">Price</p>
+                <p>A squichy toy to keep that healthy pup distracted.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
+            </div>
+
+            <div class="product-box">
+                <h3>Dog bed</h3>
+                <a href="#">
+                    <picture>
+                        <source srcset="https://m.media-amazon.com/images/I/51d2eHnv13L._AC_SX679_.jpg" media="size">
+                        <img src="https://m.media-amazon.com/images/I/51d2eHnv13L._AC_SX679_.jpg" alt="dog bowl">
+                    </picture>
+                </a>
+                <p class="price">Price</p>
+                <p>A comfortable place for your pup to snooze.</p>
+                <a class="buy-now" href="checkout.html">Buy now</a>
+            </div>
         </section>
+
+        <footer>
+            <p>&copy; 2025 PetPal - All Rights Reeserved</p>
+        </footer>
     </div>
 </body>
 

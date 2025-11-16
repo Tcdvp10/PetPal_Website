@@ -1,0 +1,316 @@
+/*Styling for the shop webpage, please do not edit*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /*hides horizontal scroll*/
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8ec;
+    color: #5a3d0b;
+}
+
+/* Header */
+header {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    background-color: #61a6ab;
+    color: #f1f2e0;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* align items toward the left */
+    gap: 40px;
+    /* control spacing between logo and links */
+    padding: 15px 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f8f8ec;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #f8f8ec;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f8f8ec;
+    border-radius: 50px;
+    padding: 6px 14px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 8px;
+    font-size: 14px;
+    color: #3a9995;
+}
+
+.search-container svg {
+    width: 20px;
+    height: 20px;
+    fill: #3a9995;
+}
+
+.cart-icon {
+    width: 26px;
+    height: 26px;
+    fill: #f8f8ec;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Hero / slideshow section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f2e8;
+    position: relative;
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.slideshow .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: slideAnim 15s infinite;
+}
+
+.slideshow .slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow .slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slideshow .slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes slideAnim {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    38% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero-title {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Smaller second hero title */
+.hero-section h5.hero-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.title-under-slideshow {
+    text-align: center;
+    color: #5a3d0b;
+    margin-top: 70px;
+}
+
+/* ================================
+   PRODUCT GRID — 3 PER ROW
+   ================================ */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* three per row */
+    gap: 25px;
+    padding: 40px 40px;
+}
+
+.product-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Responsive — 2 per row on tablets */
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive — 1 per row on phone */
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================================
+   FILTER BUTTON + PANEL
+   ================================ */
+.filter-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 60px 10px 0;
+    position: relative;
+    right: 20px;
+}
+
+.filter-btn {
+    padding: 10px 16px;
+    background: #5a3d0b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background: #4a3009;
+}
+
+/* Collapsible panel */
+.filter-panel {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    background: #fffef6;
+    border: 1px solid #d4c5a1;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.35s ease;
+    z-index: 10;
+}
+
+.filter-panel.open {
+    max-height: 380px;
+    padding: 20px;
+}
+
+.filter-panel h3 {
+    margin-top: 0;
+    color: #5a3d0b;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-panel input[type="number"] {
+    width: 45%;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #d4c5a1;
+}
+
+/* Apply button */
+#applyFilters {
+    width: 100%;
+    padding: 10px;
+    background: #61a6ab;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#applyFilters:hover {
+    background: #4c878b;
+}
+
+footer {
+    text-align: center;
+}
