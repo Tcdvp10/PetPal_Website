@@ -1,0 +1,916 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", sans-serif;
+    background: #f3efe3 !important;        
+    color: #333;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f3efe3 !important;
+}
+
+
+.box {
+    width: 100%;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: #2c7a7b;             /* teal bar */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* nav links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.95rem;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background: #fbd7a1; /* cream underline */
+    border-radius: 999px;
+}
+
+/* right side: search + cart */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* search pill */
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.9rem;
+    background: #f7fbfb;
+    border-radius: 999px;
+    min-width: 180px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 0.4rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.search-container svg {
+    width: 16px;
+    height: 16px;
+    fill: #4b8083;
+    opacity: 0.7;
+}
+
+/* cart icon */
+.cart-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #fdf4de;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.care-main {
+    max-width: 1200px;          /* big but still centered */
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 4rem;
+}
+
+/* generic section blocks (Common Diseases, Vaccines, etc.) */
+.section {
+    background: #f2f9ff;
+    border-radius: 18px;
+    padding: 1.8rem 2.2rem 2.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+/* ===== HERO  ===== */
+
+.hero {
+    position: relative;
+    margin: 0 -1.5rem 3.5rem;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    /* sharp background image with teal overlay in one line */
+    background:
+        linear-gradient(rgba(44,122,123,0.88), rgba(44,122,123,0.88)),
+        url(https://images.unsplash.com/photo-1535914125057-dc89f2ec083d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+}
+
+/* makes inner hero content sit on top */
+.hero-banner,
+.hero-actions {
+    position: relative;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* buttons styled like screenshot */
+.pill-btn {
+    padding: 0.8rem 2rem;
+    min-width: 180px;
+    border-radius: 999px;
+    font-size: 0.97rem;
+    font-weight: 600;
+    border: none;
+    background: #ffffff;
+    color: #2c7a7b;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.pill-btn--outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: none;
+}
+
+.pill-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+    background: #ffffff;
+    color: #2c7a7b;
+}
+
+.pill-btn--outline:hover {
+    background: #ffffff;
+    color: #2c7a7b;
+}
+
+/* ===== CATEGORY TABS – DAILY CARE ESSENTIALS STYLE ===== */
+
+.care-categories {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 3rem 0 2.3rem;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0.9rem 0.8rem;
+    border: none;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #355c60;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.25s;
+}
+
+.category-card.active {
+    background: #e6f3f3;
+    color: #2c7a7b;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== GENERIC SECTION CARDS ===== */
+
+.section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.6rem 2rem;
+    border: 1px solid #e2ded4;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 1.8rem;
+    color: #2c7a7b;
+}
+
+/* ===== COMMON DISEASES CARDS ===== */
+
+.disease-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.disease-card {
+    background: #fff3e0;
+    border-radius: 16px;
+    padding: 1.5rem 1.3rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.disease-card .disease-image {
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+}
+
+.disease-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+/* 3D flip card for diseases */
+.disease-card {
+    background: transparent;      /* front/back handle bg */
+    border-radius: 16px;
+    perspective: 1000px;         /* enables 3D effect */
+    cursor: pointer;
+}
+
+.disease-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    border-radius: 16px;
+}
+
+/* when card is flipped */
+.disease-card.flipped .disease-inner {
+    transform: rotateY(180deg);
+}
+
+/* front & back faces */
+.disease-front,
+.disease-back {
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: #fff3e0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 1.2rem 1rem;
+}
+
+/* front: center image + name */
+.disease-front {
+    text-align: center;
+}
+
+.disease-front .disease-image {
+    border-radius: 12px;
+    margin-bottom: 0.7rem;
+}
+
+/* back: text side */
+.disease-back {
+    transform: rotateY(180deg);
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.disease-back h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #2c7a7b;
+}
+/* ========== FLIP CARD STYLES ========== */
+
+.flip-card {
+    background: transparent;
+    perspective: 1000px;
+    height: 260px;       /* bigger cards */
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* FRONT / BACK inside card */
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.flip-front img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    background: #f2f9ff;
+    padding: 18px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.disease-card {
+    width: 100%;
+}
+
+.disease-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* ===== VACCINATION + VET TWO-COLUMN ===== */
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2ded4;
+    padding: 1.6rem 1.4rem 1.8rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #2c7a7b;
+    margin-bottom: 0.9rem;
+    font-size: 1.1rem;
+}
+
+.vaccine-intro {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.vaccine-list {
+    list-style: none;
+}
+
+.vaccine-list li {
+    margin-bottom: 0.6rem;
+}
+
+.vaccine-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.vaccine-list input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2c7a7b;
+}
+
+.vet-call ul {
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.vet-call li {
+    margin-bottom: 0.35rem;
+}
+
+.vet-note {
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    font-style: italic;
+}
+
+/* ===== GENERIC PANEL TEXT FOR OTHER TABS ===== */
+
+.panel-text {
+    font-size: 0.97rem;
+    margin-bottom: 0.9rem;
+}
+
+.panel-list {
+    margin-left: 1.1rem;
+    font-size: 0.95rem;
+}
+
+.panel-list li {
+    margin-bottom: 0.45rem;
+}
+
+.panel-questions {
+    margin-top: 1.1rem;
+    font-size: 0.92rem;
+}
+
+.panel-questions h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.03rem;
+}
+/* Multiple-choice style blocks inside each panel */
+.panel-questions .mcq {
+    margin-bottom: 0.9rem;
+}
+
+.panel-questions .mcq p {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.mcq-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mcq-options li {
+    background: #f5f7f7;
+    border-radius: 999px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+/* multiple-choice questions inside panels, using quiz styles */
+.panel-questions .quiz-question {
+    margin-top: 1.1rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.96rem;
+}
+
+.panel-questions .quiz-options {
+    margin-bottom: 0.6rem;
+}
+
+/* breed search cards */
+.breed-search {
+    margin-top: 1.3rem;
+    padding: 0.9rem 1rem 1.1rem;
+    background: #f3efe5;
+    border-radius: 12px;
+    border: 1px dashed #d7cfbe;
+}
+
+.breed-search h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.breed-search p {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.breed-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.breed-form input[type="text"] {
+    flex: 1;
+    min-width: 180px;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid #d0cbc0;
+    font-size: 0.9rem;
+}
+
+.breed-form button {
+    border-radius: 999px;
+    border: none;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: #2c7a7b;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+}
+
+.breed-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* ===== BONUS QUIZ (match mint card look) ===== */
+
+.quiz {
+    text-align: center;
+}
+
+.quiz-card {
+    background: #e6f3f3;
+    border-radius: 16px;
+    padding: 1.8rem 1.4rem 2rem;
+    border: 1px solid #c9e4df;
+    color: #12373a;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* soft glow animation */
+.quiz-card-animated {
+    animation: quizGlow 3s ease-in-out infinite alternate;
+}
+
+.quiz-progress {
+    color: #256064;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.quiz-inner {
+    margin-bottom: 1rem;
+}
+
+.quiz-question {
+    font-size: 1.02rem;
+    margin-bottom: 0.8rem;
+}
+
+/* fade animation when question changes */
+.quiz-inner.animate-in {
+    animation: fadeSlideIn 0.4s ease;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+}
+
+.quiz-option-btn {
+    border-radius: 999px;
+    border: 1px solid #cfe4df;
+    background: #ffffff;
+    color: #2c5e61;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.quiz-option-btn:hover {
+    background: #2c7a7b;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.quiz-option-btn.selected {
+    background: #2c7a7b;
+    color: #fff;
+    border-color: #1a535c;
+}
+
+.quiz-next-btn {
+    margin-top: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    padding: 0.7rem 1.7rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: #2c7a7b;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+    transition: opacity 0.1s ease, transform 0.08s ease;
+}
+
+.quiz-next-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.quiz-feedback {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    min-height: 20px;
+}
+
+.quiz-score {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+
+/* pop animation for score */
+.quiz-score.score-pop {
+    animation: scorePop 0.7s ease;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scorePop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* soft breathing glow around quiz card */
+@keyframes quizGlow {
+    from {
+        box-shadow: 0 0 0 rgba(255,255,255,0);
+    }
+    to {
+        box-shadow: 0 0 18px rgba(255,255,255,0.55);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+    .nav {
+        padding-inline: 1rem;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links {
+        display: none;   /* simple mobile behaviour */
+    }
+
+    .hero {
+        margin-inline: -1rem;
+        padding-inline: 1rem;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.2rem;
+    }
+
+    .care-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .disease-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+}
+/* ---------- FOOTER STYLE ---------- */
+.site-footer {
+    background: #0e3a44;        /* dark teal blue */
+    color: #e4f7f6;
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.85;
+}
+
+.footer-social i {
+    font-size: 1.2rem;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer-social i:hover {
+    opacity: 0.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+/* ================== FOOTER  ================== */
+
+.site-footer {
+    background: #0d3b3e;          /* dark teal bar */
+    color: #e3f6f6;
+    padding: 3rem 0 2rem;
+    margin-top: 3rem;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+}
+
+.footer-col h4,
+.footer-intro h3 {
+    color: #ffffff;
+    margin-bottom: 0.9rem;
+    font-size: 1.1rem;
+}
+
+.footer-intro h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-intro p {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.35rem;
+}
+
+.footer-col ul li a {
+    color: #d9f0f0;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+}
+
+.footer-address,
+.footer-contact {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    opacity: 0.9;
+}
+
+.footer-contact a {
+    color: #d9f0f0;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.footer-social a svg {
+    width: 20px;
+    height: 20px;
+    fill: #d9f0f0;
+    transition: 0.2s ease;
+}
+
+.footer-social a:hover svg {
+    fill: #ffffff;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4f7f7f;
+    margin: 0.8rem 0 1.5rem;
+}
+
+
+
+
+
+
