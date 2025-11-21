@@ -113,3 +113,65 @@ buyButtons.forEach(btn => {
         alert(`${product.name} added to cart!`);
     });
 });
+
+//The code for the searchbar starts here now
+const searchInput = document.querySelector(".search-container input");
+const searchContainer = document.querySelector(".search-container");
+const products = document.querySelectorAll(".product-box");
+
+// Create suggestions list element
+const suggestionList = document.createElement("ul");
+suggestionList.classList.add("search-suggestions");
+searchContainer.appendChild(suggestionList);
+
+// Function to update suggestions
+function updateSuggestions(value) {
+    suggestionList.innerHTML = "";
+    if (!value) {
+        suggestionList.style.display = "none";
+        // Show all products when input is empty
+        products.forEach(p => p.style.display = "block");
+        return;
+    }
+
+    const filteredProducts = [];
+    products.forEach(product => {
+        const title = product.querySelector("h3").textContent.toLowerCase();
+        if (title.includes(value.toLowerCase())) {
+            product.style.display = "block";  // show matching product
+            filteredProducts.push(title);
+        } else {
+            product.style.display = "none";  // hide non-matching
+        }
+    });
+
+    if (filteredProducts.length === 0) {
+        suggestionList.style.display = "none";
+        return;
+    }
+
+    filteredProducts.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        li.addEventListener("click", () => {
+            searchInput.value = item;
+            updateSuggestions(item); // update filtering
+            suggestionList.style.display = "none";
+        });
+        suggestionList.appendChild(li);
+    });
+
+    suggestionList.style.display = "block";
+}
+
+// Listen to input
+searchInput.addEventListener("input", (e) => {
+    updateSuggestions(e.target.value);
+});
+
+// Hide suggestions when clicking outside
+document.addEventListener("click", (e) => {
+    if (!searchContainer.contains(e.target)) {
+        suggestionList.style.display = "none";
+    }
+});
