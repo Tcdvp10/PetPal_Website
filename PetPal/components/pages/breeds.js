@@ -369,6 +369,54 @@ const breedsData = [
         idealHome: "Best for active families who want a herding breed and are prepared for intensive coat care and regular exercise.",
         funFact: "Their unique coat and working ability have made them prized farm and herding dogs in their island homeland."
     },
+    {
+        id: 'beagle',
+        name: 'Beagle',
+        image: 'https://content.lyka.com.au/f/1016262/1104x676/e36872ce32/beagle.png/m/640x427/smart/filters:format(webp)',
+        size: 'medium',
+        coat: 'short',
+        temperament: ['friendly', 'curious', 'merry', 'determined'],
+        origin: 'england',
+        weight: '20–30 lb (9–14 kg)',
+        lifespan: '10–15 years',
+        about: "The Beagle is a friendly, curious scent hound with a famously strong sense of smell and a lively, joyful personality. Known for their expressive faces and vocal nature, they are excellent family dogs.",
+        care: "They require portion-controlled feeding to avoid weight gain, weekly coat brushing, regular ear cleaning, patience during training, and lots of sniff-based mental exercise such as tracking games and walks.",
+        idealHome: "Perfect for families, especially with kids, who want a gentle, playful dog and are prepared for their barking, stubborn moments, and need for daily activity.",
+        funFact: "A Beagle’s nose has around 220 million scent receptors, making them one of the best sniffers in the dog world!"
+    },
+
+    {
+        id: 'bernese-mountain-dog',
+        name: 'Bernese Mountain Dog',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_b6tdGqfc_Go_bVWNNg86_Efa5TPwQ8JMw&s',
+        size: 'giant',
+        coat: 'double',
+        temperament: ['gentle', 'affectionate', 'calm', 'loyal'],
+        origin: 'switzerland',
+        weight: '70–115 lb (32–52 kg)',
+        lifespan: '7–10 years',
+        about: "The Bernese Mountain Dog is a gentle, loving giant known for its calm nature, devotion, and beautiful tri-colored coat. They are patient, stable family dogs and excellent with children.",
+        care: "Their thick double coat needs brushing 2–3 times weekly (daily during seasonal shedding). Feed a high-quality large-breed diet, exercise moderately, avoid heat exposure, and maintain joint and heart checkups.",
+        idealHome: "Ideal for families who want a gentle, affectionate companion, live in a cooler climate, and can keep up with regular grooming and a relaxed exercise routine.",
+        funFact: "Bernese Mountain Dogs were originally used to pull carts of dairy and farm goods across Swiss farms."
+    },
+
+    {
+        id: 'bergamasco-sheepdog',
+        name: 'Bergamasco Sheepdog',
+        image: 'https://www.dogpackapp.com/blog/wp-content/uploads/2024/10/bergamasco-sheepdog-field.webp',
+        size: 'large',
+        coat: 'long',
+        temperament: ['patient', 'intelligent', 'observant', 'loyal'],
+        origin: 'italy',
+        weight: '57–84 lb (26–38 kg)',
+        lifespan: '13–15 years',
+        about: "The Bergamasco is a calm, intelligent herding dog famous for its unique coat of natural 'flocks' (cords). They are loyal, patient, and gentle, thriving as devoted family companions.",
+        care: "Their coat requires special care: cords must be separated, kept clean, and thoroughly dried. They need moderate daily exercise, early socialization, and steady, positive training.",
+        idealHome: "Best for families who appreciate a calm but alert guardian, can manage coat maintenance, and want a loyal, steady companion.",
+        funFact: "Despite their heavy-looking coat, Bergamascos shed very little once the flocks are fully formed."
+    },
+
 ];
 
 
