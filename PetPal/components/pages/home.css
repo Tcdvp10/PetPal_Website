@@ -32,6 +32,19 @@ header {
   box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
+  header {
+    height: auto; /* allow header to grow */
+    padding: 10px 16px;
+    flex-wrap: wrap; /* nav + search/cart can go to two lines */
+  }
+
+  .nav {
+    padding: 0;
+    gap: 18px;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -98,16 +111,15 @@ header {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f8f2e8;
   position: relative;
-  
 }
 
 .slideshow {
@@ -165,6 +177,7 @@ header {
 }
 
 .hero-title {
+  font-size: 2.2rem;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -178,11 +191,12 @@ header {
 h2 {
   text-align: center;
   color: #8a5200;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 40px 0 20px;
 }
 
 .section {
+  position: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -244,6 +258,8 @@ h2 {
   }
 }
 
+/* Featured breeds */
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -281,13 +297,14 @@ h2 {
 }
 
 .breed-box img {
-  width: 100%;
-  height: 160px;
+  width: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 
 .breed-box p {
+  text-align: center;
   font-weight: 600;
   margin: 10px 0 14px;
 }
@@ -344,8 +361,9 @@ button a:visited {
   color: white;
 }
 
+/* Happy Tails section */
 #happy-tails {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 40px auto;
   padding: 0 20px;
   text-align: center;
@@ -357,7 +375,6 @@ button a:visited {
   color: #8a5200;
 }
 
-/* Carousel layout */
 .ht-carousel {
   display: flex;
   align-items: center;
@@ -380,13 +397,12 @@ button a:visited {
   background: #ffffff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
   align-items: center;
 }
 .story-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -438,68 +454,6 @@ button a:visited {
     height: 200px;
   }
 }
-.hero-video {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.Journey-section {
-  background-color: #f8f8ec;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-#journey-picture {
-  width: 100%;
-  max-width: 900px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 14px;
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-}
-
-#journey-picture img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Buttons container */
-.journey-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Individual buttons */
-.journey-btn {
-  background-color: #a6651f;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-}
-
-.journey-btn:hover {
-  background-color: #8a5200;
-  /* darker brown on hover */
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
 /*FOOTER*/
 .site-footer {
@@ -529,7 +483,7 @@ button a:visited {
 }
 
 .footer-intro svg {
-  width: 22px; 
+  width: 22px;
   height: 22px;
   fill: #ffffff;
 }
@@ -604,7 +558,7 @@ button a:visited {
 }
 
 .footer-social svg {
-  width: 22px; 
+  width: 22px;
   height: 22px;
   fill: #e0ddc8;
 }
@@ -631,6 +585,16 @@ button a:visited {
     grid-template-columns: 1fr;
   }
 }
+
+.section-container {
+  background-color: rgb(255, 255, 255);
+  margin: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+
 
 /* copyright */
 .Copyright {
