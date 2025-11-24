@@ -3,6 +3,7 @@
 
 <head>
     <title>Pet Pal - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
     <style>
 
@@ -13,7 +14,11 @@
     <div class="container">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: #f8f8ec;">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
                     <a href="breeds.html">Breeds</a>
                     <a href="caretips.html">Caretips & Training</a>
@@ -22,6 +27,7 @@
                 </div>
             </nav>
 
+            <!-- Right side: search + cart, aligned by header's flex -->
             <div style="display:flex; align-items:center;">
                 <div class="search-container">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -33,19 +39,18 @@
                     <input type="text" placeholder="Search" />
                 </div>
 
-                <i class="cart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <div class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#f8f8ec">
                         <path
                             d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
                     </svg>
-                </i>
+                </div>
+            </div>
         </header>
 
         <div class="hero-section">
             <div class="slideshow">
-                <figure class="slide"
-                    style="background-image: url(https://images5.alphacoders.com/916/916071.jpg);">
+                <figure class="slide" style="background-image: url(https://images5.alphacoders.com/916/916071.jpg);">
                 </figure>
                 <figure class="slide"
                     style="background-image: url(https://www.k9ofmine.com/wp-content/uploads/2021/03/dogs-that-are-good-with-chickens.jpg);">
@@ -58,70 +63,73 @@
         </div>
 
         <!-- Quick Access / Popular Sections -->
-        <h2>Quick Access / Popular Sections</h2>
-        <div class="quick-access-section">
-            <a href="breeds.html" class="card">
-                <img src="https://as1.ftcdn.net/v2/jpg/04/09/97/36/1000_F_409973641_WqLGwCQQZvRk21mzJDTxu9uJzxR7kDe6.jpg"
-                    alt="">
-                <p>Learn about Breeds</p>
-            </a>
-            <a href="caretips.html" class="card">
-                <img src="https://as1.ftcdn.net/v2/jpg/04/86/62/64/1000_F_486626413_I6oRLVL4yCX1mI8wcTkcVaYISfebY3SK.jpg"
-                    alt="">
-                <p>Discover care tips</p>
-            </a>
-            <a href="shop.html" class="card">
-                <img src="https://as1.ftcdn.net/v2/jpg/04/63/71/22/1000_F_463712286_dFYxmvjf6qZ8yR14yvNd74qq7F4wYGpZ.jpg"
-                    alt="">
-                <p>Explore Accessories</p>
-            </a>
-
-        </div>
-
-        <!-- Featured Breeds -->
-        <h2>Featured Breeds</h2>
-        <div class="carousel-container">
-            <button class="btn prev">&#8249;</button>
-            <div class="carousel">
-                <a href="#" class="breed-box">
-                    <img src="https://as1.ftcdn.net/v2/jpg/01/96/69/80/1000_F_196698075_rEAp39bGvlM9NpF0rq1gPnMysbEcGR4x.jpg"
-                        alt="Bernese Mountain Dog">
-                    <p>Bernese Mountain Dog</p>
+        <div class="section-container">
+            <h2>Popular Sections</h2>
+            <div class="quick-access-section">
+                <a href="breeds.html" class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/09/97/36/1000_F_409973641_WqLGwCQQZvRk21mzJDTxu9uJzxR7kDe6.jpg"
+                        alt="">
+                    <p>Learn about Breeds</p>
                 </a>
-                <a href="#" class="breed-box">
-                    <img src="https://as1.ftcdn.net/v2/jpg/03/98/31/60/1000_F_398316054_3eiS8YB6PRAnGBqbu7C2vdAJu16XcRoW.jpg"
-                        alt="Golden Retriever">
-                    <p>Golden Retriever</p>
+                <a href="caretips.html" class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/86/62/64/1000_F_486626413_I6oRLVL4yCX1mI8wcTkcVaYISfebY3SK.jpg"
+                        alt="">
+                    <p>Discover care tips</p>
                 </a>
-                <a href="#" class="breed-box">
-                    <img src="https://as1.ftcdn.net/v2/jpg/05/02/62/54/1000_F_502625438_wyU3yO0IOXYJQNLj9eDVxtUs39MuC4Mf.jpg"
-                        alt="German Shepherd">
-                    <p>German Shepherd</p>
-                </a>
-                <a href="#" class="breed-box">
-                    <img src="https://t3.ftcdn.net/jpg/04/20/65/04/240_F_420650482_Qh54gH5BOd9pKH4viCBtiWnMe92Zesav.jpg"
-                        alt="Shiba Inu">
-                    <p>Shiba Inu</p>
-                </a>
-                <a href="#" class="breed-box">
-                    <img src="https://as1.ftcdn.net/v2/jpg/03/82/54/32/1000_F_382543265_xOxH8CM08gTsv1AmCyHaVZwMb6MIwaOj.jpg"
-                        alt="Beagle">
-                    <p>Beagle</p>
-                </a>
-                <a href="#" class="breed-box">
-                    <img src="https://as2.ftcdn.net/v2/jpg/03/15/97/33/1000_F_315973318_WSFwoS7ndWE2EUBXTaaVeMYo0aEs8AmV.jpg"
-                        alt="Corgi">
-                    <p>Corgi</p>
-                </a>
-                <a href="#" class="breed-box">
-                    <img src="https://as2.ftcdn.net/v2/jpg/06/03/12/61/1000_F_603126127_uL0LrlwSGhGxWUwtSoj8VLsesuz2tp3x.jpg"
-                        alt="Poodle">
-                    <p>Poodle</p>
+                <a href="shop.html" class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/63/71/22/1000_F_463712286_dFYxmvjf6qZ8yR14yvNd74qq7F4wYGpZ.jpg"
+                        alt="">
+                    <p>Explore Accessories</p>
                 </a>
             </div>
-            <button class="btn next">&#8250;</button>
         </div>
 
+
+        <!-- Featured Breeds -->
+        <div class="section-container">
+            <h2>Featured Breeds</h2>
+            <div class="carousel-container">
+                <button class="btn prev">&#8249;</button>
+                <div class="carousel">
+                    <a href="#" class="breed-box">
+                        <img src="https://as1.ftcdn.net/v2/jpg/01/96/69/80/1000_F_196698075_rEAp39bGvlM9NpF0rq1gPnMysbEcGR4x.jpg"
+                            alt="Bernese Mountain Dog">
+                        <p>Bernese Mountain Dog</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/98/31/60/1000_F_398316054_3eiS8YB6PRAnGBqbu7C2vdAJu16XcRoW.jpg"
+                            alt="Golden Retriever">
+                        <p>Golden Retriever</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://as1.ftcdn.net/v2/jpg/05/02/62/54/1000_F_502625438_wyU3yO0IOXYJQNLj9eDVxtUs39MuC4Mf.jpg"
+                            alt="German Shepherd">
+                        <p>German Shepherd</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://t3.ftcdn.net/jpg/04/20/65/04/240_F_420650482_Qh54gH5BOd9pKH4viCBtiWnMe92Zesav.jpg"
+                            alt="Shiba Inu">
+                        <p>Shiba Inu</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/82/54/32/1000_F_382543265_xOxH8CM08gTsv1AmCyHaVZwMb6MIwaOj.jpg"
+                            alt="Beagle">
+                        <p>Beagle</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://as2.ftcdn.net/v2/jpg/03/15/97/33/1000_F_315973318_WSFwoS7ndWE2EUBXTaaVeMYo0aEs8AmV.jpg"
+                            alt="Corgi">
+                        <p>Corgi</p>
+                    </a>
+                    <a href="#" class="breed-box">
+                        <img src="https://as2.ftcdn.net/v2/jpg/06/03/12/61/1000_F_603126127_uL0LrlwSGhGxWUwtSoj8VLsesuz2tp3x.jpg"
+                            alt="Poodle">
+                        <p>Poodle</p>
+                    </a>
+                </div>
+                <button class="btn next">&#8250;</button>
+            </div>
+        </div>
 
         <!-- Dog Care Highlights 
         <h2>Dog Care Highlights</h2>
@@ -150,82 +158,86 @@
         </div> -->
 
         <!--Stories section-->
-        <section id="happy-tails">
-            <h2>"Happy Tails" Stories</h2>
+        <div class="section-container">
+            <section id="happy-tails">
+                <h2>"Happy Tails" Stories</h2>
 
-            <div class="ht-carousel">
-                <button class="ht-arrow ht-prev" aria-label="Previous story">‹</button>
+                <div class="ht-carousel">
+                    <button class="ht-arrow ht-prev" aria-label="Previous story">‹</button>
 
-                <div class="ht-window">
-                    <div class="ht-track">
-                        <!-- Card 1 -->
-                        <article class="story-card">
-                            <img src="https://as2.ftcdn.net/v2/jpg/03/18/74/31/1000_F_318743104_3rAZfx7mgI2nDMJMSMSMRfZTbrBvsrel.jpg"
-                                alt="Milo the beagle">
-                            <div class="story-text">
-                                <h3>Milo Finds His Forever Friend</h3>
-                                <p>Milo arrived shy and scared, unsure of the world around him.
-                                    Everything changed when a kind-hearted teacher adopted him.
-                                    Now he runs happily alongside her students every morning.</p>
-                                <p class="paw">🐾</p>
-                            </div>
-                        </article>
+                    <div class="ht-window">
+                        <div class="ht-track">
+                            <!-- Card 1 -->
+                            <article class="story-card">
+                                <img src="https://as2.ftcdn.net/v2/jpg/03/18/74/31/1000_F_318743104_3rAZfx7mgI2nDMJMSMSMRfZTbrBvsrel.jpg"
+                                    alt="Milo the beagle">
+                                <div class="story-text">
+                                    <h3>Milo Finds His Forever Friend</h3>
+                                    <p>Milo arrived shy and scared, unsure of the world around him.
+                                        Everything changed when a kind-hearted teacher adopted him.
+                                        Now he runs happily alongside her students every morning.</p>
+                                    <p class="paw">🐾</p>
+                                </div>
+                            </article>
 
-                        <!-- Card 2 -->
-                        <article class="story-card">
-                            <img src="https://as1.ftcdn.net/v2/jpg/06/49/33/26/1000_F_649332634_cjas4I2ORjNfk015VNbNXSVtRpBTJPn4.jpg"
-                                alt="Luna the husky">
-                            <div class="story-text">
-                                <h3>Luna’s Second Chance</h3>
-                                <p>After losing a leg in an accident, Luna learned to walk, run,
-                                    and play again. Her determination inspires everyone she meets.</p>
-                                <p class="paw">🐾</p>
-                            </div>
-                        </article>
+                            <!-- Card 2 -->
+                            <article class="story-card">
+                                <img src="https://as1.ftcdn.net/v2/jpg/06/49/33/26/1000_F_649332634_cjas4I2ORjNfk015VNbNXSVtRpBTJPn4.jpg"
+                                    alt="Luna the husky">
+                                <div class="story-text">
+                                    <h3>Luna’s Second Chance</h3>
+                                    <p>After losing a leg in an accident, Luna learned to walk, run,
+                                        and play again. Her determination inspires everyone she meets.</p>
+                                    <p class="paw">🐾</p>
+                                </div>
+                            </article>
 
-                        <!-- Card 3 -->
-                        <article class="story-card">
-                            <img src="https://as2.ftcdn.net/v2/jpg/04/23/45/73/1000_F_423457325_p6CJdSoL3FzcWcOETOcPC1SN7bhE3Oxj.jpg"
-                                alt="Coco the poodle">
-                            <div class="story-text">
-                                <h3>Coco the Comfort Pup</h3>
-                                <p>Coco visits the children’s hospital every Friday, offering calm
-                                    and comfort. Her favorite move is placing her paw on a patient’s hand.</p>
-                                <p class="paw">🐾</p>
-                            </div>
-                        </article>
+                            <!-- Card 3 -->
+                            <article class="story-card">
+                                <img src="https://as2.ftcdn.net/v2/jpg/04/23/45/73/1000_F_423457325_p6CJdSoL3FzcWcOETOcPC1SN7bhE3Oxj.jpg"
+                                    alt="Coco the poodle">
+                                <div class="story-text">
+                                    <h3>Coco the Comfort Pup</h3>
+                                    <p>Coco visits the children’s hospital every Friday, offering calm
+                                        and comfort. Her favorite move is placing her paw on a patient’s hand.</p>
+                                    <p class="paw">🐾</p>
+                                </div>
+                            </article>
 
-                        <!-- Card 4 -->
-                        <article class="story-card">
-                            <img src="https://as2.ftcdn.net/v2/jpg/17/63/90/39/1000_F_1763903977_OagoKeDfschpPXJ6UBzcDvAH5e56Rbwo.jpg"
-                                alt="Max the german shepherd">
-                            <div class="story-text">
-                                <h3>Max and the Mountain Adventure</h3>
-                                <p>Max stayed faithfully beside his owner after they got lost on
-                                    a mountain trail. Their bond became the talk of their small town.</p>
-                                <p class="paw">🐾</p>
-                            </div>
-                        </article>
+                            <!-- Card 4 -->
+                            <article class="story-card">
+                                <img src="https://as2.ftcdn.net/v2/jpg/17/63/90/39/1000_F_1763903977_OagoKeDfschpPXJ6UBzcDvAH5e56Rbwo.jpg"
+                                    alt="Max the german shepherd">
+                                <div class="story-text">
+                                    <h3>Max and the Mountain Adventure</h3>
+                                    <p>Max stayed faithfully beside his owner after they got lost on
+                                        a mountain trail. Their bond became the talk of their small town.</p>
+                                    <p class="paw">🐾</p>
+                                </div>
+                            </article>
 
-                        <!-- Card 5 -->
-                        <article class="story-card">
-                            <img src="https://as1.ftcdn.net/v2/jpg/05/80/08/76/1000_F_580087634_JOsi0Cjq4ouURhfBrYXIWQWgT660Niye.jpg"
-                                alt="Bella the golden retriever">
-                            <div class="story-text">
-                                <h3>Bella’s Big Move</h3>
-                                <p>After moving across the country, Bella discovered new parks,
-                                    new friends, and new adventures—proof that change can bring
-                                    beautiful beginnings.</p>
-                                <p class="paw">🐾</p>
-                            </div>
-                        </article>
+                            <!-- Card 5 -->
+                            <article class="story-card">
+                                <img src="https://as1.ftcdn.net/v2/jpg/05/80/08/76/1000_F_580087634_JOsi0Cjq4ouURhfBrYXIWQWgT660Niye.jpg"
+                                    alt="Bella the golden retriever">
+                                <div class="story-text">
+                                    <h3>Bella’s Big Move</h3>
+                                    <p>After moving across the country, Bella discovered new parks,
+                                        new friends, and new adventures, proof that change can bring
+                                        beautiful beginnings.</p>
+                                    <p class="paw">🐾</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                </div>
 
-                <button class="ht-arrow ht-next" aria-label="Next story">›</button>
-            </div>
-        </section>
- 
+                    <button class="ht-arrow ht-next" aria-label="Next story">›</button>
+                </div>
+            </section>
+        </div>
+
+
+
         <footer class="site-footer">
             <div class="footer-inner">
 
@@ -249,10 +261,14 @@
                     <h4>Information &amp; Resources</h4>
                     <ul>
                         <li><a href="https://adopt.spca.bc.ca/type/dog/">Adoption FAQ</a></li>
-                        <li><a href="https://www.akc.org/expert-advice/home-living/preparing-new-puppy/">Preparing for Your New Pet</a></li>
-                        <li><a href="https://www.carecredit.com/well-u/pet-care/how-to-train-your-dog/">Care &amp; Training Guides</a></li>
-                        <li><a href="https://www.barclondon.com/blogs/guides/dog-nutrition-chart-feeding-guide">Health &amp; Nutrition Tips</a></li>
-                        <li><a href="https://www.kamloopsveterinaryclinic.com/pet-care/dog-services/dog-emergency-vet">Emergency Contacts</a></li>
+                        <li><a href="https://www.akc.org/expert-advice/home-living/preparing-new-puppy/">Preparing for
+                                Your New Pet</a></li>
+                        <li><a href="https://www.carecredit.com/well-u/pet-care/how-to-train-your-dog/">Care &amp;
+                                Training Guides</a></li>
+                        <li><a href="https://www.barclondon.com/blogs/guides/dog-nutrition-chart-feeding-guide">Health
+                                &amp; Nutrition Tips</a></li>
+                        <li><a href="https://www.kamloopsveterinaryclinic.com/pet-care/dog-services/dog-emergency-vet">Emergency
+                                Contacts</a></li>
                     </ul>
                 </div>
 
@@ -260,10 +276,13 @@
                 <div class="footer-col">
                     <h4>Community</h4>
                     <ul>
-                        <li><a href="https://www.animalhumanesociety.org/news/our-top-dog-adoption-stories-2023">Success Stories</a></li>
-                        <li><a href="https://spca.bc.ca/news/tips-for-attending-dog-meetups/">Events &amp; Meetups</a></li>
+                        <li><a href="https://www.animalhumanesociety.org/news/our-top-dog-adoption-stories-2023">Success
+                                Stories</a></li>
+                        <li><a href="https://spca.bc.ca/news/tips-for-attending-dog-meetups/">Events &amp; Meetups</a>
+                        </li>
                         <li><a href="https://spca.bc.ca/ways-to-help/volunteer/">Volunteer Opportunities</a></li>
-                        <li><a href="https://www.adoptapet.com/dog-shelters/british-columbia/kamloops">Shelter Partners</a></li>
+                        <li><a href="https://www.adoptapet.com/dog-shelters/british-columbia/kamloops">Shelter
+                                Partners</a></li>
                         <li><a href="https://www.akc.org/subscribe/">Newsletter Sign-up</a></li>
                     </ul>
                 </div>
