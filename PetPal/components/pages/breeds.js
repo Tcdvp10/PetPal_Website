@@ -447,11 +447,42 @@ const breedsData = [
         idealHome: "Great for quiet households, retirees, or families with older children who want a loving lapdog and can provide companionship throughout the day.",
         funFact: "The Bolognese was a favorite lapdog of European nobility and often gifted among royalty."
     },
+    {
+        id: 'boerboel',
+        name: 'Boerboel',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Boerboel_pup.JPG',
+        size: 'giant',
+        coat: 'short',
+        temperament: ['confident', 'dominant', 'loyal', 'fearless'],
+        origin: 'south africa',
+        weight: '110–200 lb (50–91 kg)',
+        lifespan: '9–11 years',
+        about: "A powerful South African mastiff bred as a farm guardian. Boerboels are stable, intelligent, and extremely loyal to their families.",
+        care: "Low coat maintenance but requires firm, consistent training and heavy early socialization. Daily moderate activity is essential.",
+        idealHome: "Experienced owners only. Best for large properties and families who understand guardian breeds and can provide structure.",
+        funFact: "The name 'Boerboel' means 'farmer's dog' in Afrikaans, reflecting its working origins."
+    },
+    {
+        id: 'chihuahua',
+        name: 'Chihuahua',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Chihuahua_1.jpg',
+        size: 'small',
+        coat: 'short',
+        temperament: ['alert', 'charming', 'bold', 'devoted'],
+        origin: 'mexico',
+        weight: '2–6 lb (1–2.7 kg)',
+        lifespan: '12–14 years',
+        about: "The smallest dog breed in the world, full of personality and loyalty. Chihuahuas bond closely with their people and can be bold despite their size.",
+        care: "Smooth coats require minimal brushing; long coats need brushing 2–3 times weekly. Very sensitive to cold. Needs gentle training and extensive socialization.",
+        idealHome: "Best for adults or families with older gentle children. Perfect for apartment living and owners seeking a small, affectionate companion.",
+        funFact: "Chihuahuas were sacred to the ancient Toltec and Aztec civilizations."
+    },
+
 
     {
         id: 'doberman-pinscher',
         name: 'Doberman Pinscher',
-        image: 'https://www.mindenpictures.com/cache/pcache/00169144.jpg',
+        image: 'https://www.carecredit.com/sites/cc/image/hero_doberman_pinscher.jpg',
         size: 'large',
         coat: 'short',
         temperament: ['loyal', 'fearless', 'alert', 'intelligent'],
@@ -495,6 +526,38 @@ const breedsData = [
         idealHome: "Best for homes that understand their sensitive, intelligent nature and can provide exercise, training, and a calm environment.",
         funFact: "The Indie is one of the world's oldest naturally evolved dog breeds, perfectly adapted to the Indian climate."
     },
+    {
+        id: 'kai-ken',
+        name: 'Kai Ken',
+        image: 'https://cdn.britannica.com/51/233451-050-1E1B7B5A/Kai-Ken-dog.jpg',
+        size: 'medium',
+        coat: 'double',
+        temperament: ['brave', 'agile', 'loyal', 'alert'],
+        origin: 'japan',
+        weight: '25–40 lb (11–18 kg)',
+        lifespan: '12–15 years',
+        about: "A rare Japanese breed from the Kai mountains, known for its tiger-like brindle coat, strong hunting instincts, and loyal, reserved nature.",
+        care: "Weekly brushing, daily exercise, mental challenges, and careful socialization. Their double coat sheds heavily seasonally and needs thorough grooming.",
+        idealHome: "Active and experienced owners who understand independent, prey-driven breeds. Best with older, respectful children and secure fencing.",
+        funFact: "Kai Kens are excellent climbers and swimmers, historically used to hunt deer and boar."
+    },
+    {
+        id: 'keeshond',
+        name: 'Keeshond',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Keeshond_Male.jpg',
+        size: 'medium',
+        coat: 'double',
+        temperament: ['friendly', 'outgoing', 'lively', 'alert'],
+        origin: 'netherlands',
+        weight: '35–45 lb (16–20 kg)',
+        lifespan: '12–15 years',
+        about: "A cheerful, fluffy companion dog known as the 'smiling Dutchman'. Keeshonden are friendly, expressive, and deeply people-oriented.",
+        care: "Requires thorough brushing 2–3 times weekly, daily during heavy shedding. Needs moderate exercise and positive, gentle training.",
+        idealHome: "Excellent for families with kids, first-time owners, and anyone who wants a social, affectionate indoor companion.",
+        funFact: "Their distinctive facial markings resemble eyeglasses, giving them a naturally expressive look."
+    },
+
+
     {
         id: 'pembroke-welsh-corgi',
         name: 'Pembroke Welsh Corgi',
