@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", sans-serif;
-    background: #f3efe3 !important;        
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff !important;
     color: #333;
     line-height: 1.7;
 }
@@ -25,7 +25,7 @@ img {
 .page {
     width: 100%;
     min-height: 100vh;
-    background: #f3efe3 !important;
+    background: #ffffff !important;
 }
 
 
@@ -36,97 +36,81 @@ img {
 /* ===== HEADER ===== */
 
 header {
-    background: #2c7a7b;             /* teal bar */
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Nav bar */
 .nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2c3e50, #3495db);
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
-/* nav links */
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    font-size: 0.95rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-links a {
-    color: #fff;
-    font-weight: 500;
-    position: relative;
-    transition: opacity 0.2s;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.nav-links a:hover {
-    opacity: 0.8;
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.nav-links a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    height: 2px;
-    background: #fbd7a1; /* cream underline */
-    border-radius: 999px;
-}
-
-/* right side: search + cart */
+/* right side: search + cart – same as home */
 .header-right {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
-/* search pill */
 .search-container {
-    display: flex;
-    align-items: center;
-    padding: 0.4rem 0.9rem;
-    background: #f7fbfb;
-    border-radius: 999px;
-    min-width: 180px;
-}
-
-.search-container input {
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 0 0.4rem;
-    font-size: 0.9rem;
-    width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
 }
 
 .search-container svg {
-    width: 16px;
-    height: 16px;
-    fill: #4b8083;
-    opacity: 0.7;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  fill: #ffffff;
 }
 
-/* cart icon */
+.search-container input {
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  width: 200px;
+  background: #ffffff;   
+}
 .cart-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #fdf4de;
+  width: 24px;
+  height: 24px;
+  fill: white;
+  cursor: pointer;
 }
 
 /* ===== MAIN WRAPPER ===== */
@@ -154,9 +138,8 @@ header {
     color: #fff;
     overflow: hidden;
 
-   
-    background-image:
-        linear-gradient(rgba(44,122,123,0.55), rgba(44,122,123,0.55)),
+   background-image:
+    linear-gradient(rgba(44, 62, 80, 0.55), rgba(44, 62, 80, 0.55)),
         url("https://plus.unsplash.com/premium_photo-1707410050248-a8a8c7e2fffd?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
     background-size: cover;
     background-position: center;
@@ -193,7 +176,7 @@ header {
     font-weight: 600;
     border: none;
     background: #ffffff;
-    color: #2c7a7b;
+    color: #2c3e50;
     box-shadow: 0 6px 16px rgba(0,0,0,0.18);
     cursor: pointer;
     display: inline-block;
@@ -212,12 +195,12 @@ header {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(0,0,0,0.22);
     background: #ffffff;
-    color: #2c7a7b;
+    color: #2c3e50;
 }
 
 .pill-btn--outline:hover {
     background: #ffffff;
-    color: #2c7a7b;
+    color: #2c3e50
 }
 
 /* ===== CATEGORY TABS – DAILY CARE ESSENTIALS STYLE ===== */
@@ -236,15 +219,15 @@ header {
     border: none;
     text-align: center;
     font-size: 0.95rem;
-    color: #355c60;
+    color: #2c3e50;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: all 0.25s;
 }
 
 .category-card.active {
-    background: #e6f3f3;
-    color: #2c7a7b;
+    background: #ffffff;
+    color: #2c3e50;
     transform: translateY(-4px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
@@ -264,7 +247,7 @@ header {
     text-align: center;
     font-size: 2.1rem;
     margin-bottom: 1.8rem;
-    color: #2c7a7b;
+    color: #2c3e50
 }
 
 /* ===== COMMON DISEASES CARDS ===== */
@@ -272,11 +255,11 @@ header {
 .disease-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap:1.5rem;
 }
 
 .disease-card {
-    background: #fff3e0;
+    background:#ffffff;
     border-radius: 16px;
     padding: 1.5rem 1.3rem;
     text-align: center;
@@ -322,7 +305,7 @@ header {
     border-radius: 16px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    background: #fff3e0;
+    background: #ffffff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     padding: 1.2rem 1rem;
 }
@@ -347,7 +330,7 @@ header {
 .disease-back h3 {
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #2c7a7b;
+    color: #2c3e50;
 }
 /* ========== FLIP CARD STYLES ========== */
 
@@ -425,7 +408,7 @@ header {
 }
 
 .card h3 {
-    color: #2c7a7b;
+    color: #2c3e50;
     margin-bottom: 0.9rem;
     font-size: 1.1rem;
 }
@@ -453,7 +436,7 @@ header {
 .vaccine-list input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #2c7a7b;
+    accent-color: #2c3e50;
 }
 
 .vet-call ul {
@@ -535,7 +518,7 @@ header {
 .breed-search {
     margin-top: 1.3rem;
     padding: 0.9rem 1rem 1.1rem;
-    background: #f3efe5;
+    background: #ffffff;
     border-radius: 12px;
     border: 1px dashed #d7cfbe;
 }
@@ -571,7 +554,7 @@ header {
     padding: 0.55rem 1.2rem;
     font-size: 0.9rem;
     cursor: pointer;
-    background: #2c7a7b;
+    background: #2c3e50;
     color: #ffffff;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transition: all 0.2s;
@@ -589,11 +572,11 @@ header {
 }
 
 .quiz-card {
-    background: #e6f3f3;
+    background: #ffffff;
     border-radius: 16px;
     padding: 1.8rem 1.4rem 2rem;
     border: 1px solid #c9e4df;
-    color: #12373a;
+    color: #2c3e50;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
@@ -640,14 +623,14 @@ header {
 }
 
 .quiz-option-btn:hover {
-    background: #2c7a7b;
+    background:#2c3e50;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .quiz-option-btn.selected {
-    background: #2c7a7b;
+    background: #2c3e50;
     color: #fff;
     border-color: #1a535c;
 }
@@ -659,7 +642,7 @@ header {
     padding: 0.7rem 1.7rem;
     font-size: 0.9rem;
     cursor: pointer;
-    background: #2c7a7b;
+    background: #2c3e50;
     color: #ffffff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.16);
     transition: opacity 0.1s ease, transform 0.08s ease;
