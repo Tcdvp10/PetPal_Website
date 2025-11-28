@@ -82,63 +82,85 @@ body {
 }
 
 /* Hero / slideshow section */
-.hero {
-  /* full-width breakout */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  /* FILL THE SCREEN */
-  min-height: 100vh; /* hero = whole screen */
+.hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* centers content vertically */
-  align-items: center;
-
-  padding-top: 26rem; /* small breathing room */
-  gap: 2.2rem;
-
-  color: #fff;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
-    url("https://news.harvard.edu/wp-content/uploads/2023/11/dog_brains_2500.png");
-  background-position: center top;
-  background-size: 120%;
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-}
-/* Move hero text lower */
-.hero-banner {
-  margin-top: 7rem; /* adjust this number to move text lower */
-}
-
-.hero-banner h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-  letter-spacing: 0.04em;
-
   opacity: 0;
-  transform: translateY(30px);
-  animation: riseUp 1.2s ease-out forwards;
+  animation: slideAnim 15s infinite;
 }
 
-@keyframes riseUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.slideshow .slide:nth-child(1) {
+  animation-delay: 0s;
 }
 
+.slideshow .slide:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.slideshow .slide:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes slideAnim {
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: white;
+  border-radius: 8px;
+}
 
 h2 {
   text-align: center;
@@ -147,8 +169,71 @@ h2 {
   margin: 40px 0 20px;
 }
 
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px auto;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.intro-section p {
+  max-width: 700px;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+/* image on the right */
+.intro-section img {
+  width: 100%;
+  max-width: 600px;
+  height: 250 px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📱 Stack text and image on smaller screens */
+@media (max-width: 900px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .intro-section p {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .intro-section img {
+    max-width: 100%;
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .intro-section img {
+    height: 220px;
+  }
+}
+
 .section {
-  position: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -165,13 +250,15 @@ h2 {
 }
 
 .quick-access-section .card {
-  width: 400px;
+  flex: 1 1 260px; 
+  max-width: 360px;
 }
 
+/* Base card */
 .card {
   background: #fff;
-  width: 300px;
-  height: 300px;
+  width: 100%; /* full width inside flex item */
+  min-height: 280px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -194,22 +281,23 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
 }
 
+/* adjust breakpoints */
 @media (max-width: 768px) {
-  .card {
-    width: 45%;
+  .quick-access-section .card {
+    flex: 1 1 45%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .card {
-    width: 90%;
+  .quick-access-section .card {
+    flex: 1 1 100%;
   }
 }
-
+ 
 /* Featured breeds */
 
 .carousel-container {
@@ -405,6 +493,110 @@ button a:visited {
   .story-card img {
     height: 200px;
   }
+}
+
+/*Kamloop section*/
+.kamloops-section {
+  text-align: center;
+  margin: 0 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+
+.kamloops-intro {
+  max-width: 900px;
+  margin: 10px auto 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.kamloops-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+/* Cards */
+.kamloops-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+.kamloops-section img {
+  width: 100%;
+  max-width: 1100px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+  .kamloops-section img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kamloops-section img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .kamloops-section img {
+    height: 220px;
+  }
+}
+
+.kamloops-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.kamloops-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Icons */
+.kamloops-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: rgba(81, 154, 223, 0.12);
+  color: #2c3e50;
+}
+
+/* Learn More link */
+.kamloops-link {
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: #3495db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.kamloops-link:hover {
+  text-decoration: underline;
 }
 
 /*FOOTER*/
