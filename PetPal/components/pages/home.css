@@ -82,85 +82,63 @@ body {
 }
 
 /* Hero / slideshow section */
-.hero-section {
+.hero {
+  /* full-width breakout */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* FILL THE SCREEN */
+  min-height: 100vh; /* hero = whole screen */
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 82vh;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
+  justify-content: flex-start; /* centers content vertically */
   align-items: center;
-  justify-content: center;
-  position: relative;
-}
 
-.slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-}
+  padding-top: 26rem; /* small breathing room */
+  gap: 2.2rem;
 
-.slideshow .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: slideAnim 15s infinite;
-}
-
-.slideshow .slide:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.slideshow .slide:nth-child(2) {
-  animation-delay: 5s;
-}
-
-.slideshow .slide:nth-child(3) {
-  animation-delay: 10s;
-}
-
-@keyframes slideAnim {
-  0% {
-    opacity: 0;
-  }
-
-  8% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  38% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.hero-title {
-  font-size: 2.2rem;
+  color: #fff;
   text-align: center;
-  position: relative;
-  z-index: 2;
-  font-size: 3rem;
-  text-transform: uppercase;
-  padding: 0 10px;
-  color: white;
-  border-radius: 8px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
+    url("https://news.harvard.edu/wp-content/uploads/2023/11/dog_brains_2500.png");
+  background-position: center top;
+  background-size: 120%;
+  background-repeat: no-repeat;
 }
+/* Move hero text lower */
+.hero-banner {
+  margin-top: 7rem; /* adjust this number to move text lower */
+}
+
+.hero-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.04em;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: riseUp 1.2s ease-out forwards;
+}
+
+@keyframes riseUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 h2 {
   text-align: center;
@@ -558,14 +536,6 @@ button a:visited {
   .footer-inner {
     grid-template-columns: 1fr;
   }
-}
-
-.section-container {
-  background-color: rgb(255, 255, 255);
-  margin: 50px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
 }
 
 /* copyright */
