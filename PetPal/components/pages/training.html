@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="hero-actions">
-                    <a class="pill-btn" href="caretips.html">Learn Care Tips</a>
+                    <a class="pill-btn" href="caretips.html">Learn Training Tips</a>
                     <a class="pill-btn pill-btn--outline" href="training.html">Start Training</a>
                 </div>
             </section>
@@ -64,11 +64,11 @@
                 <button class="category-card active" data-category-tab="Basic Obidience">Basic Obedience</button>
                 <button class="category-card" data-category-tab="feeding and Nutrition">Feeding &amp; Nutrition</button>
                 <button class="category-card" data-category-tab="behaviour training">Behaviour Training</button>
-                <button class="category-card" data-category-tab="Positive Reinforcement">Positive Reinforcement</button>
-                <button class="category-card" data-category-tab="Advanced Training">Advanced Training</button>
+                <button class="category-card" data-category-tab="p Reinforcement">Positive Reinforcement</button>
+                <button class="category-card" data-category-tab="adavnced Training">Advanced Training</button>
             </section>
 
-            <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
+            <!-- ========== Behaviour panel (DEFAULT VISIBLE) ========== -->
             <section class="category-panel" data-category-panel="health">
                 <!-- Common Behaviour -->
                 <section class="section diseases-section">
@@ -133,7 +133,7 @@
                     </div>
                 </section>
 
-                <!-- Vaccines + When to call vet -->
+                <!--  When to call Trainer -->
                 <section class="section two-column">
                     <div class="card vaccination">
                         <h3>Training Checklist</h3>
@@ -147,7 +147,7 @@
                         </ul>
                     </div>
 
-                    <div class="card trainer-call">
+                    <div class="card vet-call">
                         <h3>When to call the Trainer?</h3>
                         <p>Call your Trainer right away if your dog:</p>
                         <ul>
@@ -195,7 +195,7 @@
             </section>
 
             <!-- ========== Basic Obedience PANEL ========== -->
-            <section class="category-panel" data-category-panel="basic obedience" hidden>
+            <section class="category-panel" data-category-pan="feeding" hidden>
 
                 <section class="section">
                     <h2 class="section-title">Basic Obedience</h2>
@@ -234,9 +234,22 @@
                     </div>
                 </section>
 
+                  <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Want Obidience tips for your dog’s breed?</h3>
+                        <p>Type your dog’s breed to see more information on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
+                </section>
+
+
  <!-- ========== Feeding and Nutrition PANEL ========== -->
                 <!-- BOX 2: INFO -->
-                  <section class="category-panel" data-category-panel="basic obedience" hidden>
+                  <section class="category-panel" data-category-panel="grooming" hidden>
 
                 <section class="section">
                     <h2 class="section-title">Feeding &amp; Nutrition</h2>
@@ -264,18 +277,18 @@
 
                         <div class="quiz-card">
                             <p class="quiz-progress">
-                                Question <span id="feed-current">1</span> of <span id="feed-total">3</span>
+                                Question <span id="groom-current">1</span> of <span id="feed-total">3</span>
                             </p>
 
-                            <div class="quiz-inner" id="feed-inner">
-                                <p class="quiz-question" id="feed-question"></p>
-                                <div class="quiz-options" id="feed-options"></div>
+                            <div class="quiz-inner" id="groom-inner">
+                                <p class="quiz-question" id="groom-question"></p>
+                                <div class="quiz-options" id="groom-options"></div>
                             </div>
 
-                            <button class="quiz-next-btn" id="feed-next" disabled>Next question</button>
+                            <button class="quiz-next-btn" id="groom-next" disabled>Next question</button>
 
-                            <p class="quiz-feedback" id="feed-feedback"></p>
-                            <div class="quiz-score" id="feed-score" hidden></div>
+                            <p class="quiz-feedback" id="groom-feedback"></p>
+                            <div class="quiz-score" id="groom-score" hidden></div>
                         </div>
                     </div>
                 </section>
@@ -295,7 +308,7 @@
             </section>
 
             <!-- ========== Behaviour Training PANEL ========== -->
-            <section class="category-panel" data-category-panel="Behaviour Training" hidden>
+            <section class="category-panel" data-category-panel="exercise" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
@@ -336,29 +349,30 @@
 
                         <div class="quiz-card">
                             <p class="quiz-progress">
-                                Question <span id="groom-current">1</span> of <span id="groom-total">3</span>
+                                Question <span id="exercise-current">1</span> of <span id="groom-total">3</span>
                             </p>
 
-                            <div class="quiz-inner" id="groom-inner">
-                                <p class="quiz-question" id="groom-question"></p>
-                                <div class="quiz-options" id="groom-options"></div>
+                            <div class="quiz-inner" id="exercise-inner">
+                                <p class="quiz-question" id="exercise-question"></p>
+                                <div class="quiz-options" id="exercise-options"></div>
                             </div>
 
-                            <button class="quiz-next-btn" id="groom-next" disabled>Next question</button>
+                            <button class="quiz-next-btn" id="exercise-next" disabled>Next question</button>
 
-                            <p class="quiz-feedback" id="groom-feedback"></p>
-                            <div class="quiz-score" id="groom-score" hidden></div>
+                            <p class="quiz-feedback" id="exercise-feedback"></p>
+                            <div class="quiz-score" id="exercise-score" hidden></div>
                         </div>
                     </div>
                 </section>
 
-                <!-- BOX 3: BREED SEARCH -->
-                <section class="section">
+                <!--Breeds section-->
+
+                 <section class="section">
                     <div class="breed-search">
-                        <h3>Need training tips for a specific breed?</h3>
-                        <p>Type your dogs breed to see more training details on the Breeds page.</p>
+                        <h3>Want feeding tips for your dog’s breed?</h3>
+                        <p>Type your dog’s breed to see more information on the Breeds page.</p>
                         <form class="breed-form">
-                            <input type="text" name="breed" placeholder="e.g. Poodle" required>
+                            <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
                             <button type="submit">Go to breed page</button>
                         </form>
                     </div>
@@ -367,7 +381,7 @@
             </section>
 
             <!-- ========== EXERCISE PANEL ========== -->
-            <section class="category-panel" data-category-panel="exercise" hidden>
+            <section class="category-panel" data-category-panel="comfort" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
@@ -397,18 +411,18 @@
 
                         <div class="quiz-card">
                             <p class="quiz-progress">
-                                Question <span id="exercise-current">1</span> of <span id="exercise-total">3</span>
+                                Question <span id="comfort-current">1</span> of <span id="exercise-total">3</span>
                             </p>
 
-                            <div class="quiz-inner" id="exercise-inner">
-                                <p class="quiz-question" id="exercise-question"></p>
-                                <div class="quiz-options" id="exercise-options"></div>
+                            <div class="quiz-inner" id="comfort-inner">
+                                <p class="quiz-question" id="comfort-question"></p>
+                                <div class="quiz-options" id="comfort-options"></div>
                             </div>
 
-                            <button class="quiz-next-btn" id="exercise-next" disabled>Next question</button>
+                            <button class="quiz-next-btn" id="comfort-next" disabled>Next question</button>
 
-                            <p class="quiz-feedback" id="exercise-feedback"></p>
-                            <div class="quiz-score" id="exercise-score" hidden></div>
+                            <p class="quiz-feedback" id="comfort-feedback"></p>
+                            <div class="quiz-score" id="comfort-score" hidden></div>
                         </div>
                     </div>
                 </section>
