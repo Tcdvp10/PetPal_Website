@@ -228,33 +228,61 @@ header {
 }
 
 /* ===== CATEGORY TABS – DAILY CARE ESSENTIALS STYLE ===== */
+#care-tips {
+  margin-top: 3rem;
+  text-align: center;
+}
 
-.care-categories {
+#care-tips .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.care-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
-  margin: 4rem auto 2.5rem;   /* 4rem = move downward */
+  margin: 0 auto;
 }
 
-.category-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 0.9rem 0.8rem;
-    border: none;
-    text-align: center;
-    font-size: 0.95rem;
-    color: #2c3e50;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: all 0.25s;
+.care-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid #e5e5e5;
 }
 
-.category-card.active {
-    background: #ffffff;
-    color: #2c3e50;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+.care-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.10);
+}
+
+.care-card.active {
+  border-color: #1d4f81;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.care-card .icon {
+  font-family: "Material Symbols Rounded";
+  font-size: 36px;
+  color: #1d4f81;
+  margin-bottom: 0.5rem;
+}
+
+.care-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  color: #1d4f81;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ===== GENERIC SECTION CARDS ===== */
@@ -301,7 +329,7 @@ header {
 
 .disease-card img {
   width: 100%;
-  height: 240px;   /* 🔥 increased from 150-180px to much bigger */
+  height: 320px;   /* 🔥 increased from 150-180px to much bigger */
   object-fit: cover;
   border-radius: 18px;
   margin-bottom: 1rem;
@@ -380,6 +408,10 @@ header {
     font-size: 1rem;
     color: #2c3e50;
 }
+/* Add spacing before the vaccination & vet section */
+.section.two-column {
+    margin-top: 4rem !important;
+}
 /* ========== FLIP CARD STYLES ========== */
 
 .flip-card {
@@ -446,19 +478,30 @@ header {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 }
-
-.card {
-    background: #ffffff;
-    border-radius: 16px;
-    border: 1px solid #e2ded4;
-    padding: 1.6rem 1.4rem 1.8rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+.card ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #2c3e50;
+}
+.card p {
+    color: #375a7f;
+    margin-bottom: 1rem;
+}
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
 }
 
-.card h3 {
+.card ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
     color: #2c3e50;
-    margin-bottom: 0.9rem;
-    font-size: 1.1rem;
 }
 
 .vaccine-intro {
@@ -1153,6 +1196,217 @@ header {
 
 .groom-item p {
   font-weight: 700;
-  color: #2c7a7b;
+  color: #2c3e50;
   font-size: 1.1rem;
+}
+/* ===== COMMON DISEASES – NEW LAYOUT ===== */
+
+.diseases-section {
+  margin-top: 3rem;             /* moves the whole section DOWN */
+  margin-bottom: 2.5rem;
+}
+
+.diseases-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.diseases-subtitle {
+  font-size: 0.95rem;
+  color: #2c3e50;
+  max-width: 640px;
+  margin: 0.5rem auto 0;
+}
+
+.diseases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.disease-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.4rem 1.4rem 1.6rem;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
+}
+
+.disease-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.13);
+}
+
+.disease-card img {
+  width: 100%;
+  height: 260px;          
+  border-radius: 18px;
+  margin-bottom: 1rem;
+}
+
+.disease-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: #1f3b4d;
+}
+
+.disease-card p {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+/* === EXTRA AESTHETIC ANIMATIONS FOR BONUS QUIZ === */
+
+.section.quiz {
+  background: linear-gradient(135deg, #e6f4ff, #f9fbff);
+  border-radius: 26px;
+  padding: 2.5rem 2rem 3rem;
+  margin-top: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  animation: quizBgFloat 20s ease-in-out infinite alternate;
+}
+
+@keyframes quizBgFloat {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.quiz-card.quiz-card-animated {
+  animation: cardGlow 5s ease-in-out infinite alternate;
+}
+
+@keyframes cardGlow {
+  0% {
+    box-shadow: 0 10px 26px rgba(15, 57, 96, 0.10);
+  }
+  100% {
+    box-shadow: 0 20px 44px rgba(15, 57, 96, 0.22);
+  }
+}
+.quiz-option-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-option-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* when selected (JS already adds .selected) */
+.quiz-option-btn.selected {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 26px rgba(22,101,158,0.35);
+}
+
+/* tiny paw on selected option */
+.quiz-option-btn.selected::after {
+  content: " 🐾";
+}
+.quiz-next-btn {
+  position: relative;
+}
+
+/* subtle wiggle when you hover (but not disabled) */
+.quiz-next-btn:not(:disabled):hover {
+  animation: nextBtnWiggle 0.3s ease;
+}
+
+@keyframes nextBtnWiggle {
+  0%   { transform: translateY(-2px) translateX(0); }
+  25%  { transform: translateY(-2px) translateX(-1px); }
+  50%  { transform: translateY(-2px) translateX(1px); }
+  75%  { transform: translateY(-2px) translateX(-0.5px); }
+  100% { transform: translateY(-2px) translateX(0); }
+}
+.quiz-score.score-pop::before {
+  content: "🎉🐶🎉";
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.quiz-score.score-pop::after {
+  content: "🎉";
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+/* ACTIVE BTN = white pill */
+.active-btn {
+  background: #ffffff !important;
+  color: #2c3e50 !important;
+  border: none !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18) !important;
+}
+
+/* INACTIVE BTN = transparent outline */
+.pill-btn--outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.pill-btn--outline:hover {
+  background: #ffffff;
+  color: #2c3e50;
+}
+
+/* ===== TRAINING CATEGORIES – MATCH CARE TIPS CARDS ===== */
+
+.training-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 3.5rem auto 2.5rem;   /* similar spacing to Daily Care Essentials */
+}
+
+/* each card */
+.training-categories .category-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 1.3rem 1rem;
+  border: 1px solid #e1e5f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* hover */
+.training-categories .category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* active card (selected) */
+.training-categories .category-card.active {
+  border-color: #16659e;
+  box-shadow: 0 16px 36px rgba(22, 101, 158, 0.25);
+}
+
+/* icon + label styles */
+.training-categories .category-icon {
+  font-size: 2rem;
+  color: #16659e;
+}
+
+.training-categories .category-label {
+  font-weight: 600;
+  text-align: center;
 }

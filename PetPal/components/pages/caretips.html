@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Pet Pal - Care and Tips</title>
     <link rel="stylesheet" href="caretips.css">
+    <!-- Google Material Icons (Rounded) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+<!-- Google Fonts - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -54,91 +59,86 @@
                 </div>
 
                 <div class="hero-actions">
-                    <a class="pill-btn" href="caretips.html">Learn Care Tips</a>
+                   <a class="pill-btn active-btn" href="#care-section">Learn Care Tips</a>
                     <a class="pill-btn pill-btn--outline" href="training.html">Start Training</a>
                 </div>
             </section>
 
             <!-- CATEGORY TABS -->
-            <section class="care-categories">
-                <button class="category-card active" data-category-tab="health">Health &amp; Vet</button>
-                <button class="category-card" data-category-tab="feeding">Feeding &amp; Nutrition</button>
-                <button class="category-card" data-category-tab="grooming">Grooming</button>
-                <button class="category-card" data-category-tab="exercise">Exercise</button>
-                <button class="category-card" data-category-tab="comfort">Comfort &amp; Sleep</button>
-            </section>
+<section id="care-tips">
+  <h2 class="section-title">Daily Care Essentials</h2>
 
+  <div class="care-grid">
+
+    <!-- HEALTH FIRST -->
+    <button class="care-card active" data-category-tab="health">
+      <span class="material-symbols-rounded icon">medical_services</span>
+      <h3>Health & Vet</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="feeding">
+      <span class="material-symbols-rounded icon">restaurant</span>
+      <h3>Feeding & Nutrition</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="grooming">
+      <span class="material-symbols-rounded icon">pets</span>
+      <h3>Grooming</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="exercise">
+      <span class="material-symbols-rounded icon">directions_run</span>
+      <h3>Exercise</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="comfort">
+      <span class="material-symbols-rounded icon">bed</span>
+      <h3>Comfort & Sleep</h3>
+    </button>
+
+  </div>
+</section>
             <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
             <section class="category-panel" data-category-panel="health">
                 <!-- Common Diseases -->
-                <section class="section diseases-section">
-                    <h2 class="section-title">Common Diseases</h2>
+<section class="diseases-section">
+  <div class="diseases-header">
+    <h2 class="section-title">Common Diseases</h2>
+    <p class="diseases-subtitle">
+      Keep an eye out for these common illnesses. Early vet care can save your dog’s life.
+    </p>
+  </div>
 
-                    <div class="disease-grid">
+  <div class="diseases-grid">
+    <!-- Rabies -->
+    <article class="disease-card">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1663047317286-26dd72a99938?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Dog gettong vacinated">
+      <h3>Rabies</h3>
+      <p><strong>Watch for:</strong> sudden behaviour changes, aggression, drooling, paralysis.</p>
+    </article>
 
-                        <!-- Disease 1 -->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://images.unsplash.com/photo-1618294454352-eb84462415b0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="disease-image">
-                                    <p class="disease-name">Rabies</p>
-                                </div>
+    <!-- Parvovirus -->
+    <article class="disease-card">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1664300945245-56b602719ca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Dog laying down">
+      <h3>Parvovirus</h3>
+      <p><strong>Watch for:</strong> bloody diarrhea, vomiting, extreme tiredness in puppies.</p>
+    </article>
 
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Rabies</h3>
-                                    <p><strong>Symptoms:</strong> Fever, aggression, drooling, paralysis.</p>
-                                    <p><strong>Prevention:</strong> Vaccination is essential.</p>
-                                    <p><strong>Why it matters:</strong> Rabies is fatal — always vaccinate.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Disease 2 -->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://images.unsplash.com/photo-1711374490954-986ad72da25b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="disease-image">
-                                    <p class="disease-name">Parvovirus</p>
-                                </div>
-
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Parvovirus</h3>
-                                    <p><strong>Symptoms:</strong> Bloody diarrhea, vomiting, severe lethargy.</p>
-                                    <p><strong>Prevention:</strong> Puppy vaccination (DHPP).</p>
-                                    <p><strong>Why it matters:</strong> Highly contagious and dangerous.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Disease 3 -->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://plus.unsplash.com/premium_photo-1663012999448-7f5ec5324f4e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="disease-image">
-                                    <p class="disease-name">Kennel Cough</p>
-                                </div>
-
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Kennel Cough</h3>
-                                    <p><strong>Symptoms:</strong> Dry/hacking cough, gagging.</p>
-                                    <p><strong>Prevention:</strong> Bordetella vaccine & avoiding crowded areas.</p>
-                                    <p><strong>Why it matters:</strong> Common in social dogs / daycares.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
+    <!-- Kennel Cough -->
+    <article class="disease-card">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1683134234977-96fabca0ba59?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Vet checking dog">
+      <h3>Kennel Cough</h3>
+      <p><strong>Watch for:</strong> dry “honking” cough, gagging, worse after excitement.</p>
+    </article>
+  </div>
+</section>
+    
                 <!-- Vaccines + When to call vet -->
                 <section class="section two-column">
                     <div class="card vaccination">
