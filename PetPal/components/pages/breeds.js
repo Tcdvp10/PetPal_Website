@@ -447,11 +447,56 @@ const breedsData = [
         idealHome: "Great for quiet households, retirees, or families with older children who want a loving lapdog and can provide companionship throughout the day.",
         funFact: "The Bolognese was a favorite lapdog of European nobility and often gifted among royalty."
     },
+    {
+        id: 'boerboel',
+        name: 'Boerboel',
+        image: 'https://jordandogtraining.com.au/wp-content/uploads/2025/06/Boerbull-800x534.webp',
+        size: 'giant',
+        coat: 'short',
+        temperament: ['confident', 'dominant', 'loyal', 'fearless'],
+        origin: 'south africa',
+        weight: '110–200 lb (50–91 kg)',
+        lifespan: '9–11 years',
+        about: "A powerful South African mastiff bred as a farm guardian. Boerboels are stable, intelligent, and extremely loyal to their families.",
+        care: "Low coat maintenance but requires firm, consistent training and heavy early socialization. Daily moderate activity is essential.",
+        idealHome: "Experienced owners only. Best for large properties and families who understand guardian breeds and can provide structure.",
+        funFact: "The name 'Boerboel' means 'farmer's dog' in Afrikaans, reflecting its working origins."
+    },
+    {
+        id: 'chihuahua',
+        name: 'Chihuahua',
+        image: 'https://cdn05.zipify.com/tkRa741txC_y6bLjIhwYg7VSc18=/fit-in/3840x0/902277ac20b349afb8089d51d130b76b/5.jpeg',
+        size: 'small',
+        coat: 'short',
+        temperament: ['alert', 'charming', 'bold', 'devoted'],
+        origin: 'mexico',
+        weight: '2–6 lb (1–2.7 kg)',
+        lifespan: '12–14 years',
+        about: "The smallest dog breed in the world, full of personality and loyalty. Chihuahuas bond closely with their people and can be bold despite their size.",
+        care: "Smooth coats require minimal brushing; long coats need brushing 2–3 times weekly. Very sensitive to cold. Needs gentle training and extensive socialization.",
+        idealHome: "Best for adults or families with older gentle children. Perfect for apartment living and owners seeking a small, affectionate companion.",
+        funFact: "Chihuahuas were sacred to the ancient Toltec and Aztec civilizations."
+    },
+    {
+        id: 'cavalier-king-charles-spaniel',
+        name: 'Cavalier King Charles Spaniel',
+        image: 'https://www.dailypaws.com/thmb/1M_3_30QiwVnj6MwFSUWe1utQ84=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tan-white-cavalier-king-charles-reoutch-685086913-92a7f2e6c89d4c52be6a732d89c1251c.jpg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['gentle', 'affectionate', 'friendly', 'sensitive'],
+        origin: 'united kingdom',
+        weight: '13–18 lb (6–8 kg)',
+        lifespan: '12–15 years',
+        about: "A sweet, elegant toy spaniel known for its loving nature and constantly wagging tail. Cavaliers are affectionate, social, and adaptable to many lifestyles.",
+        care: "Brush every other day, especially the ears and feathering. Clean ears weekly. Provide daily walks and interactive play. Monitor weight and heart health closely.",
+        idealHome: "Perfect for families, seniors, and anyone seeking a gentle, cuddly companion who loves being with people.",
+        funFact: "Cavaliers were named after King Charles II, who adored toy spaniels and reportedly took them everywhere—even to Parliament!"
+    },
 
     {
         id: 'doberman-pinscher',
         name: 'Doberman Pinscher',
-        image: 'https://www.mindenpictures.com/cache/pcache/00169144.jpg',
+        image: 'https://www.carecredit.com/sites/cc/image/hero_doberman_pinscher.jpg',
         size: 'large',
         coat: 'short',
         temperament: ['loyal', 'fearless', 'alert', 'intelligent'],
@@ -463,6 +508,70 @@ const breedsData = [
         idealHome: "Best for experienced, active owners who can provide structure, leadership, and plenty of physical and mental activity.",
         funFact: "The breed was created by a German tax collector, Louis Dobermann, who wanted the perfect personal protection dog."
     },
+    {
+        id: 'english-cocker-spaniel',
+        name: 'English Cocker Spaniel',
+        image: 'https://www.petpost.com.au/_next/image?url=https%3A%2F%2Fstrapi-petpost-prod-media-library.s3.ap-southeast-2.amazonaws.com%2Fcocker_spaniel_8319336d23.jpg&w=3840&q=75',
+        size: 'medium',
+        coat: 'long',
+        temperament: ['friendly', 'energetic', 'affectionate', 'intelligent'],
+        origin: 'united kingdom',
+        weight: '26–34 lb (12–16 kg)',
+        lifespan: '12–14 years',
+        about: "A merry, affectionate spaniel known for its wagging tail, gentle personality, and sporting drive. They are lively family companions with strong hunting instincts.",
+        care: "Brush 2–3 times weekly and clean ears regularly. Provide 1 hour of exercise daily including play and training. Grooming every 6–8 weeks helps maintain their coat.",
+        idealHome: "Perfect for active families seeking a gentle, playful dog who enjoys both cuddles and outdoor adventures.",
+        funFact: "The breed name comes from hunting woodcock—one of their original field roles."
+    },
+    {
+        id: 'english-springer-spaniel',
+        name: 'English Springer Spaniel',
+        image: 'https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/03/English-Springer-Spaniel-Glucklich-1024x682-1.webp',
+        size: 'medium',
+        coat: 'long',
+        temperament: ['friendly', 'energetic', 'eager-to-please', 'intelligent'],
+        origin: 'united kingdom',
+        weight: '40–50 lb (18–23 kg)',
+        lifespan: '12–14 years',
+        about: "A high-energy sporting dog known for enthusiasm, intelligence, and a loving nature. Springers excel in hunting, agility, and active family life.",
+        care: "Brush 2–3 times weekly and clean ears often. Needs 1–2 hours of vigorous exercise including running, swimming, and retrieving.",
+        idealHome: "Best for sporty families who want an energetic partner for outdoor adventures.",
+        funFact: "Springers get their name from ‘springing’ game—flushing birds into the air during hunts."
+    },
+
+
+    {
+        id: 'french-bulldog',
+        name: 'French Bulldog',
+        image: 'https://www.ellevetsciences.com/wp-content/uploads/2022/04/EV_BLOG_FrenchBullDogs_Header-1024x717.jpg',
+        size: 'small',
+        coat: 'short',
+        temperament: ['affectionate', 'playful', 'alert', 'easygoing'],
+        origin: 'france',
+        weight: 'Under 28 lb (13 kg)',
+        lifespan: '10–12 years',
+        about: "A charming, affectionate small companion known for its bat-like ears, calm nature, and love for attention. French Bulldogs thrive on human companionship and adapt well to city living.",
+        care: "Requires weekly brushing and daily cleaning of facial folds. Needs controlled exercise and careful monitoring in hot weather due to breathing issues. Feed a balanced diet to avoid weight gain.",
+        idealHome: "Perfect for families, seniors, or apartment dwellers wanting a low-exercise, affectionate companion. Best for homes that can provide a cool environment and gentle exercise.",
+        funFact: "Despite the name, French Bulldogs actually originated from small English Bulldogs brought to France by lace workers."
+    },
+    {
+        id: 'flat-coated-retriever',
+        name: 'Flat-Coated Retriever',
+        image: 'https://image.petmd.com/files/styles/863x625/public/2023-09/flat-coated-retriever.jpg;',
+        size: 'large',
+        coat: 'long',
+        temperament: ['cheerful', 'outgoing', 'energetic', 'sensitive'],
+        origin: 'united kingdom',
+        weight: '55–80 lb (25–36 kg)',
+        lifespan: '8–10 years',
+        about: "A joyful, optimistic retriever known for its forever-young personality and strong desire to please. Friendly, playful, and affectionate, they make devoted family companions.",
+        care: "Brush 2–3 times weekly, more during shedding. Provide 1–2 hours of exercise daily, including running, swimming, and retrieving. Continue mental training because they stay puppy-like for years.",
+        idealHome: "Best for active families who enjoy outdoor adventures and want a highly social, enthusiastic dog.",
+        funFact: "Often called the 'Peter Pan' of dog breeds because they stay youthful and playful well into adulthood."
+    },
+
+
 
     {
         id: 'golden-retriever',
@@ -479,6 +588,22 @@ const breedsData = [
         idealHome: "Perfect for active families who want a gentle, playful, loyal companion and can meet their physical and mental exercise needs.",
         funFact: "Golden Retrievers are excellent swimmers thanks to their water-repellent coats and strong tails used like a rudder."
     },
+    {
+        id: 'irish-red-and-white-setter',
+        name: 'Irish Red and White Setter',
+        image: 'https://irishredandwhitesetterclub.com/wp-content/uploads/2023/09/HealthBonfield23.jpg',
+        size: 'large',
+        coat: 'long',
+        temperament: ['energetic', 'loyal', 'intelligent', 'gentle'],
+        origin: 'ireland',
+        weight: '40–70 lb (18–32 kg)',
+        lifespan: '11–15 years',
+        about: "A high-energy hunting and family dog known for its intelligence, affectionate nature, and strong work ethic. They are athletic, gentle, and bond deeply with family.",
+        care: "Brush 2–3 times weekly, especially the feathering. Provide 1–2 hours of vigorous daily exercise including running and field activities. Early training and socialization are essential.",
+        idealHome: "Best for active families or outdoorsy owners who can offer lots of exercise and mental challenges.",
+        funFact: "This breed is older than the all-red Irish Setter and played a major role in developing it."
+    },
+
 
     {
         id: 'indie',
@@ -494,6 +619,51 @@ const breedsData = [
         care: "Very low grooming needs due to their short coat. They need daily exercise, early socialization, and positive training to manage their strong prey drive and independent nature.",
         idealHome: "Best for homes that understand their sensitive, intelligent nature and can provide exercise, training, and a calm environment.",
         funFact: "The Indie is one of the world's oldest naturally evolved dog breeds, perfectly adapted to the Indian climate."
+    },
+    {
+        id: 'kai-ken',
+        name: 'Kai Ken',
+        image: 'https://usserviceanimals.org/blog/wp-content/uploads/2019/07/kai-ken.jpg',
+        size: 'medium',
+        coat: 'double',
+        temperament: ['brave', 'agile', 'loyal', 'alert'],
+        origin: 'japan',
+        weight: '25–40 lb (11–18 kg)',
+        lifespan: '12–15 years',
+        about: "A rare Japanese breed from the Kai mountains, known for its tiger-like brindle coat, strong hunting instincts, and loyal, reserved nature.",
+        care: "Weekly brushing, daily exercise, mental challenges, and careful socialization. Their double coat sheds heavily seasonally and needs thorough grooming.",
+        idealHome: "Active and experienced owners who understand independent, prey-driven breeds. Best with older, respectful children and secure fencing.",
+        funFact: "Kai Kens are excellent climbers and swimmers, historically used to hunt deer and boar."
+    },
+    {
+        id: 'keeshond',
+        name: 'Keeshond',
+        image: 'https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/MjAxOTYxMzM1ODIxNjQxNjUx/keeshond-guide.jpg?arena_f_auto',
+        size: 'medium',
+        coat: 'double',
+        temperament: ['friendly', 'outgoing', 'lively', 'alert'],
+        origin: 'netherlands',
+        weight: '35–45 lb (16–20 kg)',
+        lifespan: '12–15 years',
+        about: "A cheerful, fluffy companion dog known as the 'smiling Dutchman'. Keeshonden are friendly, expressive, and deeply people-oriented.",
+        care: "Requires thorough brushing 2–3 times weekly, daily during heavy shedding. Needs moderate exercise and positive, gentle training.",
+        idealHome: "Excellent for families with kids, first-time owners, and anyone who wants a social, affectionate indoor companion.",
+        funFact: "Their distinctive facial markings resemble eyeglasses, giving them a naturally expressive look."
+    },
+    {
+        id: 'newfoundland',
+        name: 'Newfoundland',
+        image: 'https://image.petmd.com/files/inline-images/newfoundland-4.jpg?VersionId=ZbmWMuLJHQqeATPy00__uyg1qCdrRUHL',
+        size: 'giant',
+        coat: 'double',
+        temperament: ['gentle', 'patient', 'sweet-tempered', 'loyal'],
+        origin: 'canada',
+        weight: '100–150 lb (45–68 kg)',
+        lifespan: '9–10 years',
+        about: "A gentle giant known for its calm, sweet nature and natural instinct for water rescue. Newfoundlands are loving, steady, and famously patient with children.",
+        care: "High-maintenance coat requiring several brushings per week, daily grooming during shedding season, and careful temperature management due to heat sensitivity. Requires early socialization and gentle, consistent training.",
+        idealHome: "Families wanting a gentle, affectionate giant breed. Best for cooler climates and homes with plenty of space and access to water.",
+        funFact: "Newfoundlands have webbed feet and incredible swimming ability; they are historically famous for saving lives at sea."
     },
     {
         id: 'pembroke-welsh-corgi',
@@ -686,9 +856,111 @@ const breedsData = [
     idealHome: "Rural or suburban homes, farms — owners who are active, enjoy dog sports or have livestock. Best for people who can commit to daily exercise and training.",
     funFact: "Working Kelpies have been used for decades in Australia to herd sheep and cattle — they are often regarded as some of the most hardworking and resilient herding dogs." 
   }
-
-
-
+    ,{
+        id: 'romanian-mioritic-shepherd',
+        name: 'Romanian Mioritic Shepherd',
+        image: 'https://www.akc.org/wp-content/uploads/2018/07/Romanian-Mioritic-Shepherd-Dog-laying-outdoors.jpg',
+        size: 'giant',
+        coat: 'long',
+        temperament: ['calm', 'courageous', 'protective', 'loyal'],
+        origin: 'romania',
+        weight: '90–130 lb (40–60 kg)',
+        lifespan: '12–14 years',
+        about: "A powerful livestock guardian with a calm, devoted, and protective nature. Known for deep loyalty to family and natural suspicion of strangers.",
+        care: "Long, thick coat requiring brushing 2–3 times per week (daily during shedding). Needs confident, patient training and early socialization. Sensitive to heat.",
+        idealHome: "Large rural properties or homes needing a guardian. Best for experienced owners who understand independent guardian breeds.",
+        funFact: "This breed’s thick, shaggy coat helps protect it from harsh mountain weather and predators."
+    },
+    {
+        id: 'russian-tsvetnaya-bolonka',
+        name: 'Russian Tsvetnaya Bolonka',
+        image: 'https://www.rtbca.com/wp-content/uploads/2022/02/zz-side.jpeg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['playful', 'affectionate', 'alert', 'intelligent'],
+        origin: 'russia',
+        weight: '4–11 lb (2–5 kg)',
+        lifespan: '12–16 years',
+        about: "A cheerful, loving toy breed with a soft, non-shedding coat. They are devoted companions, lively, and adaptable to apartment living.",
+        care: "High-maintenance coat needing daily brushing and professional grooming every 4–6 weeks. Sensitive and thrives on gentle training and regular socialization.",
+        idealHome: "Best for adults or families with older, gentle children. Perfect for apartments and owners wanting a small, affectionate companion.",
+        funFact: "The breed was developed during the Soviet era as a companion dog for families living in small urban apartments."
+    },
+    {
+        id: 'russian-toy',
+        name: 'Russian Toy',
+        image: 'https://dogsvictoria.org.au/media/img/BrowseAllBreed/Russian%20Toy%20(Russkiy%20Toy)%20(Smooth%20Haired)%2001_adobe_express.jpeg',
+        size: 'small',
+        coat: 'short',
+        temperament: ['active', 'playful', 'devoted', 'alert'],
+        origin: 'russia',
+        weight: 'up to 6.5 lb (3 kg)',
+        lifespan: '12–14 years',
+        about: "A tiny, lively, and affectionate toy breed with a big personality. Russian Toys are cheerful, sensitive, and extremely devoted to their owners.",
+        care: "Smooth coats need light brushing; long coats need 2–3 grooming sessions weekly. Very sensitive to cold and requires gentle handling and early socialization.",
+        idealHome: "Adults or families with older, careful children. Ideal for apartments and people wanting a tiny but energetic companion.",
+        funFact: "Though tiny, the Russian Toy originated from larger terrier lines and retains their bold, fearless attitude."
+    },
+    {
+        id: 'rottweiler',
+        name: 'Rottweiler',
+        image: 'https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg',
+        size: 'large',
+        coat: 'short',
+        temperament: ['loyal', 'confident', 'protective', 'courageous'],
+        origin: 'germany',
+        weight: '80–135 lb (36–61 kg)',
+        lifespan: '9–10 years',
+        about: "A powerful working breed known for loyalty, intelligence, and strong protective instincts. Calm, confident, and deeply devoted to family.",
+        care: "Short coat requiring weekly brushing. Needs early training, extensive socialization, and plenty of physical and mental exercise.",
+        idealHome: "Experienced owners who can provide structure, leadership, and daily activity. Great for people wanting a loyal guardian.",
+        funFact: "Originally used to drive cattle and guard money for Roman soldiers, earning the nickname 'butcher’s dog'."
+    },
+    {
+        id: 'shetland-sheepdog',
+        name: 'Shetland Sheepdog',
+        image: 'https://www.sheltieblessings.com/wp-content/uploads/2024/02/PXL_20230814_2333317282.jpg',
+        size: 'medium',
+        coat: 'long',
+        temperament: ['intelligent', 'lively', 'gentle', 'loyal'],
+        origin: 'scotland',
+        weight: '15–25 lb (7–11 kg)',
+        lifespan: '12–14 years',
+        about: "A smart, gentle herding breed known for its affectionate nature, agility, and strong bond with family. Highly trainable and eager to please.",
+        care: "Long double coat requiring brushing 2–3 times a week, daily during shedding season. Needs mental stimulation, training, and regular exercise.",
+        idealHome: "Active families who want a loyal, intelligent companion. Great for kids, training, and dog sports.",
+        funFact: "Shelties are famous for excelling in obedience and agility competitions due to their sharp intelligence."
+    },
+    {
+        id: 'working-kelpie',
+        name: 'Working Kelpie',
+        image: 'https://image.petmd.com/files/styles/863x625/public/2023-08/australian-kelpie.jpg',
+        size: 'medium',
+        coat: 'short',
+        temperament: ['intelligent', 'energetic', 'driven', 'alert'],
+        origin: 'australia',
+        weight: '25–45 lb (11–20 kg)',
+        lifespan: '10–14 years',
+        about: "An intensely hardworking Australian herding dog known for remarkable stamina, intelligence, and speed. They are bred for work, not as casual pets.",
+        care: "Needs 2+ hours of intense daily activity. Minimal grooming required, but mental work is essential. Best suited for farms, working homes, or agility-focused owners.",
+        idealHome: "Ideal only for highly active or working households that can provide a real job, not a typical pet home.",
+        funFact: "Working Kelpies can control thousands of sheep in open fields and are famous for running across their backs."
+    },
+    {
+        id: 'yorkshire-terrier',
+        name: 'Yorkshire Terrier',
+        image: 'https://www.yorkshire.com/wp-content/uploads/2022/10/yorkshire-terrier-on-grass.jpg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['brave', 'affectionate', 'lively', 'alert'],
+        origin: 'united kingdom',
+        weight: 'Up to 7 lb (3.2 kg)',
+        lifespan: '11–15 years',
+        about: "A tiny but bold terrier with a big personality. Yorkies are affectionate, energetic, and loyal, known for their silky, human-like coat.",
+        care: "Daily brushing for long coats; weekly if clipped short. Provide short walks, indoor play, and gentle training. Monitor dental health closely.",
+        idealHome: "Great for adults or families with older children who can handle a small, delicate dog.",
+        funFact: "Yorkies were originally bred to hunt rats in textile mills—small but fierce workers!"
+    },
 ];
 
 

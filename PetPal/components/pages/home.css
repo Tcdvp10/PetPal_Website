@@ -87,7 +87,7 @@ body {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 82vh;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
   display: flex;
@@ -169,8 +169,71 @@ h2 {
   margin: 40px 0 20px;
 }
 
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px auto;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.intro-section p {
+  max-width: 700px;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+/* image on the right */
+.intro-section img {
+  width: 100%;
+  max-width: 600px;
+  height: 250 px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📱 Stack text and image on smaller screens */
+@media (max-width: 900px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .intro-section p {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .intro-section img {
+    max-width: 100%;
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .intro-section img {
+    height: 220px;
+  }
+}
+
 .section {
-  position: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -187,13 +250,15 @@ h2 {
 }
 
 .quick-access-section .card {
-  width: 400px;
+  flex: 1 1 260px; 
+  max-width: 360px;
 }
 
+/* Base card */
 .card {
   background: #fff;
-  width: 300px;
-  height: 300px;
+  width: 100%; /* full width inside flex item */
+  min-height: 280px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -216,22 +281,23 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
 }
 
+/* adjust breakpoints */
 @media (max-width: 768px) {
-  .card {
-    width: 45%;
+  .quick-access-section .card {
+    flex: 1 1 45%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .card {
-    width: 90%;
+  .quick-access-section .card {
+    flex: 1 1 100%;
   }
 }
-
+ 
 /* Featured breeds */
 
 .carousel-container {
@@ -429,6 +495,110 @@ button a:visited {
   }
 }
 
+/*Kamloop section*/
+.kamloops-section {
+  text-align: center;
+  margin: 0 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+
+.kamloops-intro {
+  max-width: 900px;
+  margin: 10px auto 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.kamloops-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+/* Cards */
+.kamloops-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+.kamloops-section img {
+  width: 100%;
+  max-width: 1100px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+  .kamloops-section img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kamloops-section img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .kamloops-section img {
+    height: 220px;
+  }
+}
+
+.kamloops-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.kamloops-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Icons */
+.kamloops-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: rgba(81, 154, 223, 0.12);
+  color: #2c3e50;
+}
+
+/* Learn More link */
+.kamloops-link {
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: #3495db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.kamloops-link:hover {
+  text-decoration: underline;
+}
+
 /*FOOTER*/
 .site-footer {
   background-color: #0a364e;
@@ -558,14 +728,6 @@ button a:visited {
   .footer-inner {
     grid-template-columns: 1fr;
   }
-}
-
-.section-container {
-  background-color: rgb(255, 255, 255);
-  margin: 50px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
 }
 
 /* copyright */
