@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet Pal - Care and Tips</title>
-    <link rel="stylesheet" href="caretips.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="practising.css">
+ <!-- Google Material Icons (Rounded) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+<!-- Google Fonts - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
+
 
 <body>
 
@@ -55,104 +60,95 @@
                 </div>
 
                 <div class="hero-actions">
-                  <a class="pill-btn pill-btn--outline" href="caretips.html">Learn Care Tips</a>
-                  <a class="pill-btn active-btn" href="#training-content">Start Training</a>
+                    <a class="pill-btn" href="caretips.html">Learn Care Tips</a>
+                    <a class="pill-btn pill-btn--outline" href="training.html">Start Training</a>
                 </div>
             </section>
 
-            <!-- CATEGORY TABS -->
-<h2 id="training-content" class="section-title">Training Categories</h2>
-<section class="care-categories training-categories">
-  <button class="care-card category-card" data-category-tab="behaviour">
-    <i class="fas fa-paw category-icon"></i>
-    <span class="category-label">Behaviour Training</span>
-  </button>
+     <section id="care-tips">
+  <h2 class="section-title">Daily Training Essentials</h2>
 
-  <button class="care-card category-card active" data-category-tab="basic">
-    <i class="fas fa-dog category-icon"></i>
-    <span class="category-label">Basic Obedience</span>
-  </button>
+  <div class="care-grid">
 
-  <button class="care-card category-card" data-category-tab="feeding">
-    <i class="fas fa-utensils category-icon"></i>
-    <span class="category-label">Feeding &amp; Nutrition</span>
-  </button>
+    <!-- HEALTH FIRST -->
+    <button class="care-card active" data-category-tab="health">
+      <span class="material-symbols-rounded icon">Obedience training</span>
+      <h3>Basic Obidience</h3>
+    </button>
 
-  <button class="care-card category-card" data-category-tab="advanced">
-    <i class="fas fa-graduation-cap category-icon"></i>
-    <span class="category-label">Advanced Training</span>
-  </button>
+    <button class="care-card" data-category-tab="feeding">
+      <span class="material-symbols-rounded icon">feeding</span>
+      <h3>Feeding & Nutrition</h3>
+    </button>
 
-  <button class="care-card category-card" data-category-tab="comfort">
-    <i class="fas fa-bed category-icon"></i>
-    <span class="category-label">Comfort &amp; Sleep</span>
-  </button>
+    <button class="care-card" data-category-tab="grooming">
+      <span class="material-symbols-rounded icon">behaviour pets</span>
+      <h3>Behaviour Training</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="exercise">
+      <span class="material-symbols-rounded icon">reinforcement</span>
+      <h3>Positive reinforcement</h3>
+    </button>
+
+    <button class="care-card" data-category-tab="comfort">
+      <span class="material-symbols-rounded icon">Training</span>
+      <h3>Advanced Training</h3>
+    </button>
+
+  </div>
 </section>
 
-            <!-- ========== Common Behaviours ========== -->
-            <section class="category-panel" data-category-panel="behaviour">
-                <!-- Common Behaviour -->
-                <section class="section diseases-section">
-                    <h2 class="section-title">Common Behaviours to Identify</h2>
-
-                    <div class="disease-grid">
-
-                        <!-- Behaviour 1 -->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydXFsbWYyM3k3c2sxb21rZXh5b3d5emRkeDc2N2plcThhN2NwdXFzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m5SLTWdACYbUe9Ge9F/200w.gif"
-                                        class="disease-image">
-                                    <p class="disease-name">Round Spin</p>
-                                </div>
-
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Spinning Around and Around and Around Before Lying Down</h3>
-                                    <p>You have seen them do it and maybe muttered a “Just get on with it and lay down” during the act. It turns out dogs spin around and around … and around some more … for a reason. In the wild, dogs did not have a cozy bed or loving human to cuddle up with while they went to sleep. In order to give themselves a comfortable place to rest, they would spin around to mat down grass and to kick up anything that might get in their way, like bugs, dirt, sticks, or anything else you would find in nature. Today, spinning around helps them to create a comfortable nest, whether it is in a dog bed or a blanket pile.</p>
-                                </div>
-                            </div>
+            <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
+           <section class="category-panel" data-category-panel="health"> 
+            <!-- Common Behaviour --> <section class="diseases-section">
+                 <div class="diseases-header"> 
+                    <h2 class="section-title">Common Behaviours to Identify</h2> 
+                    <p class="diseases-subtitle ">
+                         Be attentive to these common behaviours when training your dog </p> 
                         </div>
+
+                          <!-- Behaviour 1 -->
+                         <div class = "behaviour-row">
+                                <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydXFsbWYyM3k3c2sxb21rZXh5b3d5emRkeDc2N2plcThhN2NwdXFzcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/m5SLTWdACYbUe9Ge9F/200w.gif" alt="dog gettong vacinated"> 
+                                <div class = "behaviour-content">
+                                <h3>Round Spin</h3> 
+                                <p>
+                    Dogs often spin before lying down due to instinct. In the wild,
+                    spinning helped flatten grass and clear away insects or debris 
+                    before resting. Even with modern dog beds, this natural behaviour 
+                    sticks because it helps them feel comfortable and secure.Spinning helps them adjust their body, fluff their bedding, and find the most comfortable resting position — similar to how humans adjust pillows or blankets.
+                    Round spinning is a natural behaviour rooted in instinct.
+Most of the time, it’s completely normal and simply your dog preparing a comfortable, safe resting spot—just as their ancestors did.
+                </p>
+                              </div>
+                              </div>
 
                         <!--Behaviour2 -->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://media.tenor.com/dtK9WoLkRHoAAAAM/licking-face-rex.gif"
-                                        class="disease-image">
-                                    <p class="disease-name">Licking Face</p>
-                                </div>
-
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Licking Face</h3>
+                        <div class="behaviour-row">
+                                    <img src="https://media.tenor.com/dtK9WoLkRHoAAAAM/licking-face-rex.gif" alt="dog licking face">
+                                   <div class = "behaviour-content">
+                                    <h3>Licking Face </h3>
                                     <p>Anyone who has ever been around a dog has been subject to dog kisses. Whether you love them or not, you are going to be on the receiving end of some slobber. Dogs kiss you for many reasons. For one, it is a way they would communicate in the wild. It is also the way a mother communicates with her young. She licks them to clean them or stimulate them to breathe when they are born. Another reason is one many people already think: the dogs are showing affection. Licking their guardian releases endorphins that can comfort dogs. The next time your dog gives you big kisses, they just want you to know they really like being around you.</p>
-                                </div>
-                            </div>
                         </div>
+                    </div>
+
+                    </section>
+                    </section>
 
                         <!-- Behaviour 3-->
-                        <div class="disease-card flip-card">
-                            <div class="flip-inner">
-                                <!-- FRONT -->
-                                <div class="flip-front">
-                                    <img src="https://media.tenor.com/f-paU3H3PAMAAAAM/dog-happy.gif"
-                                        class="disease-image">
-                                    <p class="disease-name">Wagging their Tails</p>
+                        <div class="behaviour-row">
+                                    <img src="https://media.tenor.com/f-paU3H3PAMAAAAM/dog-happy.gif" alt="Dog wagging tail">
+                                      <div  class="behaviour-content">
+                    
+                   <p> Tail wagging is another key communication method. A right-side wag 
+                    usually means excitement or happiness, while a left-side wag 
+                    can indicate nervousness or caution. Observing speed, direction, 
+                    and body language gives clues to how a dog feels.While many people assume a wagging tail always means a dog is happy, tail movements can actually signal a wide range of feelings depending on the speed, height, direction, and looseness of the wag.</p>
+                
+                                </div>
                                 </div>
 
-                                <!-- BACK -->
-                                <div class="flip-back">
-                                    <h3>Wagging their Tails</h3>
-                                    <p>Like licking, tail wagging is another sign of communication between dogs. Not all tail wagging is happy, however. Dogs can also wag their tails when they are frightened. You can tell, however, how a dog is feeling by looking at the way their tail wags. If you see it wagging to the right, that means they are happy. When they are frightened, they wag their tails to the left.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
 
                 <!-- Vaccines + When to call vet -->
                 <section class="section two-column">
@@ -161,8 +157,10 @@
                         <p class="vaccine-intro">Tick the things checked before your dog training</p>
                         <ul class="vaccine-list">
                             <li><label><input type="checkbox"> health Check(is your dog feeling well?)</label></li>
-                            <li><label><input type="checkbox"> Energy levels(not overly exhausted or excited?)</label></li>
-                            <li><label><input type="checkbox"> Do you know the skill you are going to be working on</label></li>
+                            <li><label><input type="checkbox"> Energy levels(not overly exhausted or excited?)</label>
+                            </li>
+                            <li><label><input type="checkbox"> Do you know the skill you are going to be working
+                                    on</label></li>
                             <li><label><input type="checkbox"> Do you have all the required training tools </label></li>
                             <li><label><input type="checkbox"> Is your dog showing any signs of stress </label></li>
                         </ul>
@@ -183,19 +181,6 @@
                         </p>
                     </div>
                 </section>
-
-   <!-- Video Section -->
-    <h3 class="section-title">Training in Action</h3>
-    <div class="video-section">
-        <video 
-        autoplay
-        muted 
-        loop
-        playsinline
-        class="training-video">
-            <source src="images/trainingvideo.mp4" type="video/mp4">
-        </video>
-    </div>
              
     <!-- Bonus Quiz -->
                 <section class="section quiz">
@@ -212,32 +197,38 @@
                         </div>
 
                         <button class="quiz-next-btn" id="quiz-next" disabled>Next question</button>
+
                         <p class="quiz-feedback" id="quiz-feedback"></p>
+
                         <div class="quiz-score" id="quiz-score" hidden></div>
                     </div>
                 </section>
-
             </section>
 
-            <!-- ========== Basic Obedience  ========== -->
-           <section class="category-panel" data-category-panel="basic" hidden>
+            <!-- ========== Basic Obedience PANEL ========== -->
+            <section class="category-panel" data-category-panel="feeding" hidden>
 
                 <section class="section">
                     <h2 class="section-title">Basic Obedience</h2>
 
                     <p class="panel-text">
-                       Basic obedience training is the cornerstone of good behavior in dogs. It involves teaching your dog fundamental commands and behaviors.
+                        Basic obedience training is the cornerstone of good behavior in dogs. It involves teaching your
+                        dog fundamental commands and behaviors.
                     </p>
 
                     <ul class="panel-list">
-                        <li><strong>What is it ?</strong>Involves teaching fundamental commands like sit, stay, come, down, heel, and leave</li>
-                        <li><strong>Benefits:</strong>Builds a strong foundation for good behavior, safety, and communication. </li>
-                        <li><strong>Key principles:</strong>Include using positive reinforcement with rewards like treats or praise, keeping training sessions short and fun, and being consistent with cues and expectations. </li>
+                        <li><strong>What is it ?</strong>Involves teaching fundamental commands like sit, stay, come,
+                            down, heel, and leave</li>
+                        <li><strong>Benefits:</strong>Builds a strong foundation for good behavior, safety, and
+                            communication. </li>
+                        <li><strong>Key principles:</strong>Include using positive reinforcement with rewards like
+                            treats or praise, keeping training sessions short and fun, and being consistent with cues
+                            and expectations. </li>
                     </ul>
                 </section>
-               
+
                 <!--Box 1:Quiz-->
-                    <section class="section">
+                <section class="section">
                     <div class="panel-questions">
                         <h3>Basic Obedience</h3>
 
@@ -258,11 +249,25 @@
                         </div>
                     </div>
                 </section>
+
+                 <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Want feeding tips for your dog’s breed?</h3>
+                        <p>Type your dog’s breed to see more information on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
                 </section>
+
+            </section>
 
  <!-- ========== Feeding and Nutrition PANEL ========== -->
                 <!-- BOX 2: INFO -->
-                  <section class="category-panel" data-category-panel="feeding" hidden>
+                  <section class="category-panel" data-category-panel="grooming" hidden>
+
                 <section class="section">
                     <h2 class="section-title">Feeding &amp; Nutrition</h2>
 
@@ -320,14 +325,15 @@
             </section>
 
             <!-- ========== Behaviour Training PANEL ========== -->
-            <section class="category-panel" data-category-panel="behavior" hidden>
+            <section class="category-panel" data-category-panel="Behaviour Training" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
                     <h2 class="section-title">Behaviour Training</h2>
 
                     <p class="panel-text">
-                       Behavior training teaches dogs how to behave appropriately through rewards, routine, and guidance.
+                        Behavior training teaches dogs how to behave appropriately through rewards, routine, and
+                        guidance.
                     </p>
 
                     <ul class="panel-list">
@@ -342,16 +348,39 @@
                             Not chewing furniture
                             Learning boundaries (e.g., no begging at the table)
                         </li>
-                        <li><strong>Social Skills:</strong> 
-                        Interacting calmly with other dogs
-                        Being comfortable around strangers
-                        Handling new environments and sounds
+                        <li><strong>Social Skills:</strong>
+                            Interacting calmly with other dogs
+                            Being comfortable around strangers
+                            Handling new environments and sounds
                         </li>
                         <li><strong>Self Control Skills:</strong> trim when you hear clicking on the floor.
-                       Waiting patiently
-                       Responding even when excited or distracted
+                            Waiting patiently
+                            Responding even when excited or distracted
                         </li>
                     </ul>
+                </section>
+
+                <!-- BOX 2: QUIZ -->
+                <section class="section">
+                    <div class="panel-questions">
+                        <h3>Behaviour Training Quiz</h3>
+
+                        <div class="quiz-card">
+                            <p class="quiz-progress">
+                                Question <span id="groom-current">1</span> of <span id="groom-total">3</span>
+                            </p>
+
+                            <div class="quiz-inner" id="groom-inner">
+                                <p class="quiz-question" id="groom-question"></p>
+                                <div class="quiz-options" id="groom-options"></div>
+                            </div>
+
+                            <button class="quiz-next-btn" id="groom-next" disabled>Next question</button>
+
+                            <p class="quiz-feedback" id="groom-feedback"></p>
+                            <div class="quiz-score" id="groom-score" hidden></div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- BOX 2: QUIZ -->
@@ -391,24 +420,21 @@
 
             </section>
 
-            <!-- ========== EXERCISE PANEL ========== -->
-            <section class="category-panel" data-category-panel="advanced" hidden>
+            <!-- ========== Positive Reinforcement Panel ========== -->
+            <section class="category-panel" data-category-panel="exercise" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
                     <h2 class="section-title">Exercise</h2>
 
                     <p class="panel-text">
-                        Exercise keeps your dog’s body strong and their mind calm. The amount depends
-                        on age, size, and breed.
+                        Positive reinforcement in dog training is a method where you reward the dog for the behaviors you want to see more often
                     </p>
 
                     <ul class="panel-list">
-                        <li><strong>Puppies:</strong> short play sessions and gentle walks; avoid long runs to protect
-                            growing joints.</li>
-                        <li><strong>Adult dogs:</strong> 30–90 minutes of activity per day depending on breed and energy
-                            level.</li>
-                        <li><strong>Senior dogs:</strong> shorter, more gentle walks to keep joints moving.</li>
+                        <li>The dog performs a desired behavior (example: sits when asked).</li>
+                        <li>You immediately give a reward (treat, praise, toy, or affection).</li>
+                        <li>The dog associates the behavior with something good and is more likely to repeat it.</li>
                         <li>Mix walks with sniff time, fetch, and simple training games.</li>
                         <li>Use puzzle toys and indoor games on rainy or snowy days.</li>
                         <li>Watch for heavy panting, limping, or slowing down — those mean it’s time to rest.</li>
@@ -452,33 +478,32 @@
 
             </section>
 
-            <!-- ========== COMFORT & SLEEP PANEL ========== -->
+            <!-- ========== Advanced Training PANEL ========== -->
 
             <section class="category-panel" data-category-panel="comfort" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
-                    <h2 class="section-title">Comfort &amp; Sleep</h2>
+                    <h2 class="section-title">Advanced Training</h2>
 
                     <p class="panel-text">
-                        Dogs need a calm, cozy space to relax. Good sleep helps them recover, learn,
-                        and stay in a good mood.
+                       Advanced dog training refers to higher-level skills and behaviors that go beyond basic obedience like sit, stay, or heel.
                     </p>
 
                     <ul class="panel-list">
-                        <li>Choose a soft, supportive bed sized for your dog.</li>
-                        <li>Place the bed away from drafts, loud doors, and busy walkways.</li>
-                        <li>Keep a simple bedtime routine: potty break → water → lights down.</li>
-                        <li>Puppies may sleep 18–20 hours a day — this is normal while they grow.</li>
-                        <li>Anxious dogs may like covered crates, calming toys, or white noise.</li>
-                        <li>Wash bedding weekly to remove dirt, dander, and bacteria.</li>
+                        <p><strong>Advanced training usually includes:</strong></p>
+                        <li>More complex commands</li>
+                        <li>Longer durations</li>
+                        <li>Greater distance from the handler</li>
+                        <li>More distractions</li>
+                        <li>Higher expectations for consistency and precision</li>
                     </ul>
                 </section>
 
                 <!-- BOX 2: QUIZ -->
                 <section class="section">
                     <div class="panel-questions">
-                        <h3>Comfort &amp; Sleep Quiz</h3>
+                        <h3>Advanced Training Quiz</h3>
 
                         <div class="quiz-card">
                             <p class="quiz-progress">
@@ -515,7 +540,17 @@
 
     </div>
 
-    <!-- =============== JS: TABS + QUIZ + BREED SEARCH =============== -->
+    <!-- Video Section -->
+    <h3 class="section-title">Socializing with Other Dogs</h3>
+    <div class="video-section">
+        <video controls>
+            <source src="C:\Users\tinot\DOCUME~1\PETPAL~1\PetPal\COMPON~1\pages\_3THES~1.MP4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+     <!-- =============== JS: TABS + QUIZ + BREED SEARCH =============== -->
     <script>
         /* ----- TAB SWITCHING ----- */
         const tabButtons = document.querySelectorAll('[data-category-tab]');
@@ -534,6 +569,8 @@
             });
         });
 
+       
+
         /* ----- BONUS QUIZ ----- */
         const quizQuestions = [
             {
@@ -543,7 +580,7 @@
             },
             {
                 question: "What commands should be trained first?",
-                options: ["Name recognition", "Sit", "Come", "Stay","Leave it"],
+                options: ["Name recognition", "Sit", "Come", "Stay", "Leave it"],
                 correctIndex: 0
             },
             {
@@ -556,15 +593,11 @@
                 options: ["Ignore it", "Give more treats", "Call the vet for advice", "redirect"],
                 correctIndex: 2
             },
-            {                 
+            {
                 question: "How do I measure progress?",
-                options: [
-                   "Response to command becomes faster",
-                   "Reliability increases around distractions",
-                   "The dog remains engaged and happy"
-               ],
-               correctIndex: 1   // any index 0–2 is fine, I picked 1
-},
+                options: ["Response to command becomes faster","Reliability increases around distractions","The dog remains engaged and happy"],
+                correctindex: 3
+            },
         ];
 
         const totalQuestions = quizQuestions.length;
@@ -709,9 +742,9 @@
             {
                 question: "What are your main training goals?",
                 options: [
-                   "I want my dog to stop pulling on the leash.",
-                   "I need help with recall—he doesn’t come when called.",
-                   "I want basic obedience: sit, stay, down"
+                    "I want my dog to stop pulling on the leash.",
+                    "I need help with recall—he doesn’t come when called.",
+                    "I want basic obedience: sit, stay, down"
                 ],
                 correctIndex: 1
             },
