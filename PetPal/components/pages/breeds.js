@@ -287,7 +287,8 @@ const breedsData = [
         about: "A tough, tireless herding dog developed to move cattle over long distances, the Australian Cattle Dog is extremely energetic, intelligent, and loyal.",
         care: "They have a short, dense double coat that sheds, especially seasonally, and needs brushing. They require 1.5–2+ hours of daily vigorous exercise and mental work such as obedience, agility, or herding games.",
         idealHome: "Best for very active, experienced owners who want a work-driven dog and can handle strong herding instincts, including nipping.",
-        funFact: "They are sometimes called 'Blue Heelers' or 'Red Heelers' depending on their coat color."
+        funFact: "They are sometimes called 'Blue Heelers' or 'Red Heelers' depending on their coat color.",
+        profileLink: 'dog breeds/AustralianCattleDog.html'
     },
 
     {
@@ -303,7 +304,8 @@ const breedsData = [
         about: "A highly driven herding dog, the Australian Kelpie is energetic, intelligent, and bred to work sheep all day in tough conditions.",
         care: "They have a short double coat needing minimal grooming but shed seasonally. They require 1.5–2+ hours of intense daily exercise and mental challenges such as herding work, agility, or advanced training.",
         idealHome: "Best for working homes or very active owners who want a high-drive performance dog and can keep them busy.",
-        funFact: "Kelpies can work huge flocks of sheep almost single-handedly, often running along the backs of the flock."
+        funFact: "Kelpies can work huge flocks of sheep almost single-handedly, often running along the backs of the flock.",
+        profileLink: 'dog breeds/AustralianKelpie.html'
     },
 
     {
@@ -319,7 +321,8 @@ const breedsData = [
         about: "Despite the name, the Australian Shepherd was developed in the United States. They are highly intelligent, energetic, and eager to work, with strong herding instincts.",
         care: "They have a medium-length double coat that sheds year-round and more heavily seasonally, requiring regular brushing. They need 1.5–2+ hours of daily exercise plus mental work like obedience, trick training, or dog sports.",
         idealHome: "Ideal for very active families or individuals who can involve them in daily activities and structured training.",
-        funFact: "Aussies are popular in dog sports like agility, frisbee, and obedience because of their speed and trainability."
+        funFact: "Aussies are popular in dog sports like agility, frisbee, and obedience because of their speed and trainability.",
+        profileLink: 'dog breeds/AustralianShepherd.html'
     },
 
     {
@@ -335,7 +338,8 @@ const breedsData = [
         about: "Closely related to the Australian Cattle Dog, this breed is distinguished by its naturally short tail. They are intense, hardworking herders with high energy and intelligence.",
         care: "They have a short coat requiring minimal grooming but shed seasonally. Extremely high energy, they need 1.5–2+ hours of daily vigorous exercise and mental work.",
         idealHome: "Best for working or sport homes that can provide a job, firm training, and lots of activity.",
-        funFact: "The 'stumpy tail' is natural, not docked, in many dogs of this breed."
+        funFact: "The 'stumpy tail' is natural, not docked, in many dogs of this breed.",
+        profileLink: 'dog breeds/AustralianStumpyTailCattleDog.html'
     },
 
     {
@@ -352,6 +356,7 @@ const breedsData = [
         care: "They have a wiry, dense coat that needs brushing several times a week and occasional hand-stripping or trimming. Exercise needs are moderate: daily walks, play, and mental stimulation.",
         idealHome: "Great for families or individuals who want a small, spirited dog and are gentle with smaller breeds.",
         funFact: "The Australian Terrier was one of the first Australian breeds to be officially recognized.",
+        profileLink: 'dog breeds/AustralianTerrier.html'
     },
 
     {
@@ -368,6 +373,7 @@ const breedsData = [
         care: "They have a very short, fine coat needing minimal grooming but are sensitive to cold and rough surfaces. They need at least an hour of daily exercise including opportunities to sprint in a secure area, plus careful socialization and gentle training.",
         idealHome: "Best for experienced owners who understand sighthounds, can manage their sensitivity and independence, and provide warmth in cold climates.",
         funFact: "Azawakhs are sometimes called '45-mph couch potatoes' — fast outdoors but calm indoors once exercised.",
+        profileLink: 'dog breeds/Azawakh.html'
     },
 
     {
@@ -383,7 +389,8 @@ const breedsData = [
         about: "A rare herding breed from Terceira Island in the Azores, the Barbado da Terceira is a hardworking, intelligent dog that forms strong bonds with its family and is naturally watchful.",
         care: "They have a long, corded or heavily textured coat that is high-maintenance and needs regular, careful grooming to prevent matting, including separating cords and thorough drying after getting wet. They require daily exercise, mental stimulation, and training.",
         idealHome: "Best for active families who want a herding breed and are prepared for intensive coat care and regular exercise.",
-        funFact: "Their unique coat and working ability have made them prized farm and herding dogs in their island homeland."
+        funFact: "Their unique coat and working ability have made them prized farm and herding dogs in their island homeland.",
+        profileLink: 'dog breeds/BarbadoDaTerceira.html'
     },
     {
         id: 'beagle',
@@ -398,7 +405,8 @@ const breedsData = [
         about: "The Beagle is a friendly, curious scent hound with a famously strong sense of smell and a lively, joyful personality. Known for their expressive faces and vocal nature, they are excellent family dogs.",
         care: "They require portion-controlled feeding to avoid weight gain, weekly coat brushing, regular ear cleaning, patience during training, and lots of sniff-based mental exercise such as tracking games and walks.",
         idealHome: "Perfect for families, especially with kids, who want a gentle, playful dog and are prepared for their barking, stubborn moments, and need for daily activity.",
-        funFact: "A Beagle’s nose has around 220 million scent receptors, making them one of the best sniffers in the dog world!"
+        funFact: "A Beagle’s nose has around 220 million scent receptors, making them one of the best sniffers in the dog world!",
+        profileLink: 'dog breeds/Beagle.html'
     },
 
     {
@@ -414,7 +422,8 @@ const breedsData = [
         about: "The Bernese Mountain Dog is a gentle, loving giant known for its calm nature, devotion, and beautiful tri-colored coat. They are patient, stable family dogs and excellent with children.",
         care: "Their thick double coat needs brushing 2–3 times weekly (daily during seasonal shedding). Feed a high-quality large-breed diet, exercise moderately, avoid heat exposure, and maintain joint and heart checkups.",
         idealHome: "Ideal for families who want a gentle, affectionate companion, live in a cooler climate, and can keep up with regular grooming and a relaxed exercise routine.",
-        funFact: "Bernese Mountain Dogs were originally used to pull carts of dairy and farm goods across Swiss farms."
+        funFact: "Bernese Mountain Dogs were originally used to pull carts of dairy and farm goods across Swiss farms.",
+        profileLink: 'dog breeds/BerneseMountainDog.html'
     },
 
     {
@@ -430,7 +439,8 @@ const breedsData = [
         about: "The Bergamasco is a calm, intelligent herding dog famous for its unique coat of natural 'flocks' (cords). They are loyal, patient, and gentle, thriving as devoted family companions.",
         care: "Their coat requires special care: cords must be separated, kept clean, and thoroughly dried. They need moderate daily exercise, early socialization, and steady, positive training.",
         idealHome: "Best for families who appreciate a calm but alert guardian, can manage coat maintenance, and want a loyal, steady companion.",
-        funFact: "Despite their heavy-looking coat, Bergamascos shed very little once the flocks are fully formed."
+        funFact: "Despite their heavy-looking coat, Bergamascos shed very little once the flocks are fully formed.",
+        profileLink: 'dog breeds/BergamascoSheepDog.html'
     },
     {
         id: 'biewer-terrier',
@@ -445,7 +455,8 @@ const breedsData = [
         about: "A cheerful, loving toy breed with a beautiful long, silky coat. Biewer Terriers are playful, alert, and less yappy than many terriers, making them delightful companions.",
         care: "Their long coat requires daily brushing and regular baths to stay tangle-free. They need gentle exercise, socialization, positive training, and careful handling due to their tiny size.",
         idealHome: "Perfect for adults or families with older, gentle children who want a small, affectionate companion and can maintain regular grooming.",
-        funFact: "The breed began from a single rare puppy born in a Yorkshire Terrier litter in Germany."
+        funFact: "The breed began from a single rare puppy born in a Yorkshire Terrier litter in Germany.",
+        profileLink: 'dog breeds/BiewerTerrier.html'
     },
 
     {
@@ -461,7 +472,8 @@ const breedsData = [
         about: "The Bolognese is a sweet, calm, devoted companion dog with a fluffy cotton-like coat. They bond deeply with their owners and thrive on affection and closeness.",
         care: "Their long, soft coat requires daily brushing and professional grooming. They need gentle exercise, social interaction, and early training to prevent separation anxiety.",
         idealHome: "Great for quiet households, retirees, or families with older children who want a loving lapdog and can provide companionship throughout the day.",
-        funFact: "The Bolognese was a favorite lapdog of European nobility and often gifted among royalty."
+        funFact: "The Bolognese was a favorite lapdog of European nobility and often gifted among royalty.",
+        profileLink: 'dog breeds/Bolognese.html'
     },
     {
         id: 'boerboel',
@@ -476,7 +488,8 @@ const breedsData = [
         about: "A powerful South African mastiff bred as a farm guardian. Boerboels are stable, intelligent, and extremely loyal to their families.",
         care: "Low coat maintenance but requires firm, consistent training and heavy early socialization. Daily moderate activity is essential.",
         idealHome: "Experienced owners only. Best for large properties and families who understand guardian breeds and can provide structure.",
-        funFact: "The name 'Boerboel' means 'farmer's dog' in Afrikaans, reflecting its working origins."
+        funFact: "The name 'Boerboel' means 'farmer's dog' in Afrikaans, reflecting its working origins.",
+        profileLink: 'dog breeds/Boerboel.html'
     },
     {
         id: 'chihuahua',
@@ -491,7 +504,8 @@ const breedsData = [
         about: "The smallest dog breed in the world, full of personality and loyalty. Chihuahuas bond closely with their people and can be bold despite their size.",
         care: "Smooth coats require minimal brushing; long coats need brushing 2–3 times weekly. Very sensitive to cold. Needs gentle training and extensive socialization.",
         idealHome: "Best for adults or families with older gentle children. Perfect for apartment living and owners seeking a small, affectionate companion.",
-        funFact: "Chihuahuas were sacred to the ancient Toltec and Aztec civilizations."
+        funFact: "Chihuahuas were sacred to the ancient Toltec and Aztec civilizations.",
+        profileLink: 'dog breeds/Chihuahua.html'
     },
     {
         id: 'cavalier-king-charles-spaniel',
@@ -506,7 +520,8 @@ const breedsData = [
         about: "A sweet, elegant toy spaniel known for its loving nature and constantly wagging tail. Cavaliers are affectionate, social, and adaptable to many lifestyles.",
         care: "Brush every other day, especially the ears and feathering. Clean ears weekly. Provide daily walks and interactive play. Monitor weight and heart health closely.",
         idealHome: "Perfect for families, seniors, and anyone seeking a gentle, cuddly companion who loves being with people.",
-        funFact: "Cavaliers were named after King Charles II, who adored toy spaniels and reportedly took them everywhere—even to Parliament!"
+        funFact: "Cavaliers were named after King Charles II, who adored toy spaniels and reportedly took them everywhere—even to Parliament!",
+        profileLink: 'dog breeds/CavalierKingCharlesSpaniel.html'
     },
 
     {
@@ -522,7 +537,8 @@ const breedsData = [
         about: "A powerful, loyal, and highly intelligent working breed known for its protective instincts and devotion to family.",
         care: "Low grooming needs, but they require 1–2 hours of daily vigorous exercise and mental work. Early socialization and consistent positive training are essential.",
         idealHome: "Best for experienced, active owners who can provide structure, leadership, and plenty of physical and mental activity.",
-        funFact: "The breed was created by a German tax collector, Louis Dobermann, who wanted the perfect personal protection dog."
+        funFact: "The breed was created by a German tax collector, Louis Dobermann, who wanted the perfect personal protection dog.",
+        profileLink: 'dog breeds/DobermanPinscher.html'
     },
     {
         id: 'english-cocker-spaniel',
@@ -537,7 +553,8 @@ const breedsData = [
         about: "A merry, affectionate spaniel known for its wagging tail, gentle personality, and sporting drive. They are lively family companions with strong hunting instincts.",
         care: "Brush 2–3 times weekly and clean ears regularly. Provide 1 hour of exercise daily including play and training. Grooming every 6–8 weeks helps maintain their coat.",
         idealHome: "Perfect for active families seeking a gentle, playful dog who enjoys both cuddles and outdoor adventures.",
-        funFact: "The breed name comes from hunting woodcock—one of their original field roles."
+        funFact: "The breed name comes from hunting woodcock—one of their original field roles.",
+        profileLink: 'dog breeds/EnglishCockerSpaniel.html'
     },
     {
         id: 'english-springer-spaniel',
@@ -552,7 +569,8 @@ const breedsData = [
         about: "A high-energy sporting dog known for enthusiasm, intelligence, and a loving nature. Springers excel in hunting, agility, and active family life.",
         care: "Brush 2–3 times weekly and clean ears often. Needs 1–2 hours of vigorous exercise including running, swimming, and retrieving.",
         idealHome: "Best for sporty families who want an energetic partner for outdoor adventures.",
-        funFact: "Springers get their name from ‘springing’ game—flushing birds into the air during hunts."
+        funFact: "Springers get their name from ‘springing’ game—flushing birds into the air during hunts.",
+        profileLink: 'dog breeds/EnglishSpringerSpaniel.html'
     },
 
 
@@ -569,7 +587,8 @@ const breedsData = [
         about: "A charming, affectionate small companion known for its bat-like ears, calm nature, and love for attention. French Bulldogs thrive on human companionship and adapt well to city living.",
         care: "Requires weekly brushing and daily cleaning of facial folds. Needs controlled exercise and careful monitoring in hot weather due to breathing issues. Feed a balanced diet to avoid weight gain.",
         idealHome: "Perfect for families, seniors, or apartment dwellers wanting a low-exercise, affectionate companion. Best for homes that can provide a cool environment and gentle exercise.",
-        funFact: "Despite the name, French Bulldogs actually originated from small English Bulldogs brought to France by lace workers."
+        funFact: "Despite the name, French Bulldogs actually originated from small English Bulldogs brought to France by lace workers.",
+        profileLink: 'dog breeds/FrenchBullDog.html'
     },
     {
         id: 'flat-coated-retriever',
@@ -584,7 +603,8 @@ const breedsData = [
         about: "A joyful, optimistic retriever known for its forever-young personality and strong desire to please. Friendly, playful, and affectionate, they make devoted family companions.",
         care: "Brush 2–3 times weekly, more during shedding. Provide 1–2 hours of exercise daily, including running, swimming, and retrieving. Continue mental training because they stay puppy-like for years.",
         idealHome: "Best for active families who enjoy outdoor adventures and want a highly social, enthusiastic dog.",
-        funFact: "Often called the 'Peter Pan' of dog breeds because they stay youthful and playful well into adulthood."
+        funFact: "Often called the 'Peter Pan' of dog breeds because they stay youthful and playful well into adulthood.",
+        profileLink: 'dog breeds/FlatCoatedRetriever.html'
     },
 
 
@@ -602,7 +622,8 @@ const breedsData = [
         about: "Golden Retrievers are friendly, intelligent, and one of the most beloved family dogs. They are gentle, trainable, and known for their stable temperament and eagerness to please.",
         care: "They shed heavily and need brushing several times weekly. Provide daily exercise, training, mental stimulation, a balanced diet, and regular vet checks for joints and allergies.",
         idealHome: "Perfect for active families who want a gentle, playful, loyal companion and can meet their physical and mental exercise needs.",
-        funFact: "Golden Retrievers are excellent swimmers thanks to their water-repellent coats and strong tails used like a rudder."
+        funFact: "Golden Retrievers are excellent swimmers thanks to their water-repellent coats and strong tails used like a rudder.",
+        profileLink: 'dog breeds/GoldenRetriever.html'
     },
     {
         id: 'irish-red-and-white-setter',
@@ -617,7 +638,8 @@ const breedsData = [
         about: "A high-energy hunting and family dog known for its intelligence, affectionate nature, and strong work ethic. They are athletic, gentle, and bond deeply with family.",
         care: "Brush 2–3 times weekly, especially the feathering. Provide 1–2 hours of vigorous daily exercise including running and field activities. Early training and socialization are essential.",
         idealHome: "Best for active families or outdoorsy owners who can offer lots of exercise and mental challenges.",
-        funFact: "This breed is older than the all-red Irish Setter and played a major role in developing it."
+        funFact: "This breed is older than the all-red Irish Setter and played a major role in developing it.",
+        profileLink: 'dog breeds/IrishRedAndWhiteSetter.html'
     },
 
 
@@ -634,7 +656,8 @@ const breedsData = [
         about: "A natural landrace breed, the Indie is highly intelligent, alert, and incredibly adaptable. They are loyal to their family but often reserved with strangers.",
         care: "Very low grooming needs due to their short coat. They need daily exercise, early socialization, and positive training to manage their strong prey drive and independent nature.",
         idealHome: "Best for homes that understand their sensitive, intelligent nature and can provide exercise, training, and a calm environment.",
-        funFact: "The Indie is one of the world's oldest naturally evolved dog breeds, perfectly adapted to the Indian climate."
+        funFact: "The Indie is one of the world's oldest naturally evolved dog breeds, perfectly adapted to the Indian climate.",
+        profileLink: 'dog breeds/Indie.html'
     },
     {
         id: 'kai-ken',
@@ -649,7 +672,8 @@ const breedsData = [
         about: "A rare Japanese breed from the Kai mountains, known for its tiger-like brindle coat, strong hunting instincts, and loyal, reserved nature.",
         care: "Weekly brushing, daily exercise, mental challenges, and careful socialization. Their double coat sheds heavily seasonally and needs thorough grooming.",
         idealHome: "Active and experienced owners who understand independent, prey-driven breeds. Best with older, respectful children and secure fencing.",
-        funFact: "Kai Kens are excellent climbers and swimmers, historically used to hunt deer and boar."
+        funFact: "Kai Kens are excellent climbers and swimmers, historically used to hunt deer and boar.",
+        profileLink: 'dog breeds/KaiKen.html'
     },
     {
         id: 'keeshond',
@@ -664,7 +688,8 @@ const breedsData = [
         about: "A cheerful, fluffy companion dog known as the 'smiling Dutchman'. Keeshonden are friendly, expressive, and deeply people-oriented.",
         care: "Requires thorough brushing 2–3 times weekly, daily during heavy shedding. Needs moderate exercise and positive, gentle training.",
         idealHome: "Excellent for families with kids, first-time owners, and anyone who wants a social, affectionate indoor companion.",
-        funFact: "Their distinctive facial markings resemble eyeglasses, giving them a naturally expressive look."
+        funFact: "Their distinctive facial markings resemble eyeglasses, giving them a naturally expressive look.",
+        profileLink: 'dog breeds/Keeshond.html'
     },
     {
         id: 'newfoundland',
@@ -679,7 +704,8 @@ const breedsData = [
         about: "A gentle giant known for its calm, sweet nature and natural instinct for water rescue. Newfoundlands are loving, steady, and famously patient with children.",
         care: "High-maintenance coat requiring several brushings per week, daily grooming during shedding season, and careful temperature management due to heat sensitivity. Requires early socialization and gentle, consistent training.",
         idealHome: "Families wanting a gentle, affectionate giant breed. Best for cooler climates and homes with plenty of space and access to water.",
-        funFact: "Newfoundlands have webbed feet and incredible swimming ability; they are historically famous for saving lives at sea."
+        funFact: "Newfoundlands have webbed feet and incredible swimming ability; they are historically famous for saving lives at sea.",
+        profileLink: 'dog breeds/NewFoundLand.html'
     },
     {
         id: 'pembroke-welsh-corgi',
@@ -694,7 +720,8 @@ const breedsData = [
         about: "A smart, affectionate, and energetic herding breed known for its short legs, long body, and bright expression. They are loyal and outgoing companions.",
         care: "Their double coat sheds heavily year-round and needs regular brushing. They need daily exercise and mental stimulation to prevent boredom and manage herding instincts.",
         idealHome: "Great for families who want a small but active dog and can manage barking and herding behaviors.",
-        funFact: "According to Welsh legend, Corgis were the preferred mounts of fairy warriors."
+        funFact: "According to Welsh legend, Corgis were the preferred mounts of fairy warriors.",
+        profileLink: 'dog breeds/PembrokeWelshCorgi.html'
     },
     {
         id: 'romanian-mioritic-shepherd',
@@ -709,7 +736,8 @@ const breedsData = [
         about: "A powerful livestock guardian with a calm, devoted, and protective nature. Known for deep loyalty to family and natural suspicion of strangers.",
         care: "Long, thick coat requiring brushing 2–3 times per week (daily during shedding). Needs confident, patient training and early socialization. Sensitive to heat.",
         idealHome: "Large rural properties or homes needing a guardian. Best for experienced owners who understand independent guardian breeds.",
-        funFact: "This breed’s thick, shaggy coat helps protect it from harsh mountain weather and predators."
+        funFact: "This breed’s thick, shaggy coat helps protect it from harsh mountain weather and predators.",
+        profileLink: 'dog breeds/RomanianMioriticShepherd.html'
     },
     {
         id: 'russian-tsvetnaya-bolonka',
@@ -724,7 +752,8 @@ const breedsData = [
         about: "A cheerful, loving toy breed with a soft, non-shedding coat. They are devoted companions, lively, and adaptable to apartment living.",
         care: "High-maintenance coat needing daily brushing and professional grooming every 4–6 weeks. Sensitive and thrives on gentle training and regular socialization.",
         idealHome: "Best for adults or families with older, gentle children. Perfect for apartments and owners wanting a small, affectionate companion.",
-        funFact: "The breed was developed during the Soviet era as a companion dog for families living in small urban apartments."
+        funFact: "The breed was developed during the Soviet era as a companion dog for families living in small urban apartments.",
+        profileLink: 'dog breeds/RussianTsvetnayaBolonka.html'
     },
     {
         id: 'russian-toy',
@@ -739,7 +768,8 @@ const breedsData = [
         about: "A tiny, lively, and affectionate toy breed with a big personality. Russian Toys are cheerful, sensitive, and extremely devoted to their owners.",
         care: "Smooth coats need light brushing; long coats need 2–3 grooming sessions weekly. Very sensitive to cold and requires gentle handling and early socialization.",
         idealHome: "Adults or families with older, careful children. Ideal for apartments and people wanting a tiny but energetic companion.",
-        funFact: "Though tiny, the Russian Toy originated from larger terrier lines and retains their bold, fearless attitude."
+        funFact: "Though tiny, the Russian Toy originated from larger terrier lines and retains their bold, fearless attitude.",
+        profileLink: 'dog breeds/RussianToy.html'
     },
     {
         id: 'rottweiler',
@@ -754,7 +784,8 @@ const breedsData = [
         about: "A powerful working breed known for loyalty, intelligence, and strong protective instincts. Calm, confident, and deeply devoted to family.",
         care: "Short coat requiring weekly brushing. Needs early training, extensive socialization, and plenty of physical and mental exercise.",
         idealHome: "Experienced owners who can provide structure, leadership, and daily activity. Great for people wanting a loyal guardian.",
-        funFact: "Originally used to drive cattle and guard money for Roman soldiers, earning the nickname 'butcher’s dog'."
+        funFact: "Originally used to drive cattle and guard money for Roman soldiers, earning the nickname 'butcher’s dog'.",
+        profileLink: 'dog breeds/Rotteiler.html'
     },
     {
         id: 'shetland-sheepdog',
@@ -769,7 +800,8 @@ const breedsData = [
         about: "A smart, gentle herding breed known for its affectionate nature, agility, and strong bond with family. Highly trainable and eager to please.",
         care: "Long double coat requiring brushing 2–3 times a week, daily during shedding season. Needs mental stimulation, training, and regular exercise.",
         idealHome: "Active families who want a loyal, intelligent companion. Great for kids, training, and dog sports.",
-        funFact: "Shelties are famous for excelling in obedience and agility competitions due to their sharp intelligence."
+        funFact: "Shelties are famous for excelling in obedience and agility competitions due to their sharp intelligence.",
+        profileLink: 'dog breeds/ShetlandSheepdog.html'
     },
     {
         id: 'working-kelpie',
@@ -784,7 +816,8 @@ const breedsData = [
         about: "An intensely hardworking Australian herding dog known for remarkable stamina, intelligence, and speed. They are bred for work, not as casual pets.",
         care: "Needs 2+ hours of intense daily activity. Minimal grooming required, but mental work is essential. Best suited for farms, working homes, or agility-focused owners.",
         idealHome: "Ideal only for highly active or working households that can provide a real job, not a typical pet home.",
-        funFact: "Working Kelpies can control thousands of sheep in open fields and are famous for running across their backs."
+        funFact: "Working Kelpies can control thousands of sheep in open fields and are famous for running across their backs.",
+        profileLink: 'dog breeds/WorkingKelpie.html'
     },
     {
         id: 'yorkshire-terrier',
@@ -799,7 +832,8 @@ const breedsData = [
         about: "A tiny but bold terrier with a big personality. Yorkies are affectionate, energetic, and loyal, known for their silky, human-like coat.",
         care: "Daily brushing for long coats; weekly if clipped short. Provide short walks, indoor play, and gentle training. Monitor dental health closely.",
         idealHome: "Great for adults or families with older children who can handle a small, delicate dog.",
-        funFact: "Yorkies were originally bred to hunt rats in textile mills—small but fierce workers!"
+        funFact: "Yorkies were originally bred to hunt rats in textile mills—small but fierce workers!",
+        profileLink: 'dog breeds/YorkshireTerrier.html'
     },
 
 
