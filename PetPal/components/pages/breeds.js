@@ -15,7 +15,8 @@ const breedsData = [
         about: "A tiny, confident toy breed known for its monkey-like expression and big-dog attitude in a small body. Affenpinschers are alert, amusing, and sometimes stubborn, making them entertaining companions.",
         care: "Feed a high-quality small-breed food and watch their weight. Their rough, wiry coat needs brushing several times a week plus occasional trimming or hand-stripping, and facial hair should be cleaned regularly. They need moderate daily activity: short walks, play, and puzzle toys.",
         idealHome: "Best for adults or families with older, respectful children. Ideal for someone who wants a small dog with a bold personality and who can commit to regular grooming.",
-        funFact: "The name 'Affenpinscher' comes from German and means 'monkey terrier' because of their facial expression."
+        funFact: "The name 'Affenpinscher' comes from German and means 'monkey terrier' because of their facial expression.",
+        profileLink: 'dog breeds/Affenpinscher.html'
     },
 
     {
@@ -31,7 +32,8 @@ const breedsData = [
         about: "An elegant sighthound with a long, flowing coat and dignified presence. Afghan Hounds are intelligent and sensitive, often aloof with strangers but affectionate with their families.",
         care: "Their long silky coat requires daily brushing and regular baths to prevent mats and tangles. They need moderate exercise with space to run safely, plus gentle, patient training because they are sensitive and not always eager to please.",
         idealHome: "Best for experienced owners who appreciate their independent nature, can handle intensive coat care, and provide secure areas for running.",
-        funFact: "Afghan Hounds are one of the oldest known dog breeds and were originally used to hunt in the mountains and deserts of Afghanistan."
+        funFact: "Afghan Hounds are one of the oldest known dog breeds and were originally used to hunt in the mountains and deserts of Afghanistan.",
+        profileLink: 'dog breeds/AfghanHound.html'
     },
 
     {
@@ -47,7 +49,8 @@ const breedsData = [
         about: "Known as the 'King of Terriers', the Airedale is the largest terrier breed. They are confident, outgoing, highly intelligent, and versatile working and family dogs.",
         care: "They have a dense, wiry coat that needs regular brushing and periodic hand-stripping or clipping. High energy and smart, they require plenty of daily exercise and mental work such as training, games, and jobs.",
         idealHome: "Great for active families who want an energetic, playful dog and are willing to provide ongoing training and stimulation.",
-        funFact: "Airedales have served as police dogs, war dogs, and hunting companions, showing how versatile they are."
+        funFact: "Airedales have served as police dogs, war dogs, and hunting companions, showing how versatile they are.",
+        profileLink: 'dog breeds/AiredaleTerrier.html'
     },
 
     {
@@ -63,7 +66,8 @@ const breedsData = [
         about: "A powerful, dignified spitz-type breed from Japan, Akitas are loyal, protective, and reserved with strangers but deeply devoted to their families.",
         care: "Their thick double coat sheds heavily, especially seasonally, and needs regular brushing. They require moderate daily exercise, firm but respectful training, and very early socialization to manage their strong guarding and prey instincts.",
         idealHome: "Best for experienced owners without multiple small children or many unfamiliar visitors, who can provide structure, leadership, and consistent training.",
-        funFact: "In Japan, Akitas are symbols of good health, happiness, and long life, and small Akita statues are often given as gifts."
+        funFact: "In Japan, Akitas are symbols of good health, happiness, and long life, and small Akita statues are often given as gifts.",
+        profileLink: 'dog breeds/Akita.html'
     },
 
     {
@@ -79,7 +83,8 @@ const breedsData = [
         about: "A smaller, companion version of northern sled dogs, the Alaskan Klee Kai is alert, intelligent, and energetic, with a fox-like face and often a shy or reserved attitude toward strangers.",
         care: "They have a thick double coat that sheds moderately and heavily during seasonal sheds; regular brushing is important. They need daily walks, play, and mental challenges like training and puzzle toys to prevent boredom.",
         idealHome: "Best for active people or families with older children, who understand sensitive, high-energy, vocal dogs and can manage their shyness and strong mind.",
-        funFact: "The breed name 'Klee Kai' comes from an Inuit term meaning 'small dog'."
+        funFact: "The breed name 'Klee Kai' comes from an Inuit term meaning 'small dog'.",
+        profileLink: 'dog breeds/AlaskanKleeKai.html'
     },
 
     {
@@ -95,7 +100,8 @@ const breedsData = [
         about: "A powerful Arctic sled dog, the Alaskan Malamute is friendly, affectionate, and pack-oriented but also strong-willed and independent.",
         care: "They have a very thick double coat that sheds heavily, especially during coat blows, and needs frequent brushing. They require 1–2 hours of daily exercise such as long walks, hiking, or pulling activities, plus mental stimulation. In hot weather, exercise must be carefully managed.",
         idealHome: "Ideal for active families in cooler climates who can handle a large, strong dog with high exercise needs and lots of shedding.",
-        funFact: "Malamutes were originally bred by the native Mahlemiut people of Alaska to haul heavy loads over long distances."
+        funFact: "Malamutes were originally bred by the native Mahlemiut people of Alaska to haul heavy loads over long distances.",
+        profileLink: 'dog breeds/AlaskanMalamute.html'
     },
 
     {
@@ -111,7 +117,8 @@ const breedsData = [
         about: "An athletic, powerful farm and guardian dog, the American Bulldog is confident, loyal, and affectionate with family while naturally protective.",
         care: "They have a short, low-maintenance coat that needs weekly brushing and occasional baths. They require 45–90 minutes of daily exercise, consistent training from an early age, and thorough socialization with people and other dogs.",
         idealHome: "Best for experienced owners or active families who can provide structure, training, and plenty of exercise, and supervise interactions with small children.",
-        funFact: "American Bulldogs were historically used as farm utility dogs, helping with tasks like catching cattle and protecting property."
+        funFact: "American Bulldogs were historically used as farm utility dogs, helping with tasks like catching cattle and protecting property.",
+        profileLink: 'dog breeds/AmericanBulldog.html'
     },
 
     {
@@ -127,7 +134,8 @@ const breedsData = [
         about: "A fast, loud, and determined scent hound bred for hunting raccoons, this breed is friendly, affectionate with family, and very energetic.",
         care: "They have a short, easy-care coat but need regular ear cleaning. They require 1–2 hours of daily, vigorous exercise and mental work such as tracking, long walks, and games, or they can become bored and noisy.",
         idealHome: "Best for very active homes that enjoy outdoor life and don’t mind a dog that bays and howls, with secure fencing and training.",
-        funFact: "Their strong scent drive means they love to follow their nose and may ignore recall if off-leash in an open, unfenced area."
+        funFact: "Their strong scent drive means they love to follow their nose and may ignore recall if off-leash in an open, unfenced area.",
+        profileLink: 'dog breeds/AmericanEnglishCoonhound.html'
     },
 
     {
@@ -143,7 +151,8 @@ const breedsData = [
         about: "A fluffy white spitz-type dog, the American Eskimo is smart, social, playful, and often vocal. They love being with their people and excel at learning tricks.",
         care: "They have a dense double coat that sheds and needs brushing several times a week (daily during shedding seasons). They require 30–60 minutes of daily exercise plus mental stimulation such as training, agility, and games.",
         idealHome: "Perfect for families who want an active, people-oriented, trainable dog and don’t mind some shedding and barking.",
-        funFact: "American Eskimo Dogs were once popular circus performers thanks to their intelligence and eagerness to learn tricks."
+        funFact: "American Eskimo Dogs were once popular circus performers thanks to their intelligence and eagerness to learn tricks.",
+        profileLink: 'dog breeds/AmericanEskimoDog.html'
     },
 
     {
@@ -159,7 +168,8 @@ const breedsData = [
         about: "A lean, athletic scent hound developed for fox hunting, the American Foxhound is gentle, social, and very energetic with a strong prey and scent drive.",
         care: "They have a short, low-maintenance coat but need regular ear care. They require at least 1–2 hours of daily exercise, including long walks, runs, and scent games, and mental stimulation to prevent boredom and destructive or vocal behavior.",
         idealHome: "Best for active families in rural or suburban areas who can handle a loud, energetic dog and provide secure outdoor space.",
-        funFact: "American Foxhounds are closely tied to early American history and were favored by George Washington."
+        funFact: "American Foxhounds are closely tied to early American history and were favored by George Washington.",
+        profileLink: 'dog breeds/AmericanFoxHound.html'
     },
 
     {
@@ -175,7 +185,8 @@ const breedsData = [
         about: "A small, lively terrier that often comes hairless, making it a unique choice for people who prefer very low shedding. They are playful, bright, and affectionate family dogs.",
         care: "Hairless dogs need special skin care: gentle bathing, sun protection, and warmth in cold weather. They need daily walks and play, mental games, and early socialization and obedience training.",
         idealHome: "Great for families who want a small, active dog, can be gentle with a smaller breed, and are willing to manage skin and temperature care.",
-        funFact: "The American Hairless Terrier developed from a single hairless Rat Terrier puppy born in Louisiana in the 1970s."
+        funFact: "The American Hairless Terrier developed from a single hairless Rat Terrier puppy born in Louisiana in the 1970s.",
+        profileLink: 'dog breeds/AmericanHairlessTerrier.html'
     },
 
     {
@@ -191,7 +202,8 @@ const breedsData = [
         about: "A rugged, spotted hunting and treeing dog, the American Leopard Hound is energetic, intelligent, independent, and devoted to its family.",
         care: "They have a short coat and moderate shedding, needing weekly brushing. High energy means daily vigorous exercise such as running, hiking, and scent work, plus mental challenges. Early socialization is important.",
         idealHome: "Best for very active owners with secure space and an interest in outdoor activities or dog sports.",
-        funFact: "Their striking merle or leopard-patterned coats and strong hunting abilities make them stand out among American hounds."
+        funFact: "Their striking merle or leopard-patterned coats and strong hunting abilities make them stand out among American hounds.",
+        profileLink: 'dog breeds/AmericanLeopardHound.html'
     },
 
     {
@@ -207,7 +219,8 @@ const breedsData = [
         about: "A muscular, powerful breed that is also people-oriented, affectionate, and eager to please. With proper training and socialization, they are loyal family companions.",
         care: "They have a short, smooth coat that needs minimal grooming. They require 1–2 hours of daily exercise, mental stimulation, consistent positive training, and thorough socialization with people and other dogs.",
         idealHome: "Best for confident owners who are committed to training, socializing, and providing plenty of exercise and attention.",
-        funFact: "Despite their tough appearance, many AmStaffs are big softies with their families and love cuddling."
+        funFact: "Despite their tough appearance, many AmStaffs are big softies with their families and love cuddling.",
+        profileLink: 'dog breeds/AmericanStaffordshireTerrier.html'
     },
 
     {
@@ -223,7 +236,8 @@ const breedsData = [
         about: "A versatile hunting and retrieving dog, especially fond of water work. American Water Spaniels are friendly, energetic, and closely bonded to their families.",
         care: "They have a dense, water-resistant, curly or wavy coat that needs regular brushing and occasional trimming. They enjoy swimming, retrieving, hikes, and need at least an hour of daily exercise plus mental stimulation.",
         idealHome: "Great for active families who enjoy outdoor activities, especially near water, and want a medium-sized, devoted companion.",
-        funFact: "The American Water Spaniel is one of the few breeds developed specifically in the United States for hunting from small boats."
+        funFact: "The American Water Spaniel is one of the few breeds developed specifically in the United States for hunting from small boats.",
+        profileLink: 'dog breeds/AmericanWaterSpaniel.html' 
     },
 
     {
@@ -239,7 +253,8 @@ const breedsData = [
         about: "A large livestock guardian breed, the Anatolian Shepherd is independent, calm, and highly protective of its flock and family.",
         care: "They have a short to medium double coat that sheds seasonally and needs regular brushing. They require moderate daily exercise, early and ongoing socialization, and consistent training to manage their strong guarding instincts.",
         idealHome: "Best for rural homes or properties needing a guardian, with experienced owners who respect their independence and size.",
-        funFact: "Anatolian Shepherds have been used to protect livestock from predators like wolves and even cheetahs."
+        funFact: "Anatolian Shepherds have been used to protect livestock from predators like wolves and even cheetahs.",
+        profileLink: 'dog breeds/AnatolianShepherdDog.html'
     },
 
     {
@@ -255,7 +270,8 @@ const breedsData = [
         about: "One of the four Swiss mountain dog breeds, the Appenzeller is energetic, confident, vocal, and an excellent farm and family dog.",
         care: "They have a short to medium double coat that needs weekly brushing and more during shedding season. They need 1–2 hours of daily vigorous exercise and mental tasks like herding games, obedience, or agility.",
         idealHome: "Ideal for active homes that can provide lots of exercise, training, and a job to do.",
-        funFact: "Appenzellers were traditionally used for herding cattle and pulling carts in the Swiss Alps."
+        funFact: "Appenzellers were traditionally used for herding cattle and pulling carts in the Swiss Alps.",
+        profileLink: 'dog breeds/AppensellerSennenhund.html'
     },
 
     {
@@ -849,7 +865,12 @@ function resetFilters() {
 
 // Function to view breed profile
 function viewBreedProfile(breedId) {
-    window.location.href = `breed-profile.html?breed=${breedId}`;
+    const breed = breedsData.find(b => b.id === breedId);
+    if (!breed || !breed.profileLink) {
+        console.error('No profileLink found for breed:', breedId);
+        return;
+    }
+    window.location.href = breed.profileLink;
 }
 
 // Initialize the page
