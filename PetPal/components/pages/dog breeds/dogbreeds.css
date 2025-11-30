@@ -147,35 +147,33 @@ a {
 
 /* Smaller clean picture */
 .breed-hero-image {
-    position: relative; /* allows the paw to be positioned absolutely */
-    display: inline-block;
+  position: relative; /* allows the paw to be positioned absolutely */
+  display: inline-block;
 }
 
 .breed-hero-image img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 18px;
-    border: 12px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 12px solid #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* PAW STAMP */
 .paw-stamp {
-    position: absolute;
-    top: -10px;      /* moves slightly outside the border */
-    left: -10px;
-    width: 65px;
-    height: 65px;
-    background-image: url('https://img.freepik.com/premium-vector/3d-illustration-footprint-paw-dog-wolf-white-tone_391563-757.jpg?w=360');
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.85;
-    transform: rotate(-18deg);  /* cute tilted stamp look */
-    filter: drop-shadow(0 3px 4px rgba(0,0,0,0.2));
+  position: absolute;
+  top: -10px; /* moves slightly outside the border */
+  left: -10px;
+  width: 65px;
+  height: 65px;
+  background-image: url("https://img.freepik.com/premium-vector/3d-illustration-footprint-paw-dog-wolf-white-tone_391563-757.jpg?w=360");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  transform: rotate(-18deg); /* cute tilted stamp look */
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.2));
 }
-
-
 
 /* Text section */
 .breed-hero-info {
@@ -355,6 +353,12 @@ a {
 .char-medium {
   background: rgba(250, 192, 94, 0.12);
   color: #a5641b;
+  border: 1px solid rgba(165, 100, 27, 0.25);
+}
+
+.char-low {
+  background: rgba(250, 94, 94, 0.12);
+  color: #a51b1b;
   border: 1px solid rgba(165, 100, 27, 0.25);
 }
 
@@ -567,78 +571,70 @@ a {
 /* === FUN FACTS MINI CARDS WITH THEMED ICONS === */
 
 .icon-facts {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
 .icon-facts li {
-    background: #ffffff;
-    padding: 0.95rem 1.1rem;
-    margin-bottom: 0.9rem;
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.8rem;
-    position: relative;
+  background: #ffffff;
+  padding: 0.95rem 1.1rem;
+  margin-bottom: 0.9rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  position: relative;
 
-    opacity: 0;
-    transform: translateY(8px);
-    animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeInUp 0.4s ease forwards;
 }
 
 /* ICON SIZE + STYLE */
 .icon-facts li::before {
-    content: "";
-    width: 28px;
-    height: 28px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-shrink: 0;
-    margin-top: 1px;
-    opacity: 0.95;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  opacity: 0.95;
 }
 
-/* 🐂 Swiss farm cart — warm gold */
-.icon-facts li[data-icon="cart"]::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/808/808484.png");
-}
-
-/* 🏔️ Mountain icon — deep blue */
-.icon-facts li[data-icon="mountain"]::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/616/616490.png");
-}
-
-/* ❤️ Soft heart — warm tint */
-.icon-facts li[data-icon="heart"]::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/833/833472.png");
-}
-
-/* ❄️ Snowflake — cool blue */
-.icon-facts li[data-icon="snow"]::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/2583/2583918.png");
-}
-
-/* 🐶 Dog face — Bernese-like colours */
-.icon-facts li[data-icon="bond"]::before {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1946/1946412.png");
-}
 
 /* Stagger animation */
-.icon-facts li:nth-child(1) { animation-delay: 0.05s; }
-.icon-facts li:nth-child(2) { animation-delay: 0.15s; }
-.icon-facts li:nth-child(3) { animation-delay: 0.25s; }
-.icon-facts li:nth-child(4) { animation-delay: 0.35s; }
-.icon-facts li:nth-child(5) { animation-delay: 0.45s; }
+.icon-facts li:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.icon-facts li:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.icon-facts li:nth-child(3) {
+  animation-delay: 0.25s;
+}
+.icon-facts li:nth-child(4) {
+  animation-delay: 0.35s;
+}
+.icon-facts li:nth-child(5) {
+  animation-delay: 0.45s;
+}
 
 /* Fade-in animation */
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* panel backgrounds (very subtle) */
@@ -719,6 +715,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .similar-card {
@@ -733,6 +730,7 @@ a {
 }
 
 .similar-card img {
+  height: 220px;
   width: 100%;
   border-radius: 12px;
   margin-bottom: 0.6rem;
