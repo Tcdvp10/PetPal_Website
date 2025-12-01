@@ -51,11 +51,23 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Search bar styling (adjust for icon and size) */
 .search-container {
   position: relative;
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 20px;
+  /* Add space between search bar and cart */
+}
+
+.search-container input {
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  width: 220px;
+  /* Adjust width if needed */
+  font-size: 1rem;
 }
 
 .search-container svg {
@@ -66,12 +78,51 @@ body {
   fill: #666;
 }
 
-.search-container input {
-  padding: 0.5rem 1rem 0.5rem 2.5rem;
+/* Suggestions List Styling */
+.suggestions-container {
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 25px;
-  outline: none;
-  width: 200px;
+  border-radius: 12px;
+  /* Rounded edges for the suggestions box */
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Match font family */
+}
+
+/* Style for each suggestion item */
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  /* Dark text for better visibility */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+  /* Lighter hover background */
+  color: #2c3e50;
+  /* Slight dark color on hover */
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
 }
 
 .cart-icon svg {
@@ -250,14 +301,15 @@ h2 {
 }
 
 .quick-access-section .card {
-  flex: 1 1 260px; 
+  flex: 1 1 260px;
   max-width: 360px;
 }
 
 /* Base card */
 .card {
   background: #fff;
-  width: 100%; /* full width inside flex item */
+  width: 100%;
+  /* full width inside flex item */
   min-height: 280px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -297,7 +349,7 @@ h2 {
     flex: 1 1 100%;
   }
 }
- 
+
 /* Featured breeds */
 
 .carousel-container {
@@ -408,6 +460,7 @@ button a:visited {
   padding: 0 20px;
   text-align: center;
 }
+
 #happy-tails h2 {
   margin-bottom: 18px;
   font-family: "Poppins", system-ui, sans-serif;
@@ -420,14 +473,17 @@ button a:visited {
   align-items: center;
   gap: 10px;
 }
+
 .ht-window {
   flex: 1;
   overflow: hidden;
 }
+
 .ht-track {
   display: flex;
   transition: transform 0.4s ease;
 }
+
 .story-card {
   min-width: 100%;
   box-sizing: border-box;
@@ -440,21 +496,25 @@ button a:visited {
   text-align: left;
   align-items: center;
 }
+
 .story-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .story-text h3 {
   margin-top: 0;
   margin-bottom: 8px;
   color: #5f8bb7;
 }
+
 .story-text p {
   margin: 4px 0;
   color: #444;
 }
+
 .paw {
   font-size: 22px;
   margin-top: 8px;
@@ -475,10 +535,12 @@ button a:visited {
   font-weight: bold;
   transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
+
 .ht-arrow:hover {
   background: #5baefb;
   transform: translateY(-1px);
 }
+
 .ht-arrow[disabled] {
   opacity: 0.4;
   cursor: default;
@@ -490,6 +552,7 @@ button a:visited {
   .story-card {
     grid-template-columns: 1fr;
   }
+
   .story-card img {
     height: 200px;
   }
@@ -534,6 +597,7 @@ button a:visited {
   gap: 10px;
   height: 100%;
 }
+
 .kamloops-section img {
   width: 100%;
   max-width: 1100px;
@@ -649,7 +713,8 @@ button a:visited {
 }
 
 .footer-col a {
-  color: #fcffc9; /* teal-ish links */
+  color: #fcffc9;
+  /* teal-ish links */
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -667,7 +732,8 @@ button a:visited {
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   font-size: 1.8rem;
-  color: #5c999b; /* PetPal teal */
+  color: #5c999b;
+  /* PetPal teal */
   margin-bottom: 10px;
 }
 

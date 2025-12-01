@@ -33,13 +33,13 @@ a {
   padding: 0 20px;
 }
 
-/* Header Styles */
+/* Header */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
+  background: linear-gradient(135deg, #2c3e50, #3495db);
   color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -69,11 +69,23 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Search bar styling (adjust for icon and size) */
 .search-container {
   position: relative;
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 20px;
+  /* Add space between search bar and cart */
+}
+
+.search-container input {
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  width: 220px;
+  /* Adjust width if needed */
+  font-size: 1rem;
 }
 
 .search-container svg {
@@ -84,12 +96,51 @@ a {
   fill: #666;
 }
 
-.search-container input {
-  padding: 0.5rem 1rem 0.5rem 2.5rem;
+/* Suggestions List Styling */
+.suggestions-container {
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 25px;
-  outline: none;
-  width: 200px;
+  border-radius: 12px;
+  /* Rounded edges for the suggestions box */
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Match font family */
+}
+
+/* Style for each suggestion item */
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  /* Dark text for better visibility */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+  /* Lighter hover background */
+  color: #2c3e50;
+  /* Slight dark color on hover */
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
 }
 
 .cart-icon svg {
@@ -140,14 +191,17 @@ a {
   grid-template-columns: 45% 55%;
   gap: 2.5rem;
   align-items: center;
-  background: none !important; /* REMOVE card */
-  box-shadow: none !important; /* REMOVE shadow */
+  background: none !important;
+  /* REMOVE card */
+  box-shadow: none !important;
+  /* REMOVE shadow */
   padding: 0 !important;
 }
 
 /* Smaller clean picture */
 .breed-hero-image {
-  position: relative; /* allows the paw to be positioned absolutely */
+  position: relative;
+  /* allows the paw to be positioned absolutely */
   display: inline-block;
 }
 
@@ -163,7 +217,8 @@ a {
 /* PAW STAMP */
 .paw-stamp {
   position: absolute;
-  top: -10px; /* moves slightly outside the border */
+  top: -10px;
+  /* moves slightly outside the border */
   left: -10px;
   width: 65px;
   height: 65px;
@@ -171,7 +226,8 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.85;
-  transform: rotate(-18deg); /* cute tilted stamp look */
+  transform: rotate(-18deg);
+  /* cute tilted stamp look */
   filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.2));
 }
 
@@ -453,12 +509,10 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  background: radial-gradient(
-    circle at top left,
-    #ecf7ff 0%,
-    #f2f7ff 45%,
-    #e6eff5 100%
-  );
+  background: radial-gradient(circle at top left,
+      #ecf7ff 0%,
+      #f2f7ff 45%,
+      #e6eff5 100%);
   border: 1px solid rgba(44, 62, 80, 0.15);
   display: flex;
   align-items: center;
@@ -612,15 +666,19 @@ a {
 .icon-facts li:nth-child(1) {
   animation-delay: 0.05s;
 }
+
 .icon-facts li:nth-child(2) {
   animation-delay: 0.15s;
 }
+
 .icon-facts li:nth-child(3) {
   animation-delay: 0.25s;
 }
+
 .icon-facts li:nth-child(4) {
   animation-delay: 0.35s;
 }
+
 .icon-facts li:nth-child(5) {
   animation-delay: 0.45s;
 }
@@ -631,6 +689,7 @@ a {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -639,30 +698,24 @@ a {
 
 /* panel backgrounds (very subtle) */
 .breed-panel[data-breed-panel="caretips"] {
-  background: radial-gradient(
-    circle at top left,
-    #fff6e7 0%,
-    #ffffff 45%,
-    #f4fafb 100%
-  );
+  background: radial-gradient(circle at top left,
+      #fff6e7 0%,
+      #ffffff 45%,
+      #f4fafb 100%);
 }
 
 .breed-panel[data-breed-panel="training"] {
-  background: radial-gradient(
-    circle at top right,
-    #eef5ff 0%,
-    #ffffff 45%,
-    #f4fafb 100%
-  );
+  background: radial-gradient(circle at top right,
+      #eef5ff 0%,
+      #ffffff 45%,
+      #f4fafb 100%);
 }
 
 .breed-panel[data-breed-panel="funfacts"] {
-  background: radial-gradient(
-    circle at bottom left,
-    #fff2ea 0%,
-    #ffffff 40%,
-    #f4fafb 100%
-  );
+  background: radial-gradient(circle at bottom left,
+      #fff2ea 0%,
+      #ffffff 40%,
+      #f4fafb 100%);
 }
 
 /* ===== PHOTO GALLERY ===== */
@@ -675,10 +728,14 @@ a {
 }
 
 .photo-grid img {
-  width: 335px; /* bigger */
-  height: 260px; /* same height */
-  object-fit: cover; /* crops nicely */
-  border-radius: 16px; /* smooth corners */
+  width: 335px;
+  /* bigger */
+  height: 260px;
+  /* same height */
+  object-fit: cover;
+  /* crops nicely */
+  border-radius: 16px;
+  /* smooth corners */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease;
 }
@@ -689,7 +746,8 @@ a {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
   max-width: 800px;
   margin: 1.5rem auto;
@@ -719,7 +777,8 @@ a {
 }
 
 .similar-card {
-  display: block; /* whole card clickable */
+  display: block;
+  /* whole card clickable */
   background: #ffffff;
   border-radius: 16px;
   padding: 1.2rem 1rem 1.4rem;
@@ -775,7 +834,8 @@ a {
   }
 
   .nav-links {
-    display: none; /* simple mobile; you can add burger later if needed */
+    display: none;
+    /* simple mobile; you can add burger later if needed */
   }
 
   .breed-main {
@@ -820,6 +880,7 @@ a {
     padding: 1.4rem 1.2rem;
   }
 }
+
 /* ================== FOOTER  ================== */
 
 .site-footer {
@@ -871,7 +932,8 @@ a {
 }
 
 .footer-col a {
-  color: #fcffc9; /* teal-ish links */
+  color: #fcffc9;
+  /* teal-ish links */
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -889,7 +951,8 @@ a {
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   font-size: 1.8rem;
-  color: #5c999b; /* PetPal teal */
+  color: #5c999b;
+  /* PetPal teal */
   margin-bottom: 10px;
 }
 
