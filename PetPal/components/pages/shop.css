@@ -186,6 +186,8 @@ body {
   /* three per row */
   gap: 25px;
   padding: 40px 40px;
+  transition: all 0.3s ease;
+  /* Smooth transition for layout change */
 }
 
 .product-box h3 {
@@ -196,7 +198,8 @@ body {
 }
 
 .product-box {
-
+  position: relative;
+  z-index: 1;
   background: #ffffff;
   border-radius: 14px;
   padding: 18px 18px 20px;
@@ -273,23 +276,33 @@ body {
    FILTER BUTTON + PANEL
    ================================ */
 .filter-container {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin: 20px 60px 10px 0;
-  position: relative;
-  right: 20px;
+  margin: 20px 0;
+  padding-right: 20px;
 }
 
+
 .filter-btn {
-  padding: 10px 16px;
+  padding: 10px;
   background: #3495db;
   color: #fff;
-  border: none;
+  border: 1px solid #ccc;
   cursor: pointer;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #ddd;
+  /* Darken the background when the filter is visible */
+  border: 1px solid #ccc;
+  /* Optional: border for better visibility */
 }
 
 .filter-btn:hover {
@@ -298,20 +311,43 @@ body {
 
 /* Collapsible panel */
 .filter-panel {
+  display: none;
   position: absolute;
-  top: 50px;
-  right: 0;
+  /* Make it absolute within the products area */
+  top: 0;
+  /* Stick to the top of the "Our Products" area */
+  right: -250px;
+  /* Start off-screen */
   width: 250px;
-  background: #fffef6;
-  border: 1px solid #d4c5a1;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  transition: max-height 0.35s ease;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   z-index: 10;
+  /* Ensure it's on top of the products grid */
+  height: auto;
+  /* Let it be tall enough for the filters */
+  max-height: 90vh;
+  /* Max height to avoid it becoming too tall */
+  transition: right 0.3s ease;
+  /* Smooth transition for sliding in/out */
+  border-radius: 8px;
 }
+
+.filter-panel.show {
+  display: block;
+  /* Show the filter panel when 'show' class is added */
+  right: 0;
+  /* Bring the panel to the right edge of the screen */
+}
+
+/* When the filter panel is visible, shift the product grid to the left */
+.filter-active .products {
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 product boxes per row */
+  margin-right: 270px;
+  /* Leave room for the filter panel */
+}
+
 
 .filter-panel.open {
   max-height: 380px;
@@ -326,6 +362,12 @@ body {
 .filter-group {
   margin-bottom: 15px;
 }
+
+.filter-panel.show {
+  display: block;
+  /* Show the filter panel when 'show' class is added */
+}
+
 
 .filter-panel input[type="number"] {
   width: 45%;
@@ -350,6 +392,31 @@ body {
 #applyFilters:hover {
   background: #4c878b;
 }
+
+#toggleFilter {
+  padding: 10px;
+  background-color: #3495db;
+  color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 1001;
+}
+
+
+#toggleFilter:hover {
+  background-color: #4a3009;
+}
+
+#toggleFilter.active {
+  background-color: #ddd;
+  /* Change the background when filter is active */
+}
+
 
 /*FOOTER*/
 .site-footer {

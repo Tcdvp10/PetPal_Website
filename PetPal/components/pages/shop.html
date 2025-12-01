@@ -59,22 +59,53 @@
         <div class="filter-container">
             <button class="filter-btn" id="toggleFilter">Filters ▼</button>
 
-            <div class="filter-panel" id="filterPanel">
-                <h3>Filter Products</h3>
+            <div class="filter-panel">
+                <h3>Filters</h3>
 
                 <div class="filter-group">
-                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
-                    <label><input type="checkbox" name="category" value="toys"> Toys</label>
-                    <label><input type="checkbox" name="category" value="feeding"> Feeding</label>
+                    <label for="price-min">Min Price:</label>
+                    <input type="number" id="price-min" placeholder="Min Price">
                 </div>
 
                 <div class="filter-group">
-                    <label>Price Range:</label>
-                    <input type="number" placeholder="Min" id="minPrice">
-                    <input type="number" placeholder="Max" id="maxPrice">
+                    <label for="price-max">Max Price:</label>
+                    <input type="number" id="price-max" placeholder="Max Price">
+                </div>
+
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <div>
+                        <input type="checkbox" id="collars" class="category-filter" value="collars">
+                        <label for="collars">Collars</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dog-bowls" class="category-filter" value="dog-bowls">
+                        <label for="dog-bowls">Dog Bowls</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dog-feeders" class="category-filter" value="dog-feeders">
+                        <label for="dog-feeders">Dog Feeders</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blankets" class="category-filter" value="blankets">
+                        <label for="blankes">Dog blankets</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="toys" class="category-filter" value="toys">
+                        <label for="toys">Dog toys</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="beds" class="category-filter" value="beds">
+                        <label for="beds">Dog beds</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="boots" class="category-filter" value="boots">
+                        <label for="boots">Dog boots</label>
+                    </div>
                 </div>
 
                 <button id="applyFilters">Apply Filters</button>
+                <button id="resetFilters">Reset Filters</button>
             </div>
         </div>
         <!--END FILTER BUTTON -->
@@ -82,7 +113,7 @@
         <section class="products">
             <!--location of the code for the filter button-->
             <!--The code to be used on product boxes, (product-boxes) the containers for the products being sold-->
-            <div class="product-box">
+            <div class="product-box" data-price="8.00" data-category="collars">
                 <h3>Dog collar</h3>
                 <a href="#">
                     <picture>
@@ -95,7 +126,7 @@
                 <button class="buy-button" data-id="1" data-name="Dog Collar" data-price="8.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="15.00" data-category="dog-bowls">
                 <h3>Dog bowl</h3>
                 <a href="#">
                     <picture>
@@ -108,7 +139,7 @@
                 <button class="buy-button" data-id="2" data-name="Dog bowl" data-price="15.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="45.00" data-category="dog-feeders">
                 <h3>Automatic Dog feeder</h3>
                 <a href="#">
                     <picture>
@@ -123,7 +154,7 @@
                     Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="30.00" data-category="collars">
                 <h3>Dog tracker</h3>
                 <a href="#">
                     <picture>
@@ -139,7 +170,7 @@
                 <button class="buy-button" data-id="4" data-name="Dog Tracker" data-price="30.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="5.00" data-category="toys">
                 <h3>Ball toy</h3>
                 <a href="#">
                     <picture>
@@ -152,7 +183,7 @@
                 <button class="buy-button" data-id="5" data-name="Ball Toy" data-price="5.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="25.00" data-category="beds">
                 <h3>Dog bed</h3>
                 <a href="#">
                     <picture>
@@ -165,7 +196,7 @@
                 <button class="buy-button" data-id="6" data-name="Dog bed" data-price="25.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="15.00" data-category="blankets">
                 <h3>Dog blanket</h3>
                 <a href="#">
                     <picture>
@@ -178,7 +209,7 @@
                 <button class="buy-button" data-id="7" data-name="Dog blanket" data-price="15.00">Buy Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="20.00" data-category="collars">
                 <h3>Retractable Dog leash</h3>
                 <a href="#">
                     <picture>
@@ -193,7 +224,7 @@
                     Now</button>
             </div>
 
-            <div class="product-box">
+            <div class="product-box" data-price="12.00" data-category="boots">
                 <h3>Winter dog boots</h3>
                 <a href="#">
                     <picture>
@@ -203,7 +234,7 @@
                     </picture>
                 </a>
                 <span class="price">$12.00</span>
-                <p>Make dog walking much easier.</p>
+                <p>Keep your furry friends paws warm.</p>
                 <button class="buy-button" data-id="9" data-name="Winter dog boots" data-price="12.00">Buy
                     Now</button>
             </div>
@@ -231,11 +262,15 @@
                 <div class="footer-col">
                     <h4>Information &amp; Resources</h4>
                     <ul>
-                        <li><a href="#">Adoption FAQ</a></li>
-                        <li><a href="#">Preparing for Your New Pet</a></li>
-                        <li><a href="#">Care &amp; Training Guides</a></li>
-                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
-                        <li><a href="#">Emergency Contacts</a></li>
+                        <li><a href="https://adopt.spca.bc.ca/type/dog/">Adoption FAQ</a></li>
+                        <li><a href="https://www.akc.org/expert-advice/home-living/preparing-new-puppy/">Preparing for
+                                Your New Pet</a></li>
+                        <li><a href="https://www.carecredit.com/well-u/pet-care/how-to-train-your-dog/">Care &amp;
+                                Training Guides</a></li>
+                        <li><a href="https://www.barclondon.com/blogs/guides/dog-nutrition-chart-feeding-guide">Health
+                                &amp; Nutrition Tips</a></li>
+                        <li><a href="https://www.kamloopsveterinaryclinic.com/pet-care/dog-services/dog-emergency-vet">Emergency
+                                Contacts</a></li>
                     </ul>
                 </div>
 
@@ -243,11 +278,14 @@
                 <div class="footer-col">
                     <h4>Community</h4>
                     <ul>
-                        <li><a href="#">Success Stories</a></li>
-                        <li><a href="#">Events &amp; Meetups</a></li>
-                        <li><a href="#">Volunteer Opportunities</a></li>
-                        <li><a href="#">Shelter Partners</a></li>
-                        <li><a href="#">Newsletter Sign-up</a></li>
+                        <li><a href="https://www.animalhumanesociety.org/news/our-top-dog-adoption-stories-2023">Success
+                                Stories</a></li>
+                        <li><a href="https://spca.bc.ca/news/tips-for-attending-dog-meetups/">Events &amp; Meetups</a>
+                        </li>
+                        <li><a href="https://spca.bc.ca/ways-to-help/volunteer/">Volunteer Opportunities</a></li>
+                        <li><a href="https://www.adoptapet.com/dog-shelters/british-columbia/kamloops">Shelter
+                                Partners</a></li>
+                        <li><a href="https://www.akc.org/subscribe/">Newsletter Sign-up</a></li>
                     </ul>
                 </div>
 
@@ -299,10 +337,11 @@
                 </div>
             </div>
         </footer>
-
-        <p class="Copyright">&copy; 2025 PetPal - All Rights Reeserved</p>
-    </div>
-    <script src="shop-checkout.js"></script>
+        <div class="Copyright">
+            <p>&copy; 2025 PetPal - All Rights Reeserved</p>
+        </div>
+        <script src="shop-checkout.js"></script>
+        <script src="shop-filter.js"></script>
 </body>
 
 </html>
