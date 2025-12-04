@@ -12,6 +12,13 @@ body {
   margin: 0;
   padding: 0;
   color: #5a3d0b;
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Header */
@@ -56,7 +63,6 @@ body {
   display: flex;
   align-items: center;
   margin-right: 20px;
-  /* Add space between search bar and cart */
 }
 
 .search-container input {
@@ -65,7 +71,6 @@ body {
   border-radius: 25px;
   outline: none;
   width: 220px;
-  /* Adjust width if needed */
   font-size: 1rem;
 }
 
@@ -80,12 +85,10 @@ body {
 /* Suggestions List Styling */
 .suggestions-container {
   display: none;
-  /* Hidden by default */
   position: absolute;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 12px;
-  /* Rounded edges for the suggestions box */
   max-height: 300px;
   overflow-y: auto;
   width: 100%;
@@ -94,25 +97,19 @@ body {
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* Match font family */
 }
 
-/* Style for each suggestion item */
 .suggestion-item {
   padding: 10px;
   cursor: pointer;
   color: #333;
-  /* Dark text for better visibility */
   font-size: 1rem;
   transition: background-color 0.3s ease;
-  /* Smooth hover effect */
 }
 
 .suggestion-item:hover {
   background-color: #f0f0f0;
-  /* Lighter hover background */
   color: #2c3e50;
-  /* Slight dark color on hover */
 }
 
 .suggestions-list li {
@@ -140,7 +137,6 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -201,22 +197,20 @@ body {
 }
 
 .hero-title {
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-align: center;
   position: relative;
   z-index: 2;
-  font-size: 3rem;
   text-transform: uppercase;
   padding: 0 10px;
   color: white;
   border-radius: 8px;
-
 }
 
 h2 {
   text-align: center;
-  color: #2c3e50;
-  font-size: 1.8rem;
+  color: #8a5200;
+  font-size: 1.6rem;
   margin: 40px 0 20px;
 }
 
@@ -253,22 +247,7 @@ h2 {
   object-fit: cover;
 }
 
-/* Mission & Values Styling*/
-h2 {
-  text-align: center;
-  color: #8a5200;
-  font-size: 1.6rem;
-  margin: 40px 0 20px;
-}
-
-.mission-values {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0 20px 40px;
-}
-
+/* Mission & Values Styling */
 .mission-values {
   display: flex;
   justify-content: center;
@@ -276,12 +255,6 @@ h2 {
   gap: 30px;
   padding: 0 20px 40px;
 }
-
-
-.mission-values .value-box {
-  width: 400px;
-}
-
 
 .value-box {
   background: #fff;
@@ -325,20 +298,6 @@ h2 {
   }
 }
 
-/* Meet the Team */
-.meet-team {
-  padding: 60px 10%;
-  text-align: center;
-}
-
-.team-image img {
-  width: 100%;
-  max-width: 1200px;
-  border-radius: 12px;
-  margin: 0 auto 30px auto;
-  display: block;
-}
-
 /* Join Us */
 .join-us {
   padding: 60px 10%;
@@ -354,6 +313,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .join-btn {
@@ -384,6 +344,11 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1.5fr 1.3fr;
   gap: 32px;
+}
+
+.footer-col {
+  min-width: 0;
+  /* prevent overflow in grid */
 }
 
 .footer-col h3,
@@ -421,9 +386,11 @@ h2 {
 
 .footer-col a {
   color: #fcffc9;
-  /* teal-ish links */
   text-decoration: none;
   font-size: 0.95rem;
+  word-wrap: break-word;
+  /* fix overlapping email */
+  overflow-wrap: break-word;
 }
 
 .footer-col a:hover {
@@ -440,7 +407,6 @@ h2 {
   font-weight: 800;
   font-size: 1.8rem;
   color: #5c999b;
-  /* PetPal teal */
   margin-bottom: 10px;
 }
 
@@ -449,15 +415,6 @@ h2 {
   margin: 0 0 10px;
   color: #e0ddc8;
   font-size: 0.95rem;
-}
-
-.footer-contact a {
-  color: #529597;
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  text-decoration: underline;
 }
 
 .footer-social {
@@ -500,6 +457,10 @@ h2 {
 @media (max-width: 600px) {
   .footer-inner {
     grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    padding: 0 10px;
   }
 }
 
