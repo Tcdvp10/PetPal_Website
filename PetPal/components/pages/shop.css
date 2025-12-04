@@ -480,16 +480,24 @@ body {
   /* Change the background when filter is active */
 }
 
-/* Quantity selector inside product box */
-.qty-selector {
+/* Row that holds quantity selector (left) and cart button (right) */
+.product-bottom-row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
   margin-top: 10px;
 }
 
-.qty-btn {
+/* Quantity selector left */
+.qty-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-btn,
+.minus,
+.plus {
   background-color: #3495db;
   color: white;
   border: none;
@@ -497,11 +505,17 @@ body {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.2s;
+}
+
+.qty-display {
+  min-width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .qty-btn:hover {
-  background-color: #2c3e50;
+  background-color: #3495db;
 }
 
 .qty-display {
@@ -511,16 +525,23 @@ body {
   font-weight: bold;
 }
 
-/* Cart icon button styling */
+/* Buy button styled like nav cart */
 .buy-button {
-  font-size: 1.4rem;
-  padding: 8px 14px;
+  background-color: #3495db;
   border-radius: 50%;
   width: 45px;
   height: 45px;
+  font-size: 1.4rem;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-button:hover {
+  background-color: #3495db;
 }
 
 /*FOOTER*/

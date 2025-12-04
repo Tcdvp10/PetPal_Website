@@ -3,16 +3,15 @@
 // ---------- CART DATA MANAGEMENT ----------
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-// Save cart to localStorage
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartIcon();
 }
 
-// Update cart icon with number of items
 function updateCartIcon() {
     const cartIcon = document.querySelector('.cart-icon');
     if (!cartIcon) return;
+
     let count = cart.reduce((sum, item) => sum + item.quantity, 0);
 
     const oldBadge = cartIcon.querySelector('.cart-count');
@@ -22,31 +21,33 @@ function updateCartIcon() {
         const badge = document.createElement('span');
         badge.classList.add('cart-count');
         badge.textContent = count;
+
+        cartIcon.style.position = 'relative';
         badge.style.position = 'absolute';
         badge.style.top = '0';
-        badge.style.right = '0';
+        badge.style.right = '-5px';
         badge.style.backgroundColor = 'red';
         badge.style.color = 'white';
         badge.style.fontSize = '12px';
         badge.style.borderRadius = '50%';
         badge.style.padding = '2px 6px';
-        cartIcon.style.position = 'relative';
+        badge.style.fontWeight = 'bold';
         cartIcon.appendChild(badge);
     }
 }
 
-// ---------- ADD TO CART FUNCTION ----------
-function addToCart(product) {
+function addToCart(product, quantity = 1) {
     const existing = cart.find(item => item.id === product.id);
+
     if (existing) {
-        existing.quantity += 1;
+        existing.quantity += quantity;
     } else {
-        cart.push({ ...product, quantity: 1 });
+        cart.push({ ...product, quantity });
     }
     saveCart();
 }
 
-// ---------- MODIFY CART ITEMS ----------
+// ---------- MODIFY CART ----------
 function increaseQuantity(id) {
     const item = cart.find(i => i.id === id);
     if (item) item.quantity++;
@@ -76,7 +77,7 @@ function clearCart() {
     displayCart();
 }
 
-// ---------- DISPLAY CART ON CHECKOUT ----------
+// ---------- DISPLAY CART ----------
 function displayCart() {
     const cartList = document.getElementById('cart-items');
     const totalPriceEl = document.getElementById('total-price');
@@ -91,8 +92,8 @@ function displayCart() {
         const li = document.createElement('li');
 
         li.innerHTML = `
-            <strong>${item.name}</strong> - $${item.price.toFixed(2)}
-            <br>
+            <strong>${item.name}</strong> - $${item.price.toFixed(2)} <br>
+
             <button class="qty-btn" data-id="${item.id}" data-action="decrease">−</button>
             <span class="qty-num">${item.quantity}</span>
             <button class="qty-btn" data-id="${item.id}" data-action="increase">+</button>
@@ -108,15 +109,13 @@ function displayCart() {
 
     totalPriceEl.textContent = total.toFixed(2);
 
-    // Enable or disable "Clear Cart" button
     if (clearBtn) clearBtn.style.display = cart.length > 0 ? 'block' : 'none';
 
-    // Attach event listeners for +, -, remove buttons
     cartList.querySelectorAll('.qty-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const id = btn.dataset.id;
-            const action = btn.dataset.action;
+        const id = btn.dataset.id;
+        const action = btn.dataset.action;
 
+        btn.addEventListener('click', () => {
             if (action === 'increase') increaseQuantity(id);
             if (action === 'decrease') decreaseQuantity(id);
         });
@@ -127,12 +126,11 @@ function displayCart() {
     });
 }
 
-// ---------- SIMULATE PAYMENT ----------
+// ---------- PAYMENT ----------
 const checkoutForm = document.getElementById('checkoutForm');
 if (checkoutForm) {
     checkoutForm.addEventListener('submit', function (e) {
         e.preventDefault();
-
         cart = [];
         saveCart();
         displayCart();
@@ -141,7 +139,7 @@ if (checkoutForm) {
     });
 }
 
-// ---------- NAV CART ICON CLICK ----------
+// ---------- NAV CART CLICK ----------
 const cartIcon = document.querySelector('.cart-icon');
 if (cartIcon) {
     cartIcon.addEventListener('click', () => {
@@ -149,31 +147,13 @@ if (cartIcon) {
     });
 }
 
-// ---------- CLEAR CART BUTTON ----------
+// ---------- CLEAR CART ----------
 const clearBtn = document.getElementById('clear-cart');
 if (clearBtn) {
     clearBtn.addEventListener('click', clearCart);
 }
 
-// ---------- INITIALIZATION ----------
-displayCart();
-updateCartIcon();
-
-// ---------- BUY BUTTONS ON SHOP PAGE ----------
-const buyButtons = document.querySelectorAll('.buy-button');
-buyButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const product = {
-            id: btn.dataset.id,
-            name: btn.dataset.name,
-            price: parseFloat(btn.dataset.price)
-        };
-        addToCart(product);
-        alert(`${product.name} added to cart!`);
-    });
-});
-
-// Quantity selectors on product cards
+// ---------- PRODUCT CARD BUY BUTTON WITH QUANTITY ----------
 document.querySelectorAll(".product-box").forEach(box => {
     let qtyDisplay = box.querySelector(".qty-display");
     let minus = box.querySelector(".minus");
@@ -195,24 +175,22 @@ document.querySelectorAll(".product-box").forEach(box => {
     });
 
     buyButton.addEventListener("click", () => {
-        // Override buy amount with chosen quantity
         const product = {
             id: buyButton.dataset.id,
             name: buyButton.dataset.name,
             price: parseFloat(buyButton.dataset.price)
         };
 
-        for (let i = 0; i < quantity; i++) {
-            addToCart(product);
-        }
+        addToCart(product, quantity);
 
         alert(`${quantity} × ${product.name} added to cart!`);
+
         quantity = 1;
         qtyDisplay.textContent = 1;
     });
 });
 
-// Fade-in animation on scroll
+// ---------- FADE IN ----------
 const productBoxes = document.querySelectorAll(".product-box");
 
 const revealObserver = new IntersectionObserver(entries => {
@@ -221,9 +199,10 @@ const revealObserver = new IntersectionObserver(entries => {
             entry.target.classList.add("visible");
         }
     });
-}, {
-    threshold: 0.2
-});
+}, { threshold: 0.2 });
 
 productBoxes.forEach(box => revealObserver.observe(box));
 
+// ---------- INIT ----------
+displayCart();
+updateCartIcon();
