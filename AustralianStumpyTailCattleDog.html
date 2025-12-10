@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Australian Stumpy Tail Cattle Dog - Dog Breed Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
+                    </div>
+                    <i class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="breed-main">
+
+            <!-- HERO -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <span class="paw-stamp"></span>
+                    <img src="https://www.thesprucepets.com/thmb/9WB6SVu46JnKWVbanSaYG6YiVaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-454288321-fa4f3b75dba84944b46d16725e5daf60.jpg"
+                        alt="Australian Stumpy Tail Cattle Dog standing outdoors">
+                </div>
+
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Australian Stumpy Tail Cattle Dog</h1>
+                    <p class="breed-tagline">
+                        A tough, no-nonsense herding dog with a natural short tail, bred to work long days in harsh
+                        conditions. Stumpy Tails are intensely loyal, energetic, and happiest when they have a job to
+                        do.
+                    </p>
+
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Group</dt>
+                            <dd>Herding</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>12–15 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Origin</dt>
+                            <dd>Australia</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Short, weather-resistant double coat</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Breed Overview</button>
+                <button class="breed-tab" data-breed-tab="caretips">Care</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
+
+            <!-- PANELS -->
+            <section class="breed-panels">
+
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">Breed Overview</h2>
+
+                    <div class="overview-layout">
+
+                        <!-- QUICK FACTS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Quick Facts</h3>
+                            <dl class="overview-facts">
+                                <div class="fact-row">
+                                    <dt>Group</dt>
+                                    <dd>Herding</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Height</dt>
+                                    <dd>17–20 inches at the shoulder</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Weight</dt>
+                                    <dd>35–50 pounds</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat Type</dt>
+                                    <dd>Short, dense, weather-resistant double coat</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Colours</dt>
+                                    <dd>Blue or red speckle, often with mask or mottling</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Temperament</dt>
+                                    <dd>Energetic, loyal, alert, strong-willed, focused</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Hypoallergenic</dt>
+                                    <dd>No – moderate shedding</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Origin</dt>
+                                    <dd>Australia</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <!-- CHARACTERISTICS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Characteristics</h3>
+                            <table class="char-table">
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+
+                    <figure class="overview-photo">
+                        <img src="../images/AustralianStumpyTailCattle.PNG"
+                            alt="Australian Stumpy Tail Cattle Dog standing alert">
+                        <figcaption>The Australian Stumpy Tail Cattle Dog is built for stamina, speed, and hard work.
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- CARE -->
+                <article class="breed-panel" data-breed-panel="caretips" hidden>
+                    <h2 class="section-title section-title--left">Care</h2>
+
+                    <p class="care-intro">
+                        This is a true working breed that needs plenty of daily activity and structure. Their coat is
+                        fairly low-maintenance, but their energy levels are not—they are best for active, committed
+                        homes.
+                    </p>
+
+                    <div class="care-grid">
+                        <div class="care-card">
+                            <div class="care-icon">🧼</div>
+                            <h3>General Care</h3>
+                            <ul>
+                                <li>Brush weekly to remove loose hair and dust from the short coat.</li>
+                                <li>More frequent brushing during seasonal shedding.</li>
+                                <li>Check and clean ears regularly, especially after dusty or dirty environments.</li>
+                                <li>Trim nails every few weeks and brush teeth several times a week.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐶</div>
+                            <h3>Puppy Care</h3>
+                            <ul>
+                                <li>Socialise early with people, kids, dogs, and new environments.</li>
+                                <li>Introduce crate training, car rides, and vet visits in a positive way.</li>
+                                <li>Short, controlled exercise to protect developing joints.</li>
+                                <li>Teach calm behaviour indoors so they learn to switch off.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐕‍🦺</div>
+                            <h3>Adult Care</h3>
+                            <ul>
+                                <li>Needs at least 1.5–2 hours of daily physical activity.</li>
+                                <li>Ideal jobs include herding, running alongside bikes (when fully grown), and farm
+                                    work.</li>
+                                <li>Secure fencing is essential—they are agile and determined.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">❤️</div>
+                            <h3>Common Health Issues</h3>
+                            <ul>
+                                <li>Hip dysplasia and other joint issues in some lines.</li>
+                                <li>Eye conditions—regular eye checks recommended.</li>
+                                <li>Deafness in some dogs, especially with certain colour patterns.</li>
+                                <li>Weight gain if exercise is reduced but food isn’t adjusted.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p class="training-intro">
+                        Australian Stumpy Tail Cattle Dogs are extremely intelligent, driven, and independent. They
+                        thrive
+                        with firm, fair, and consistent training and do best when given real work or structured tasks.
+                    </p>
+
+                    <div class="training-grid two-column">
+                        <div class="training-card">
+                            <div class="training-icon">🎓</div>
+                            <h3>Basic Training</h3>
+                            <ul>
+                                <li>Start early with sit, down, stay, recall, heel, and “leave it.”</li>
+                                <li>Use positive reinforcement but keep clear rules and boundaries.</li>
+                                <li>Practise recall in safe, fenced spaces before any off-leash work.</li>
+                                <li>Teach polite greetings—they may be intense or suspicious with strangers.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🌿</div>
+                            <h3>Exercise & Enrichment</h3>
+                            <ul>
+                                <li>Excellent at herding, agility, obedience, rally, and tracking.</li>
+                                <li>Daily structured walks plus off-leash work in safe areas, if possible.</li>
+                                <li>Use puzzle toys, scent games, and training sessions to challenge their mind.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">⚠️</div>
+                            <h3>Common Challenges</h3>
+                            <ul>
+                                <li>Strong herding instincts—may nip heels or try to herd kids or pets.</li>
+                                <li>Can be wary of strangers if not well-socialised.</li>
+                                <li>May become destructive or noisy if bored or under-exercised.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🩺</div>
+                            <h3>Safety Notes</h3>
+                            <ul>
+                                <li>Always supervise around small children; teach kids how to interact respectfully.
+                                </li>
+                                <li>Use secure fencing—they can slip out if they see something to chase.</li>
+                                <li>Avoid intense impact sports (like hard jumping) until fully grown.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+
+                    <ul class="funfacts-list mini-facts icon-facts">
+                        <li data-icon="tail">Their short tail is natural in many dogs, not docked.</li>
+                        <li data-icon="cow">They were developed specifically to move cattle over long distances.</li>
+                        <li data-icon="flag">They are one of Australia’s original working breeds.</li>
+                        <li data-icon="bolt">Known for incredible stamina and determination in tough conditions.</li>
+                        <li data-icon="farm">They are happiest when they have a real job or regular structured work.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <img src="https://ezydog.com.au/cdn/shop/articles/Australian-Stumpy-Tail-Cattle-Dog-breed_748c6625-8ecf-402b-8a52-fdbda83d17ed.webp?v=1746266797&width=1536"
+                            alt="Australian Stumpy Tail Cattle Dog portrait">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAHiYAcAjIAyAjQS0bxXQjP6IwmjwKfXyjQ&s"
+                            alt="Australian Stumpy Tail Cattle Dog working cattle">
+                        <img src="https://breed-assets.wisdompanel.com/dog/australian-stumpy-tail-cattle-dog/Australian_Stumpy_Tail_Cattle_Dog1.png"
+                            alt="Australian Stumpy Tail Cattle Dog standing in field">
+                        <img src="https://cdn.shopify.com/s/files/1/0994/0236/articles/australian-stumpy-tail_1920x.jpg"
+                            alt="Australian Stumpy Tail Cattle Dog running outdoors">
+                        <img src="https://img2.storyblok.com/810x0/f/92981/8bc001ea0e/australian-stumpy-tail-cattle-dog-primary.jpg"
+                            alt="Australian Stumpy Tail Cattle Dog puppy">
+                        <img src="https://www.dogster.com/wp-content/uploads/2024/04/Australian-Stumpy-Tail-Cattle-Dog-in-lying-on-the-grass-outdoors_Yana-Tinker_Shutterstock.jpg"
+                            alt="Close-up of Australian Stumpy Tail Cattle Dog face">
+                    </div>
+                </article>
+            </section>
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg"
+                            alt="Australian Cattle Dog">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A closely related herding breed with similar energy and work drive.</p>
+                    </a>
+
+                    <a href="WorkingKelpie.html" class="similar-card">
+                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1458387729-1-e1695928435188.jpg?w=1024"
+                            alt="Working Kelpie">
+                        <h3>Working Kelpie</h3>
+                        <p>Another intense Australian herding dog bred for serious farm work.</p>
+                    </a>
+                    <a href="AustralianKelpie.html" class="similar-card">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/07/24185651/australian-kelpie-dog-breed.jpeg"
+                            alt="Australian Kelpie">
+                        <h3>Australian Kelpie</h3>
+                        <p>A high-energy Australian herder known for intelligence and nonstop drive.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="https://adopt.spca.bc.ca/type/dog/">Adoption FAQ</a></li>
+                        <li><a href="https://www.akc.org/expert-advice/home-living/preparing-new-puppy/">Preparing for
+                                Your New Pet</a></li>
+                        <li><a href="https://www.carecredit.com/well-u/pet-care/how-to-train-your-dog/">Care &amp;
+                                Training Guides</a></li>
+                        <li><a href="https://www.barclondon.com/blogs/guides/dog-nutrition-chart-feeding-guide">Health
+                                &amp; Nutrition Tips</a></li>
+                        <li><a href="https://www.kamloopsveterinaryclinic.com/pet-care/dog-services/dog-emergency-vet">Emergency
+                                Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://www.animalhumanesociety.org/news/our-top-dog-adoption-stories-2023">Success
+                                Stories</a></li>
+                        <li><a href="https://spca.bc.ca/news/tips-for-attending-dog-meetups/">Events &amp; Meetups</a>
+                        </li>
+                        <li><a href="https://spca.bc.ca/ways-to-help/volunteer/">Volunteer Opportunities</a></li>
+                        <li><a href="https://www.adoptapet.com/dog-shelters/british-columbia/kamloops">Shelter
+                                Partners</a></li>
+                        <li><a href="https://www.akc.org/subscribe/">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="Copyright">
+            <p>&copy; 2025 PetPal - All Rights Reeserved</p>
+        </div>
+        <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+        <script>
+            // Tabs
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
+
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
+                });
+            });
+
+            // Cart button -> checkout
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = 'checkout.html';
+                });
+            }
+
+            // Simple breed search: go back to breeds page with ?q=
+            const breedSearchForm = document.getElementById('breed-search-form');
+            if (breedSearchForm) {
+                breedSearchForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const term = breedSearchForm.q.value.trim();
+                    if (!term) return;
+                    window.location.href = 'breeds.html' + encodeURIComponent(term);
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
+</body>
+
+</html>

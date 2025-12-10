@@ -6,203 +6,203 @@ document.addEventListener('DOMContentLoaded', () => {
     const breedData = [
         {
             "name": "Affenpinscher",
-            "url": "dog breeds/Affenpinscher.html"
+            "url": "Affenpinscher.html"
         },
         {
             "name": "Afghan Hound",
-            "url": "dog breeds/AfghanHound.html"
+            "url": "AfghanHound.html"
         },
         {
             "name": "Airedale Terrier",
-            "url": "dog breeds/AiredaleTerrier.html"
+            "url": "AiredaleTerrier.html"
         },
         {
             "name": "Akita",
-            "url": "dog breeds/Akita.html"
+            "url": "Akita.html"
         },
         {
             "name": "Alaskan Klee Kai",
-            "url": "dog breeds/AlaskanKleeKai.html"
+            "url": "AlaskanKleeKai.html"
         },
         {
             "name": "Alaskan Malamute",
-            "url": "dog breeds/AlaskanMalamute.html"
+            "url": "AlaskanMalamute.html"
         },
         {
             "name": "American Bulldog",
-            "url": "dog breeds/AmericanBulldog.html"
+            "url": "AmericanBulldog.html"
         },
         {
             "name": "American English Coonhound",
-            "url": "dog breeds/AmericanEnglishCoonhound.html"
+            "url": "AmericanEnglishCoonhound.html"
         },
         {
             "name": "American Eskimo Dog",
-            "url": "dog breeds/AmericanEskimoDog.html"
+            "url": "AmericanEskimoDog.html"
         },
         {
             "name": "American Foxhound",
-            "url": "dog breeds/AmericanFoxHound.html"
+            "url": "AmericanFoxHound.html"
         },
         {
             "name": "American Hairless Terrier",
-            "url": "dog breeds/AmericanHairlessTerrier.html"
+            "url": "AmericanHairlessTerrier.html"
         },
         {
             "name": "American Leopard Hound",
-            "url": "dog breeds/AmericanLeopardHound.html"
+            "url": "AmericanLeopardHound.html"
         },
         {
             "name": "American Staffordshire Terrier",
-            "url": "dog breeds/AmericanStaffordshireTerrier.html"
+            "url": "AmericanStaffordshireTerrier.html"
         },
         {
             "name": "American Water Spaniel",
-            "url": "dog breeds/AmericanWaterSpaniel.html"
+            "url": "AmericanWaterSpaniel.html"
         },
         {
             "name": "Anatolian Shepherd Dog",
-            "url": "dog breeds/AnatolianShepherdDog.html"
+            "url": "AnatolianShepherdDog.html"
         },
         {
             "name": "Appenzeller Sennenhund",
-            "url": "dog breeds/AppenzellerSennenhund.html"
+            "url": "AppenzellerSennenhund.html"
         },
         {
             "name": "Australian Cattle Dog",
-            "url": "dog breeds/AustralianCattleDog.html"
+            "url": "AustralianCattleDog.html"
         },
         {
             "name": "Australian Kelpie",
-            "url": "dog breeds/AustralianKelpie.html"
+            "url": "AustralianKelpie.html"
         },
         {
             "name": "Australian Shepherd",
-            "url": "dog breeds/AustralianShepherd.html"
+            "url": "AustralianShepherd.html"
         },
         {
             "name": "Australian Stumpy Tail Cattle Dog",
-            "url": "dog breeds/AustralianStumpyTailCattleDog.html"
+            "url": "AustralianStumpyTailCattleDog.html"
         },
         {
             "name": "Australian Terrier",
-            "url": "dog breeds/AustralianTerrier.html"
+            "url": "AustralianTerrier.html"
         },
         {
             "name": "Azawakh",
-            "url": "dog breeds/Azawakh.html"
+            "url": "Azawakh.html"
         },
         {
             "name": "Barbado da Terceira",
-            "url": "dog breeds/BarbadoDaTerceira.html"
+            "url": "BarbadoDaTerceira.html"
         },
         {
             "name": "Beagle",
-            "url": "dog breeds/Beagle.html"
+            "url": "Beagle.html"
         },
         {
             "name": "Bernese Mountain Dog",
-            "url": "dog breeds/BerneseMountainDog.html"
+            "url": "BerneseMountainDog.html"
         },
         {
             "name": "Bergamasco Sheepdog",
-            "url": "dog breeds/BergamascoSheepDog.html"
+            "url": "BergamascoSheepDog.html"
         },
         {
             "name": "Biewer Terrier",
-            "url": "dog breeds/BiewerTerrier.html"
+            "url": "BiewerTerrier.html"
         },
         {
             "name": "Bolognese",
-            "url": "dog breeds/Bolognese.html"
+            "url": "Bolognese.html"
         },
         {
             "name": "Boerboel",
-            "url": "dog breeds/Boerboel.html"
+            "url": "Boerboel.html"
         },
         {
             "name": "Chihuahua",
-            "url": "dog breeds/Chihuahua.html"
+            "url": "Chihuahua.html"
         },
         {
             "name": "Cavalier King Charles Spaniel",
-            "url": "dog breeds/CavalierKingCharlesSpaniel.html"
+            "url": "CavalierKingCharlesSpaniel.html"
         },
         {
             "name": "Doberman Pinscher",
-            "url": "dog breeds/DobermanPinscher.html"
+            "url": "DobermanPinscher.html"
         },
         {
             "name": "English Cocker Spaniel",
-            "url": "dog breeds/EnglishCockerSpaniel.html"
+            "url": "EnglishCockerSpaniel.html"
         },
         {
             "name": "English Springer Spaniel",
-            "url": "dog breeds/EnglishSpringerSpaniel.html"
+            "url": "EnglishSpringerSpaniel.html"
         },
         {
             "name": "French Bulldog",
-            "url": "dog breeds/FrenchBullDog.html"
+            "url": "FrenchBullDog.html"
         },
         {
             "name": "Flat-Coated Retriever",
-            "url": "dog breeds/FlatCoatedRetriever.html"
+            "url": "FlatCoatedRetriever.html"
         },
         {
             "name": "Golden Retriever",
-            "url": "dog breeds/GoldenRetriever.html"
+            "url": "GoldenRetriever.html"
         },
         {
             "name": "Irish Red and White Setter",
-            "url": "dog breeds/IrishRedAndWhiteSetter.html"
+            "url": "IrishRedAndWhiteSetter.html"
         },
         {
             "name": "Indie (Indian Pariah Dog)",
-            "url": "dog breeds/Indie.html"
+            "url": "Indie.html"
         },
         {
             "name": "Kai Ken",
-            "url": "dog breeds/KaiKen.html"
+            "url": "KaiKen.html"
         },
         {
             "name": "Keeshond",
-            "url": "dog breeds/Keeshond.html"
+            "url": "Keeshond.html"
         },
         {
             "name": "Newfoundland",
-            "url": "dog breeds/Newfoundland.html"
+            "url": "Newfoundland.html"
         },
         {
             "name": "Pembroke Welsh Corgi",
-            "url": "dog breeds/PembrokeWelshCorgi.html"
+            "url": "PembrokeWelshCorgi.html"
         },
         {
             "name": "Romanian Mioritic Shepherd",
-            "url": "dog breeds/RomanianMioriticShepherd.html"
+            "url": "RomanianMioriticShepherd.html"
         },
         {
             "name": "Russian Tsvetnaya Bolonka",
-            "url": "dog breeds/RussianTsvetnayaBolonka.html"
+            "url": "RussianTsvetnayaBolonka.html"
         },
         {
             "name": "Russian Toy",
-            "url": "dog breeds/RussianToy.html"
+            "url": "RussianToy.html"
         },
         {
             "name": "Rottweiler",
-            "url": "dog breeds/Rotteiler.html"
+            "url": "Rotteiler.html"
         },
         {
             "name": "Shetland Sheepdog",
-            "url": "dog breeds/ShetlandSheepdog.html"
+            "url": "ShetlandSheepdog.html"
         },
         {
             "name": "Working Kelpie",
-            "url": "dog breeds/WorkingKelpie.html"
+            "url": "WorkingKelpie.html"
         },
         {
             "name": "Yorkshire Terrier",
-            "url": "dog breeds/YorkshireTerrier.html"
+            "url": "YorkshireTerrier.html"
         }
     ];
 

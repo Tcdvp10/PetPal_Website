@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Working Kelpie - Dog Breed Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
+                    </div>
+                    <i class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ========= MAIN BREED PROFILE ========= -->
+        <main class="breed-main">
+
+            <!-- HERO: image + summary -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <span class="paw-stamp"></span>
+                    <img src="https://www.thesprucepets.com/thmb/aD0njjSNHUQIdtqtFdj5OjCAvUs%3D/2119x0/filters%3Ano_upscale%28%29%3Astrip_icc%28%29%3Aformat%28webp%29/GettyImages-713869107-39e43f2374514fc89b06680938abd7bf.jpg"
+                        alt="Working Kelpie standing alert in a grassy field">
+                </div>
+
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Working Kelpie</h1>
+                    <p class="breed-tagline">
+                        A tireless Australian herding dog bred to work all day. Working Kelpies are quick, agile, and
+                        intensely focused—devoted partners who love to stay busy with their people.
+                    </p>
+
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Group</dt>
+                            <dd>Herding / Working</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>12–15 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Origin</dt>
+                            <dd>Australia</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Short to medium, weather-resistant double coat</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Breed Overview</button>
+                <button class="breed-tab" data-breed-tab="caretips">Care</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
+
+            <!-- PANELS -->
+            <section class="breed-panels">
+
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M64 176C80.6 176 94.2 188.6 95.8 204.7L96.1 211.3C97.8 227.4 111.4 240 128 240L307.1 240L448 300.4L448 544C448 561.7 433.7 576 416 576L384 576C366.3 576 352 561.7 352 544L352 412.7C328 425 300.8 432 272 432C243.2 432 216 425 192 412.7L192 544C192 561.7 177.7 576 160 576L128 576C110.3 576 96 561.7 96 544L96 298.4C58.7 285.2 32 249.8 32 208C32 190.3 46.3 176 64 176zM387.8 32C395.5 32 402.7 35.6 407.4 41.8L424 64L476.1 64C488.8 64 501 69.1 510 78.1L528 96L584 96C597.3 96 608 106.7 608 120L608 144C608 188.2 572.2 224 528 224L464 224L457 252L332.3 198.6L363.9 51.4C366.3 40.1 376.2 32 387.8 32zM480 108C469 108 460 117 460 128C460 139 469 148 480 148C491 148 500 139 500 128C500 117 491 108 480 108z" />
+                        </svg>
+                        Breed Overview
+                    </h2>
+
+                    <div class="overview-layout">
+
+                        <!-- LEFT: QUICK FACTS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Quick Facts</h3>
+                            <dl class="overview-facts">
+                                <div class="fact-row">
+                                    <dt>Group</dt>
+                                    <dd>Herding / Working</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Height</dt>
+                                    <dd>17 to 20 inches</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Weight</dt>
+                                    <dd>25–45 pounds (11–20 kg)</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat</dt>
+                                    <dd>Short to medium, close-lying double coat</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat Colour</dt>
+                                    <dd>Black, red, chocolate, fawn, blue, and tan combinations</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Temperament</dt>
+                                    <dd>Energetic, intelligent, focused, loyal, independent</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Hypoallergenic</dt>
+                                    <dd>No; seasonal shedding</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Origin</dt>
+                                    <dd>Rural Australia (sheep and cattle work)</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Characteristics</h3>
+
+                            <table class="char-table">
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High (with trusted people)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium (best with dog-savvy kids)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount of Shedding</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                            </table>
+                        </section>
+
+                    </div>
+
+                    <figure class="overview-photo">
+                        <img src="../images/WorkingKelpie.png" alt="Working Kelpie standing and looking alert">
+                        <figcaption>Credit: The Spruce Pets / Getty Images</figcaption>
+                    </figure>
+
+                </article>
+
+                <!--CARE-->
+                <article class="breed-panel" data-breed-panel="caretips" hidden>
+                    <h2 class="section-title section-title--left">Care</h2>
+
+                    <p class="care-intro">
+                        Working Kelpies are athletic herding dogs bred to work long hours in tough conditions. They need
+                        plenty of exercise, mental challenges, and close interaction with their people to stay happy and
+                        well-balanced.
+                    </p>
+
+                    <div class="care-grid">
+
+                        <div class="care-card">
+                            <div class="care-icon">🧼</div>
+                            <h3>General Care (All Life Stages)</h3>
+                            <ul>
+                                <li><strong>Feeding:</strong> Offer a balanced diet appropriate for a medium, active
+                                    dog. Working dogs may need higher calories on heavy work days.</li>
+                                <li><strong>Grooming:</strong> Weekly brushing usually keeps the coat healthy. Expect
+                                    heavier shedding once or twice a year.</li>
+                                <li><strong>Living environment:</strong> Kelpies do best in homes that can provide space
+                                    and daily activity. They are not suited to a sedentary lifestyle.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐶</div>
+                            <h3>Puppy Care</h3>
+                            <ul>
+                                <li><strong>Growth:</strong> Feed a high-quality puppy food and keep them lean to
+                                    support healthy joints and steady growth.</li>
+                                <li><strong>Activity:</strong> Provide short, frequent play sessions rather than heavy
+                                    forced exercise while bones are still developing.</li>
+                                <li><strong>Handling:</strong> Get them used to being touched, brushed, and having
+                                    their paws and ears handled from a young age.</li>
+                                <li><strong>Social skills:</strong> Positive experiences with people, dogs, livestock,
+                                    and different environments help shape a confident, stable adult.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐕‍🦺</div>
+                            <h3>Adult Care</h3>
+                            <ul>
+                                <li><strong>Exercise:</strong> Most adult Kelpies need at least one to two hours of
+                                    activity daily, including brisk walks, off-leash runs in safe areas, or structured
+                                    work.</li>
+                                <li><strong>Coat &amp; skin:</strong> Check regularly for burrs, grass seeds, or minor
+                                    scrapes, especially if they work in fields or rough terrain.</li>
+                                <li><strong>Mind:</strong> Training, scent games, and herding-style activities are
+                                    important to prevent boredom and destructive behaviour.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🧓</div>
+                            <h3>Senior Care</h3>
+                            <ul>
+                                <li><strong>Movement:</strong> Continue daily walks but adjust intensity as they age.
+                                    Watch for stiffness or reluctance to jump.</li>
+                                <li><strong>Comfort:</strong> Provide a soft bed and a warm, draft-free resting spot,
+                                    especially after exercise.</li>
+                                <li><strong>Health checks:</strong> Regular vet visits help monitor teeth, joints, and
+                                    weight. Ask your vet about supplements or pain relief if needed.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">☀️</div>
+                            <h3>Seasonal Tips</h3>
+                            <ul>
+                                <li><strong>Hot weather:</strong> Work and exercise during cooler hours. Provide shade
+                                    and plenty of fresh water, especially for dark-coated Kelpies.</li>
+                                <li><strong>Cold weather:</strong> Their coat offers some protection, but young,
+                                    elderly,
+                                    or very lean dogs may still appreciate shelter or a coat.</li>
+                                <li><strong>Shedding seasons:</strong> During coat blows, brush more frequently to
+                                    remove loose undercoat.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">❤️</div>
+                            <h3>Common Health Issues</h3>
+                            <ul>
+                                <li><strong>Joint concerns:</strong> Like many active breeds, some Kelpies may be prone
+                                    to hip or elbow issues—maintain a healthy weight and avoid overdoing high-impact
+                                    exercise when young.</li>
+                                <li><strong>Eye conditions:</strong> Certain hereditary eye issues can appear;
+                                    responsible
+                                    breeders screen breeding dogs.</li>
+                                <li><strong>Dental care:</strong> Regular tooth brushing and dental checks help prevent
+                                    tartar build-up and gum disease.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p class="training-intro">
+                        Working Kelpies are highly intelligent and driven to work. With clear guidance and positive
+                        reinforcement, they become responsive, reliable partners both on farms and in active family
+                        homes.
+                    </p>
+
+                    <div class="two-column training-grid">
+
+                        <div class="training-card">
+                            <div class="training-icon">🎓</div>
+                            <h3>Puppy &amp; Basic Manners</h3>
+                            <ul>
+                                <li>Start basic cues like sit, down, stay, and recall early using rewards and calm,
+                                    consistent handling.</li>
+                                <li>Teach polite greetings so they don’t jump up or nip at heels when excited.</li>
+                                <li>Expose them to different people, noises, and environments to build confidence and
+                                    reduce sensitivity.</li>
+                                <li>Practise short, focused training sessions—Kelpies learn quickly but can become bored
+                                    with repetition.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🌿</div>
+                            <h3>Exercise &amp; Enrichment</h3>
+                            <ul>
+                                <li>Provide daily outlets for their herding instincts with fetch, agility-style courses,
+                                    or herding lessons where appropriate.</li>
+                                <li>Use puzzle feeders, scent games, and trick training to challenge their brilliant
+                                    minds.</li>
+                                <li>Many Working Kelpies excel in sports such as agility, obedience, rally, and flyball.
+                                </li>
+                                <li>Balance physical work with mental tasks and rest to prevent over-arousal and
+                                    overuse injuries.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">⚠️</div>
+                            <h3>Common Training Challenges</h3>
+                            <ul>
+                                <li><strong>High drive:</strong> Without enough exercise and structure, Kelpies may
+                                    chase cars, bikes, or children. Teach strong impulse control cues.</li>
+                                <li><strong>Sensitivity:</strong> They often respond best to fair, gentle handling.
+                                    Harsh methods can damage trust.</li>
+                                <li><strong>Boredom:</strong> Under-stimulated dogs may dig, bark, or chew. Keep their
+                                    schedule rich in activities.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🩺</div>
+                            <h3>Health &amp; Safety Notes</h3>
+                            <ul>
+                                <li>Teach a rock-solid recall and good manners around livestock and roads for safety.
+                                </li>
+                                <li>Supervise around very young children and teach kids to interact calmly and
+                                    respectfully.</li>
+                                <li>Warm up before intense activity and cool down afterward, especially in working or
+                                    sport dogs.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+
+                    <ul class="funfacts-list mini-facts icon-facts">
+                        <li data-icon="cart">Working Kelpies were developed in Australia to move sheep and cattle across
+                            vast, hot, and rugged landscapes.</li>
+                        <li data-icon="mountain">They are famous for their ability to work across rough terrain, jumping
+                            onto the backs of sheep to cross tightly packed flocks.</li>
+                        <li data-icon="heart">Despite their intense work ethic, many Kelpies are affectionate companions
+                            who love curling up with their favourite people after a busy day.</li>
+                        <li data-icon="snow">Kelpies are popular in dog sports like agility and obedience thanks to
+                            their speed, agility, and eagerness to learn.</li>
+                        <li data-icon="bond">Many Working Kelpies form a close partnership with one handler and are
+                            known for their impressive ability to respond to whistles and distant cues.</li>
+                    </ul>
+
+                </article>
+
+                <!-- PHOTO GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1458387729-1-e1695928435188.jpg"
+                            alt="Working Kelpie standing on grass and looking alert">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Working-Kelpie.1-400x267.jpg"
+                            alt="Working Kelpie running in a field">
+                        <img src="https://www.thesprucepets.com/thmb/umZ6LnPVujbSk6RPZdUeRgKj0rg=/2784x0/filters:no_upscale():strip_icc()/GettyImages-500927586-76e9363c585c4a3186f38fdc8cf41ea9.jpg"
+                            alt="Working Kelpie herding sheep">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Working-Kelpie-puppies.jpg"
+                            alt="Working Kelpie relaxing outdoors">
+                        <img src="https://furlyfe.com/wp-content/uploads/2024/04/3d1053d2-40fe-41cc-9111-b6c770a7040c.png"
+                            alt="Close-up portrait of a Working Kelpie">
+                        <img src="https://www.thesprucepets.com/thmb/pAK5CKOAmhaWO7nzrIwZDNeimPU=/2121x0/filters:no_upscale():strip_icc()/GettyImages-168260509-0fe101af4f2a4413ba47304bc3d1ca7b.jpg"
+                            alt="Working Kelpie puppy in the grass">
+                    </div>
+                </article>
+            </section>
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+
+                    <!-- CARD 1: Australian Kelpie -->
+                    <a href="AustralianKelpie.html" class="similar-card">
+                        <img src="https://images.ctfassets.net/440y9b545yd9/3pRA8hd6Wf1MbZQQRUAC8M/441f590202d2f2f8f9433d3f28a0ea2a/Australian_kelpie850.jpg"
+                            alt="Australian Kelpie standing outdoors">
+                        <h3>Australian Kelpie</h3>
+                        <p>A closely related working herder with speed, intelligence, and tireless energy.</p>
+                    </a>
+
+                    <!-- CARD 2: Australian Cattle Dog -->
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://image.petmd.com/files/styles/863x625/public/2022-10/Australian_Cattle_Dog.jpeg"
+                            alt="Australian Cattle Dog outdoors">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A tough, driven herding breed known for endurance, intelligence, and a strong work ethic.</p>
+                    </a>
+
+                    <!-- CARD 3: Australian Stumpy Tail Cattle Dog -->
+                    <a href="AustralianStumpyTailCattleDog.html" class="similar-card">
+                        <img src="https://www.dogpackapp.com/blog/wp-content/uploads/2024/10/australian-stumpy-tail-cattle-dog-lawn.webp"
+                            alt="Australian Stumpy Tail Cattle Dog">
+                        <h3>Australian Stumpy Tail Cattle Dog</h3>
+                        <p>An energetic, focused herder with intense drive and excellent working ability.</p>
+                    </a>
+
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <!--footer-->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="https://adopt.spca.bc.ca/type/dog/">Adoption FAQ</a></li>
+                        <li><a href="https://www.akc.org/expert-advice/home-living/preparing-new-puppy/">Preparing for
+                                Your New Pet</a></li>
+                        <li><a href="https://www.carecredit.com/well-u/pet-care/how-to-train-your-dog/">Care &amp;
+                                Training Guides</a></li>
+                        <li><a href="https://www.barclondon.com/blogs/guides/dog-nutrition-chart-feeding-guide">Health
+                                &amp; Nutrition Tips</a></li>
+                        <li><a href="https://www.kamloopsveterinaryclinic.com/pet-care/dog-services/dog-emergency-vet">Emergency
+                                Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://www.animalhumanesociety.org/news/our-top-dog-adoption-stories-2023">Success
+                                Stories</a></li>
+                        <li><a href="https://spca.bc.ca/news/tips-for-attending-dog-meetups/">Events &amp; Meetups</a>
+                        </li>
+                        <li><a href="https://spca.bc.ca/ways-to-help/volunteer/">Volunteer Opportunities</a></li>
+                        <li><a href="https://www.adoptapet.com/dog-shelters/british-columbia/kamloops">Shelter
+                                Partners</a></li>
+                        <li><a href="https://www.akc.org/subscribe/">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    </div>
+
+    <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+    <script>
+        // Tabs
+        const breedTabs = document.querySelectorAll('[data-breed-tab]');
+        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+        breedTabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.breedTab;
+
+                breedTabs.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                breedPanels.forEach(panel => {
+                    panel.hidden = panel.dataset.breedPanel !== target;
+                });
+            });
+        });
+
+        // Cart button -> checkout
+        const cartButton = document.getElementById('cart-button');
+        if (cartButton) {
+            cartButton.addEventListener('click', () => {
+                window.location.href = 'checkout.html';
+            });
+        }
+
+        // Simple breed search: go back to breeds page with ?q=
+        const breedSearchForm = document.getElementById('breed-search-form');
+        if (breedSearchForm) {
+            breedSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const term = breedSearchForm.q.value.trim();
+                if (!term) return;
+                window.location.href = 'breeds.html' + encodeURIComponent(term);
+            });
+        }
+    </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
+</body>
+
+</html>
