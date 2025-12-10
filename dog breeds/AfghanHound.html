@@ -13,12 +13,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -26,7 +31,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -125,7 +132,8 @@
                                 </div>
                                 <div class="fact-row">
                                     <dt>Coat Colour</dt>
-                                    <dd>Many colours: cream, fawn, gold, red, black, blue, brindle, and combinations</dd>
+                                    <dd>Many colours: cream, fawn, gold, red, black, blue, brindle, and combinations
+                                    </dd>
                                 </div>
                                 <div class="fact-row">
                                     <dt>Temperament</dt>
@@ -304,7 +312,8 @@
                             <ul>
                                 <li>Start early with sit, down, stay, recall, and loose-leash walking using positive
                                     reinforcement.</li>
-                                <li>Keep training sessions short and fun; they can get bored with too much repetition.</li>
+                                <li>Keep training sessions short and fun; they can get bored with too much repetition.
+                                </li>
                                 <li>Practise calm handling (ears, feet, brushing) so grooming is easier later.</li>
                                 <li>Work on a strong recall, but always remember their natural instinct to chase.</li>
                             </ul>
@@ -314,8 +323,10 @@
                             <div class="training-icon">🌿</div>
                             <h3>Exercise &amp; Enrichment</h3>
                             <ul>
-                                <li>Daily walks plus opportunities to sprint in a safely fenced area help burn energy.</li>
-                                <li>Sighthound sports like lure coursing, or chasing toys, tap into their natural drive.</li>
+                                <li>Daily walks plus opportunities to sprint in a safely fenced area help burn energy.
+                                </li>
+                                <li>Sighthound sports like lure coursing, or chasing toys, tap into their natural drive.
+                                </li>
                                 <li>Use puzzle toys and scent games, but expect them to prefer running and exploring
                                     over intense obedience drills.</li>
                                 <li>Provide safe vantage points—many Afghans enjoy quietly watching the world.</li>
@@ -394,37 +405,39 @@
 
 
             <!-- SIMILAR BREEDS -->
-          <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- Azawakh -->
-        <a href="Azawakh.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Azawakh_178091272.jpg" alt="Azawakh">
-            <h3>Azawakh</h3>
-            <p>A tall, elegant sighthound known for speed, independence, and graceful movement.</p>
-        </a>
+                    <!-- Azawakh -->
+                    <a href="Azawakh.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Azawakh_178091272.jpg" alt="Azawakh">
+                        <h3>Azawakh</h3>
+                        <p>A tall, elegant sighthound known for speed, independence, and graceful movement.</p>
+                    </a>
 
-        <!-- Irish Red and White Setter -->
-        <a href="IrishRedAndWhiteSetter.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Irish-Red-and-White-Setter-stalking-in-a-field.jpg" alt="Irish Red and White Setter">
-            <h3>Irish Red & White Setter</h3>
-            <p>A flowing-coated hunting breed with beauty, stamina, and gentle aloofness.</p>
-        </a>
+                    <!-- Irish Red and White Setter -->
+                    <a href="IrishRedAndWhiteSetter.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Irish-Red-and-White-Setter-stalking-in-a-field.jpg"
+                            alt="Irish Red and White Setter">
+                        <h3>Irish Red & White Setter</h3>
+                        <p>A flowing-coated hunting breed with beauty, stamina, and gentle aloofness.</p>
+                    </a>
 
-        <!-- Australian Shepherd -->
-        <a href="AustralianShepherd.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg" alt="Australian Shepherd">
-            <h3>Australian Shepherd</h3>
-            <p>An agile, long-coated working breed with elegance, smarts, and strong independence.</p>
-        </a>
+                    <!-- Australian Shepherd -->
+                    <a href="AustralianShepherd.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg"
+                            alt="Australian Shepherd">
+                        <h3>Australian Shepherd</h3>
+                        <p>An agile, long-coated working breed with elegance, smarts, and strong independence.</p>
+                    </a>
 
-    </div>
-</section>
-</main>
+                </div>
+            </section>
+        </main>
 
-<footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -563,6 +576,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

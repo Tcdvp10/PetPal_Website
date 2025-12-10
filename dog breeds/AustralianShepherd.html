@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -44,7 +51,8 @@
             <section class="breed-hero">
                 <div class="breed-hero-image">
                     <span class="paw-stamp"></span>
-                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg" alt="Australian Shepherd standing outdoors">
+                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg"
+                        alt="Australian Shepherd standing outdoors">
                 </div>
 
                 <div class="breed-hero-info">
@@ -136,19 +144,41 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Trainability</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-high">High</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="https://www.thesprucepets.com/thmb/pCclQGjhuw8NSdpCya6jUYJTNY8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/breed-profile-australian-shepherd-1117935-ff95e6d0538445978382a9264ce90cfc.jpg" alt="Australian Shepherd standing alert">
+                        <img src="https://www.thesprucepets.com/thmb/pCclQGjhuw8NSdpCya6jUYJTNY8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/breed-profile-australian-shepherd-1117935-ff95e6d0538445978382a9264ce90cfc.jpg"
+                            alt="Australian Shepherd standing alert">
                         <figcaption>Australian Shepherds are famous for their intelligence and merle coats.</figcaption>
                     </figure>
 
@@ -159,7 +189,8 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Aussies are energetic, intelligent dogs who thrive on activity and mental stimulation. Their coat
+                        Aussies are energetic, intelligent dogs who thrive on activity and mental stimulation. Their
+                        coat
                         requires regular grooming and they need a job or structured routine to stay happy.
                     </p>
 
@@ -280,57 +311,57 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8mFwuINamdaVKPEgfL8hLsQRIW_XQ9zNag&s" 
-                        alt="Australian Shepherd portrait">
-                        <img src="https://www.dogster.com/wp-content/uploads/2022/03/Australian-Shepherd-breed-sitting-on-the-stone_ChocoPie-Shutterstock.jpg" 
-                        alt="Australian Shepherd running in field">
-                        <img src="https://www.trupanion.com/images/trupanionwebsitelibraries/bg/australian-shepherds-two-dogs.jpg?sfvrsn=749bfebc_5" 
-                        alt="Blue merle Aussie sitting">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8mFwuINamdaVKPEgfL8hLsQRIW_XQ9zNag&s"
+                            alt="Australian Shepherd portrait">
+                        <img src="https://www.dogster.com/wp-content/uploads/2022/03/Australian-Shepherd-breed-sitting-on-the-stone_ChocoPie-Shutterstock.jpg"
+                            alt="Australian Shepherd running in field">
+                        <img src="https://www.trupanion.com/images/trupanionwebsitelibraries/bg/australian-shepherds-two-dogs.jpg?sfvrsn=749bfebc_5"
+                            alt="Blue merle Aussie sitting">
                         <img src="https://www.zooplus.ie/magazine/wp-content/uploads/2021/08/Australian-Shepherd-dog-in-nature-in-front-of-a-tree-1.webp"
-                         alt="Australian Shepherd doing agility jump">
-                        <img src="https://australianshepherds.org/wp-content/uploads/2021/04/woods.png" 
-                        alt="Australian Shepherd puppy">
-                        <img src="https://static.wikia.nocookie.net/fictionrulezforever/images/f/fc/Profile_-_Australian_Shepherd.jpg/revision/latest?cb=20240324035332" 
-                        alt="Red merle Australian Shepherd outdoors">
+                            alt="Australian Shepherd doing agility jump">
+                        <img src="https://australianshepherds.org/wp-content/uploads/2021/04/woods.png"
+                            alt="Australian Shepherd puppy">
+                        <img src="https://static.wikia.nocookie.net/fictionrulezforever/images/f/fc/Profile_-_Australian_Shepherd.jpg/revision/latest?cb=20240324035332"
+                            alt="Red merle Australian Shepherd outdoors">
                     </div>
                 </article>
             </section>
 
             <!-- SIMILAR BREEDS -->
-                <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
-        <!-- Australian Cattle Dog -->
-        <a href="AustralianCattleDog.html" class="similar-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg" 
-            alt="Australian Cattle Dog">
-            <h3>Australian Cattle Dog</h3>
-            <p>A tough, energetic herding breed with high stamina and strong work drive.</p>
-        </a>
+                <div class="similar-grid">
+                    <!-- Australian Cattle Dog -->
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg"
+                            alt="Australian Cattle Dog">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A tough, energetic herding breed with high stamina and strong work drive.</p>
+                    </a>
 
-        <!-- Australian Kelpie -->
-        <a href="AustralianKelpie.html" class="similar-card">
-            <img src="https://images.ctfassets.net/440y9b545yd9/3pRA8hd6Wf1MbZQQRUAC8M/441f590202d2f2f8f9433d3f28a0ea2a/Australian_kelpie850.jpg" 
-            alt="Australian Kelpie">
-            <h3>Australian Kelpie</h3>
-            <p>A high-drive herder bred to work all day, similar in energy and intelligence.</p>
-        </a>
+                    <!-- Australian Kelpie -->
+                    <a href="AustralianKelpie.html" class="similar-card">
+                        <img src="https://images.ctfassets.net/440y9b545yd9/3pRA8hd6Wf1MbZQQRUAC8M/441f590202d2f2f8f9433d3f28a0ea2a/Australian_kelpie850.jpg"
+                            alt="Australian Kelpie">
+                        <h3>Australian Kelpie</h3>
+                        <p>A high-drive herder bred to work all day, similar in energy and intelligence.</p>
+                    </a>
 
-        <!-- Shetland Sheepdog -->
-        <a href="ShetlandSheepdog.html" class="similar-card">
-            <img src="https://assets.orvis.com/is/image/orvisprd/AdobeStock_14023497" 
-            alt="Shetland Sheepdog">
-            <h3>Shetland Sheepdog</h3>
-            <p>A smart, loyal herding dog that also excels in training and dog sports.</p>
-        </a>
-    </div>
-</section>
+                    <!-- Shetland Sheepdog -->
+                    <a href="ShetlandSheepdog.html" class="similar-card">
+                        <img src="https://assets.orvis.com/is/image/orvisprd/AdobeStock_14023497"
+                            alt="Shetland Sheepdog">
+                        <h3>Shetland Sheepdog</h3>
+                        <p>A smart, loyal herding dog that also excels in training and dog sports.</p>
+                    </a>
+                </div>
+            </section>
 
         </main>
 
         <!-- FOOTER -->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -431,30 +462,32 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

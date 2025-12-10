@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,7 +30,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -523,9 +530,9 @@
                     </div>
                 </div>
             </div>
-            </footer>
+        </footer>
 
-            <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
     </div>
 
     <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
@@ -566,6 +573,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

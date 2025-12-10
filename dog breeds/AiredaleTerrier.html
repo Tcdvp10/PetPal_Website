@@ -14,13 +14,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <!-- main pages are in /pages -->
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -28,9 +32,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -181,7 +187,7 @@
                     </div>
 
                     <figure class="overview-photo">
-                       <img src="../images/AiredaleTerriers.PNG" alt="Airedale Terrier infographic">
+                        <img src="../images/AiredaleTerriers.PNG" alt="Airedale Terrier infographic">
                         <figcaption>Credit: The Spruce Pets</figcaption>
                     </figure>
 
@@ -355,10 +361,12 @@
                     <ul class="funfacts-list mini-facts icon-facts">
                         <li data-icon="king">Airedales are nicknamed the “King of Terriers” because they’re the largest
                             of the terrier breeds.</li>
-                        <li data-icon="work">They’ve worked as hunters, police dogs, and even wartime message carriers.</li>
+                        <li data-icon="work">They’ve worked as hunters, police dogs, and even wartime message carriers.
+                        </li>
                         <li data-icon="water">They were originally bred to hunt otters and rats along the River Aire in
                             England.</li>
-                        <li data-icon="family">Behind the tough look, many Airedales are goofy, playful family dogs.</li>
+                        <li data-icon="family">Behind the tough look, many Airedales are goofy, playful family dogs.
+                        </li>
                         <li data-icon="smart">They’re very intelligent—so they learn good habits (and naughty ones)
                             quickly.</li>
                     </ul>
@@ -386,36 +394,40 @@
             </section>
 
             <!-- SIMILAR BREEDS -->
-           <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- American Staffordshire Terrier -->
-        <a href="AmericanStaffordshireTerrier.html" class="similar-card">
-            <img src="https://www.purina.com/sites/default/files/2025-09/american_staffordshire_terrier_4_1.jpg" alt="American Staffordshire Terrier">
-            <h3>American Staffordshire Terrier</h3>
-            <p>A strong, confident terrier-type breed with loyalty and courage similar to the Airedale.</p>
-        </a>
+                    <!-- American Staffordshire Terrier -->
+                    <a href="AmericanStaffordshireTerrier.html" class="similar-card">
+                        <img src="https://www.purina.com/sites/default/files/2025-09/american_staffordshire_terrier_4_1.jpg"
+                            alt="American Staffordshire Terrier">
+                        <h3>American Staffordshire Terrier</h3>
+                        <p>A strong, confident terrier-type breed with loyalty and courage similar to the Airedale.</p>
+                    </a>
 
-        <!-- Appenzeller Sennenhund -->
-        <a href="AppenzellerSennenhund.html" class="similar-card">
-            <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2021/08/Appenzeller-Mountain-Dog-on-grass.webp" alt="Appenzeller Sennenhund">
-            <h3>Appenzeller Sennenhund</h3>
-            <p>A bold, energetic working dog with intelligence and versatility like the Airedale.</p>
-        </a>
+                    <!-- Appenzeller Sennenhund -->
+                    <a href="AppenzellerSennenhund.html" class="similar-card">
+                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2021/08/Appenzeller-Mountain-Dog-on-grass.webp"
+                            alt="Appenzeller Sennenhund">
+                        <h3>Appenzeller Sennenhund</h3>
+                        <p>A bold, energetic working dog with intelligence and versatility like the Airedale.</p>
+                    </a>
 
-        <!-- Australian Cattle Dog -->
-        <a href="AustralianCattleDog.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Cattle-Dog-laying-down-in-the-grass.jpg" alt="Australian Cattle Dog">
-            <h3>Australian Cattle Dog</h3>
-            <p>A tough, highly intelligent worker known for endurance and strong personality.</p>
-        </a>
+                    <!-- Australian Cattle Dog -->
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Cattle-Dog-laying-down-in-the-grass.jpg"
+                            alt="Australian Cattle Dog">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A tough, highly intelligent worker known for endurance and strong personality.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
 
-        </main><footer class="site-footer">
+        </main>
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -553,6 +565,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

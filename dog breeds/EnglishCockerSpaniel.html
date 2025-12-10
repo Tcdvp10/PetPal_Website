@@ -11,12 +11,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -24,7 +29,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -376,12 +383,18 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://consumer-cms.petfinder.com/sites/default/files/images/content/English%20Cocker%20Spaniel%202.jpg" alt="English Cocker Spaniel standing in a field of dandelions">
-                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11165936/202106english-cocker-spaniel-sitting-in-forest.jpg" alt="English Cocker Spaniel sitting in a forest">
-                        <img src="https://consumer-cms.petfinder.com/sites/default/files/images/content/English%20Cocker%20Spaniel%204.jpg" alt="English Cocker Spaniel running through grass">
-                        <img src="https://cdn.royalcanin-weshare-online.io/LeeW93oBaPOZra8qYLhu/v5/bp-lot-1-english-cocker-spaniel-couleur-portrait" alt="English Cocker Spaniel puppy standing in a field">
-                        <img src="https://thehappypuppysite.com/wp-content/uploads/2019/04/The-English-Cocker-Spaniel-HP-long-1.jpg" alt="English Cocker Spaniel with long silky coat sitting in grass">
-                        <img src="https://spotpetinsurance.ca/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fm5ehn3s5t7ec%2Fwp-image-197495%2F99390834f6030f4b52dd50f08abe12d4%2FCocker-Spaniel-Breed-Information.jpg&w=3840&q=75" alt="English Cocker Spaniel relaxing at home on the couch">
+                        <img src="https://consumer-cms.petfinder.com/sites/default/files/images/content/English%20Cocker%20Spaniel%202.jpg"
+                            alt="English Cocker Spaniel standing in a field of dandelions">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11165936/202106english-cocker-spaniel-sitting-in-forest.jpg"
+                            alt="English Cocker Spaniel sitting in a forest">
+                        <img src="https://consumer-cms.petfinder.com/sites/default/files/images/content/English%20Cocker%20Spaniel%204.jpg"
+                            alt="English Cocker Spaniel running through grass">
+                        <img src="https://cdn.royalcanin-weshare-online.io/LeeW93oBaPOZra8qYLhu/v5/bp-lot-1-english-cocker-spaniel-couleur-portrait"
+                            alt="English Cocker Spaniel puppy standing in a field">
+                        <img src="https://thehappypuppysite.com/wp-content/uploads/2019/04/The-English-Cocker-Spaniel-HP-long-1.jpg"
+                            alt="English Cocker Spaniel with long silky coat sitting in grass">
+                        <img src="https://spotpetinsurance.ca/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fm5ehn3s5t7ec%2Fwp-image-197495%2F99390834f6030f4b52dd50f08abe12d4%2FCocker-Spaniel-Breed-Information.jpg&w=3840&q=75"
+                            alt="English Cocker Spaniel relaxing at home on the couch">
                     </div>
                 </article>
             </section>
@@ -402,7 +415,8 @@
 
                     <!-- CARD 2: English Springer Spaniel -->
                     <a href="EnglishSpringerSpaniel.html" class="similar-card">
-                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/03/English-Springer-Spaniel-Glucklich-1024x682-1.webp" alt="Havanese dog standing on grass">
+                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/03/English-Springer-Spaniel-Glucklich-1024x682-1.webp"
+                            alt="Havanese dog standing on grass">
                         <h3>English Springer Spaniel</h3>
                         <p>A small, friendly companion breed with a soft coat and a happy, outgoing temperament—another
                             great family lapdog.</p>
@@ -562,6 +576,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

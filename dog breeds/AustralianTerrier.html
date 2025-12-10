@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -44,14 +51,15 @@
             <section class="breed-hero">
                 <div class="breed-hero-image">
                     <span class="paw-stamp"></span>
-                    <img src="https://www.thesprucepets.com/thmb/NyKDecvQdD6UT81Z0RGgGr9bgzM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/CaptureLight-5ee86ab393c84496ae3050d4f875fbb4.jpg" 
-                    alt="Australian Terrier standing outdoors">
+                    <img src="https://www.thesprucepets.com/thmb/NyKDecvQdD6UT81Z0RGgGr9bgzM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/CaptureLight-5ee86ab393c84496ae3050d4f875fbb4.jpg"
+                        alt="Australian Terrier standing outdoors">
                 </div>
 
                 <div class="breed-hero-info">
                     <h1 class="breed-name">Australian Terrier</h1>
                     <p class="breed-tagline">
-                        Small but confident, the Australian Terrier is a lively, brave, and affectionate companion with a strong work ethic and a huge personality packed into a compact frame.
+                        Small but confident, the Australian Terrier is a lively, brave, and affectionate companion with
+                        a strong work ethic and a huge personality packed into a compact frame.
                     </p>
 
                     <dl class="breed-stats">
@@ -137,13 +145,34 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection Level</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-medium">Medium–High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Trainability</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-low">Low–Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-low">Low–Medium</span></td>
+                                </tr>
                             </table>
                         </section>
 
@@ -162,7 +191,8 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Despite their small size, Australian Terriers are surprisingly tough and energetic. They need regular grooming, daily walks, and consistent routines to stay happy and healthy.
+                        Despite their small size, Australian Terriers are surprisingly tough and energetic. They need
+                        regular grooming, daily walks, and consistent routines to stay happy and healthy.
                     </p>
 
                     <div class="care-grid">
@@ -220,7 +250,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Australian Terriers are smart, eager, and independent. Training should be consistent, fun, and reward-based, with clear rules to prevent stubborn behavior.
+                        Australian Terriers are smart, eager, and independent. Training should be consistent, fun, and
+                        reward-based, with clear rules to prevent stubborn behavior.
                     </p>
 
                     <div class="training-grid two-column">
@@ -293,18 +324,18 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://image.petmd.com/files/styles/863x625/public/2024-04/australian-terrier.jpg" 
-                        alt="Australian Terrier portrait">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRJmTiU4-LpmV9yyoJUa6muH0SssB9b6ngQ&s" 
-                        alt="Australian Terrier standing outdoors">
-                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1226717580-e1696002487688.jpg" 
-                        alt="Australian Terrier playing">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54DV6ueZQWUR7Zur9h9glpu_OY-16a3jtug&s" 
-                        alt="Australian Terrier puppy">
-                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11162222/202107australian-terrier-3.jpg" 
-                        alt="Australian Terrier on grass">
-                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Terrier-History-06.jpg" 
-                        alt="Close-up of Australian Terrier face">
+                        <img src="https://image.petmd.com/files/styles/863x625/public/2024-04/australian-terrier.jpg"
+                            alt="Australian Terrier portrait">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRJmTiU4-LpmV9yyoJUa6muH0SssB9b6ngQ&s"
+                            alt="Australian Terrier standing outdoors">
+                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1226717580-e1696002487688.jpg"
+                            alt="Australian Terrier playing">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54DV6ueZQWUR7Zur9h9glpu_OY-16a3jtug&s"
+                            alt="Australian Terrier puppy">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11162222/202107australian-terrier-3.jpg"
+                            alt="Australian Terrier on grass">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Terrier-History-06.jpg"
+                            alt="Close-up of Australian Terrier face">
                     </div>
 
                 </article>
@@ -316,19 +347,22 @@
 
                 <div class="similar-grid">
                     <a href="Affenpinscher.html" class="similar-card">
-                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-running-outdoors.jpg" alt="Affenpinscher">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-running-outdoors.jpg"
+                            alt="Affenpinscher">
                         <h3>Affenpinscher</h3>
                         <p>A small, spirited dog with a bold personality and terrier-like confidence.</p>
                     </a>
 
                     <a href="AmericanHairlessTerrier.html" class="similar-card">
-                        <img src="https://image.petmd.com/files/inline-images/american-hairless-terrier-2.jpg?VersionId=bMPqPmIj4odB2dLZ02rx.1ml1OJIh4Kz" alt="Hairless Terrier">
+                        <img src="https://image.petmd.com/files/inline-images/american-hairless-terrier-2.jpg?VersionId=bMPqPmIj4odB2dLZ02rx.1ml1OJIh4Kz"
+                            alt="Hairless Terrier">
                         <h3>American Hairless Terrier</h3>
                         <p>A lively, curious terrier breed with a similar playful temperament.</p>
                     </a>
 
                     <a href="BiewerTerrier.html" class="similar-card">
-                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11164757/202106GettyImages-1569177563-scaled-1.jpg" alt="Biewer Terrier">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11164757/202106GettyImages-1569177563-scaled-1.jpg"
+                            alt="Biewer Terrier">
                         <h3>Biewer Terrier</h3>
                         <p>A cheerful, small companion breed that shares the Terrier zest for life.</p>
                     </a>
@@ -338,7 +372,7 @@
         </main>
 
         <!-- FOOTER -->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -439,31 +473,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

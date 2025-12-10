@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -137,13 +144,34 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Stranger Friendliness</td><td><span class="char-chip char-low">Low</span></td></tr>
-                                <tr><td>Guarding Instinct</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-high">High (seasonal)</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Stranger Friendliness</td>
+                                    <td><span class="char-chip char-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Guarding Instinct</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-high">High (seasonal)</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
@@ -151,7 +179,8 @@
                     <figure class="overview-photo">
                         <img src="https://www.thesprucepets.com/thmb/77bHRd5EcJztJnExMCJsFonqkhM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/anatolian-shepherd-dog-breed-profile-4688967_Final-e577a1f6ce1b4b15b1d93950d045cf1b.jpg"
                             alt="Anatolian Shepherd Dog watching over a field">
-                        <figcaption>Anatolian Shepherd Dogs are calm guardians, always scanning their surroundings.</figcaption>
+                        <figcaption>Anatolian Shepherd Dogs are calm guardians, always scanning their surroundings.
+                        </figcaption>
                     </figure>
 
                 </article>
@@ -161,8 +190,10 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Anatolian Shepherd Dogs are hardy working guardians built for outdoor life. Their care focuses on
-                        coat maintenance, safe space to patrol, and thoughtful management of their strong guarding instincts.
+                        Anatolian Shepherd Dogs are hardy working guardians built for outdoor life. Their care focuses
+                        on
+                        coat maintenance, safe space to patrol, and thoughtful management of their strong guarding
+                        instincts.
                     </p>
 
                     <div class="care-grid">
@@ -170,8 +201,10 @@
                             <div class="care-icon">🧼</div>
                             <h3>General Care</h3>
                             <ul>
-                                <li>Brush the coat weekly; during shedding season, daily brushing helps manage loose hair.</li>
-                                <li>Check ears regularly for debris or redness, especially if they spend time outdoors.</li>
+                                <li>Brush the coat weekly; during shedding season, daily brushing helps manage loose
+                                    hair.</li>
+                                <li>Check ears regularly for debris or redness, especially if they spend time outdoors.
+                                </li>
                                 <li>Trim nails every few weeks; large dogs can struggle if nails become too long.</li>
                                 <li>Provide sturdy, comfortable bedding and shade if they rest outside.</li>
                             </ul>
@@ -181,8 +214,10 @@
                             <div class="care-icon">🐶</div>
                             <h3>Puppy Care</h3>
                             <ul>
-                                <li>Socialise early with people, animals, and different environments to avoid over-guarding.</li>
-                                <li>Teach gentle handling and basic manners from the beginning – they grow very large, very fast.</li>
+                                <li>Socialise early with people, animals, and different environments to avoid
+                                    over-guarding.</li>
+                                <li>Teach gentle handling and basic manners from the beginning – they grow very large,
+                                    very fast.</li>
                                 <li>Use controlled, age-appropriate exercise to protect growing joints.</li>
                                 <li>Supervise interactions with children and smaller pets as they learn boundaries.</li>
                             </ul>
@@ -203,9 +238,11 @@
                             <h3>Common Health Issues</h3>
                             <ul>
                                 <li>Hip and elbow dysplasia in some lines – regular vet checks are important.</li>
-                                <li>Bloat (GDV) risk in deep-chested large breeds – discuss prevention with your vet.</li>
+                                <li>Bloat (GDV) risk in deep-chested large breeds – discuss prevention with your vet.
+                                </li>
                                 <li>Joint strain if over-exercised as pups or kept overweight.</li>
-                                <li>Heat sensitivity in very hot climates – they do best with shade and cooler temps.</li>
+                                <li>Heat sensitivity in very hot climates – they do best with shade and cooler temps.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -216,8 +253,10 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        As independent livestock guardians, Anatolian Shepherd Dogs think for themselves. Training should
-                        focus on respectful leadership, clear rules, and early socialisation rather than strict obedience.
+                        As independent livestock guardians, Anatolian Shepherd Dogs think for themselves. Training
+                        should
+                        focus on respectful leadership, clear rules, and early socialisation rather than strict
+                        obedience.
                     </p>
 
                     <div class="training-grid two-column">
@@ -236,9 +275,12 @@
                             <div class="training-icon">🌿</div>
                             <h3>Exercise & Enrichment</h3>
                             <ul>
-                                <li>Daily walks around their territory or neighbourhood help satisfy their patrol instincts.</li>
-                                <li>Give them a clear job: watching livestock, guarding the yard, or “checking” certain areas.</li>
-                                <li>Use scent games, calm training sessions, and problem-solving toys for mental stimulation.</li>
+                                <li>Daily walks around their territory or neighbourhood help satisfy their patrol
+                                    instincts.</li>
+                                <li>Give them a clear job: watching livestock, guarding the yard, or “checking” certain
+                                    areas.</li>
+                                <li>Use scent games, calm training sessions, and problem-solving toys for mental
+                                    stimulation.</li>
                             </ul>
                         </div>
 
@@ -246,9 +288,11 @@
                             <div class="training-icon">⚠️</div>
                             <h3>Common Challenges</h3>
                             <ul>
-                                <li>Suspicious of strangers – manage introductions and do not force them to be overly social.</li>
+                                <li>Suspicious of strangers – manage introductions and do not force them to be overly
+                                    social.</li>
                                 <li>May ignore commands if they think they know better; build trust, not fear.</li>
-                                <li>Barking at perceived threats is natural – teach a “quiet” cue and control triggers where possible.</li>
+                                <li>Barking at perceived threats is natural – teach a “quiet” cue and control triggers
+                                    where possible.</li>
                             </ul>
                         </div>
 
@@ -257,8 +301,10 @@
                             <h3>Safety Notes</h3>
                             <ul>
                                 <li>Always supervise interactions with visiting children or unfamiliar people.</li>
-                                <li>Secure fences are essential; they may expand their “territory” if allowed to roam.</li>
-                                <li>Be cautious at dog parks – many guardian breeds do not enjoy chaotic, off-leash groups.</li>
+                                <li>Secure fences are essential; they may expand their “territory” if allowed to roam.
+                                </li>
+                                <li>Be cautious at dog parks – many guardian breeds do not enjoy chaotic, off-leash
+                                    groups.</li>
                             </ul>
                         </div>
                     </div>
@@ -269,11 +315,16 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="mountain">They originated on the harsh plateaus of Anatolia, guarding flocks from wolves and other predators.</li>
-                        <li data-icon="shield">Many Anatolians will calmly place themselves between danger and the animals or people they protect.</li>
-                        <li data-icon="moon">They are naturally alert at night, patrolling and watching over their territory.</li>
-                        <li data-icon="herd">In some conservation projects, Anatolian Shepherds are used to protect livestock from cheetahs and reduce conflict.</li>
-                        <li data-icon="heart">Though serious on duty, they can be gentle, loving giants with their own families.</li>
+                        <li data-icon="mountain">They originated on the harsh plateaus of Anatolia, guarding flocks from
+                            wolves and other predators.</li>
+                        <li data-icon="shield">Many Anatolians will calmly place themselves between danger and the
+                            animals or people they protect.</li>
+                        <li data-icon="moon">They are naturally alert at night, patrolling and watching over their
+                            territory.</li>
+                        <li data-icon="herd">In some conservation projects, Anatolian Shepherds are used to protect
+                            livestock from cheetahs and reduce conflict.</li>
+                        <li data-icon="heart">Though serious on duty, they can be gentle, loving giants with their own
+                            families.</li>
                     </ul>
                 </article>
 
@@ -300,36 +351,42 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- Boerboel -->
-        <a href="Boerboel.html" class="similar-card">
-            <img src="https://www.dogster.com/wp-content/uploads/2024/02/Boerboel-dog-with-collar-standing-on-grass_AleksaMayer_Shutterstock.jpg" alt="Boerboel">
-            <h3>Boerboel</h3>
-            <p>A powerful South African guardian breed known for strength, loyalty, and steady temperament.</p>
-        </a>
+                    <!-- Boerboel -->
+                    <a href="Boerboel.html" class="similar-card">
+                        <img src="https://www.dogster.com/wp-content/uploads/2024/02/Boerboel-dog-with-collar-standing-on-grass_AleksaMayer_Shutterstock.jpg"
+                            alt="Boerboel">
+                        <h3>Boerboel</h3>
+                        <p>A powerful South African guardian breed known for strength, loyalty, and steady temperament.
+                        </p>
+                    </a>
 
-        <!-- Rottweiler -->
-        <a href="Rottweiler.html" class="similar-card">
-            <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg" alt="Rottweiler">
-            <h3>Rottweiler</h3>
-            <p>A confident working guardian breed with strong protective instincts and devotion to family.</p>
-        </a>
+                    <!-- Rottweiler -->
+                    <a href="Rottweiler.html" class="similar-card">
+                        <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg"
+                            alt="Rottweiler">
+                        <h3>Rottweiler</h3>
+                        <p>A confident working guardian breed with strong protective instincts and devotion to family.
+                        </p>
+                    </a>
 
-        <!-- Bergamasco Sheepdog -->
-        <a href="BergamascoSheepdog.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-standing-in-a-field-in-the-mountains.jpg" alt="Bergamasco Sheepdog standing outdoors">
-            <h3>Bergamasco Sheepdog</h3>
-            <p>A calm, intelligent herding dog with similar livestock-working heritage and steady disposition.</p>
-        </a>
+                    <!-- Bergamasco Sheepdog -->
+                    <a href="BergamascoSheepdog.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-standing-in-a-field-in-the-mountains.jpg"
+                            alt="Bergamasco Sheepdog standing outdoors">
+                        <h3>Bergamasco Sheepdog</h3>
+                        <p>A calm, intelligent herding dog with similar livestock-working heritage and steady
+                            disposition.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
 
         </main>
-<footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -430,31 +487,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

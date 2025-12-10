@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -138,21 +145,42 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium–High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Guarding / Watchdog</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Guarding / Watchdog</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="../images/AppenzellerSennenhund.PNG"
-                            alt="Appenzeller Sennenhund standing in a field">
-                        <figcaption>Appenzeller Sennenhunde are agile farm dogs built for the steep slopes of the Alps.</figcaption>
+                        <img src="../images/AppenzellerSennenhund.PNG" alt="Appenzeller Sennenhund standing in a field">
+                        <figcaption>Appenzeller Sennenhunde are agile farm dogs built for the steep slopes of the Alps.
+                        </figcaption>
                     </figure>
 
                 </article>
@@ -162,7 +190,8 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Appenzeller Sennenhunde are tough, all-weather farm dogs. Their coats are fairly easy to care for,
+                        Appenzeller Sennenhunde are tough, all-weather farm dogs. Their coats are fairly easy to care
+                        for,
                         but they need lots of exercise, mental work, and clear structure in the home.
                     </p>
 
@@ -172,7 +201,8 @@
                             <h3>General Care</h3>
                             <ul>
                                 <li>Brush once or twice a week to remove loose hair and dirt.</li>
-                                <li>During seasonal shedding, more frequent brushing helps manage hair around the home.</li>
+                                <li>During seasonal shedding, more frequent brushing helps manage hair around the home.
+                                </li>
                                 <li>Check ears regularly for redness or debris, especially after time outdoors.</li>
                                 <li>Trim nails every few weeks and brush teeth several times per week.</li>
                             </ul>
@@ -193,8 +223,10 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>They need at least 1–2 hours of daily exercise: walks, hikes, running, or active play.</li>
-                                <li>Give them “jobs” like herding-style games, carrying a pack, or learning new tasks.</li>
+                                <li>They need at least 1–2 hours of daily exercise: walks, hikes, running, or active
+                                    play.</li>
+                                <li>Give them “jobs” like herding-style games, carrying a pack, or learning new tasks.
+                                </li>
                                 <li>A secure yard is important – they are alert watchdogs and may patrol the area.</li>
                             </ul>
                         </div>
@@ -203,10 +235,12 @@
                             <div class="care-icon">❤️</div>
                             <h3>Common Health Issues</h3>
                             <ul>
-                                <li>Hip or elbow dysplasia in some lines – regular vet checks and healthy weight help.</li>
+                                <li>Hip or elbow dysplasia in some lines – regular vet checks and healthy weight help.
+                                </li>
                                 <li>Joint strain if they jump or exercise too hard while still growing.</li>
                                 <li>Occasional eye issues – schedule routine eye checks if recommended by your vet.</li>
-                                <li>Weight gain if they are not given enough activity for their working-dog metabolism.</li>
+                                <li>Weight gain if they are not given enough activity for their working-dog metabolism.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -228,8 +262,10 @@
                             <ul>
                                 <li>Start early with sit, down, stay, recall, and leash manners.</li>
                                 <li>Use rewards-based methods – they respond well to praise, toys, and treats.</li>
-                                <li>Practise impulse control: waiting at doors, not jumping, and taking treats gently.</li>
-                                <li>Keep sessions short, fun, and varied to match their high energy and intelligence.</li>
+                                <li>Practise impulse control: waiting at doors, not jumping, and taking treats gently.
+                                </li>
+                                <li>Keep sessions short, fun, and varied to match their high energy and intelligence.
+                                </li>
                             </ul>
                         </div>
 
@@ -237,7 +273,8 @@
                             <div class="training-icon">🌿</div>
                             <h3>Exercise & Enrichment</h3>
                             <ul>
-                                <li>Great activities include hiking, running, agility, obedience, and herding games.</li>
+                                <li>Great activities include hiking, running, agility, obedience, and herding games.
+                                </li>
                                 <li>Use puzzle feeders, scent games, and trick training to tire their brains.</li>
                                 <li>Mix structured work with free play to prevent boredom and frustration.</li>
                             </ul>
@@ -247,8 +284,10 @@
                             <div class="training-icon">⚠️</div>
                             <h3>Common Challenges</h3>
                             <ul>
-                                <li>They can be very vocal as watchdogs – teach a “quiet” cue and reward calm behaviour.</li>
-                                <li>May try to herd children or other pets – redirect gently and give appropriate outlets.</li>
+                                <li>They can be very vocal as watchdogs – teach a “quiet” cue and reward calm behaviour.
+                                </li>
+                                <li>May try to herd children or other pets – redirect gently and give appropriate
+                                    outlets.</li>
                                 <li>Without enough exercise, they may become destructive or overly noisy.</li>
                             </ul>
                         </div>
@@ -258,7 +297,8 @@
                             <h3>Safety Notes</h3>
                             <ul>
                                 <li>Always supervise around small children until everyone understands boundaries.</li>
-                                <li>Secure fencing is important – they’re alert and may chase or bark at passing animals.</li>
+                                <li>Secure fencing is important – they’re alert and may chase or bark at passing
+                                    animals.</li>
                                 <li>Teach polite greetings so their enthusiasm doesn’t knock people over.</li>
                             </ul>
                         </div>
@@ -270,11 +310,16 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="mountain">They are one of four traditional Swiss mountain dogs, bred for life on steep, rugged farms.</li>
-                        <li data-icon="cart">Historically, Appenzellers helped herd cattle, guard the farm, and even pull small carts.</li>
-                        <li data-icon="sound">Known for being vocal, many will “announce” visitors long before the doorbell rings.</li>
-                        <li data-icon="bolt">Their agility and speed make them excellent candidates for dog sports like agility and flyball.</li>
-                        <li data-icon="heart">With family, they’re often cheerful, affectionate clowns who love to be in the middle of everything.</li>
+                        <li data-icon="mountain">They are one of four traditional Swiss mountain dogs, bred for life on
+                            steep, rugged farms.</li>
+                        <li data-icon="cart">Historically, Appenzellers helped herd cattle, guard the farm, and even
+                            pull small carts.</li>
+                        <li data-icon="sound">Known for being vocal, many will “announce” visitors long before the
+                            doorbell rings.</li>
+                        <li data-icon="bolt">Their agility and speed make them excellent candidates for dog sports like
+                            agility and flyball.</li>
+                        <li data-icon="heart">With family, they’re often cheerful, affectionate clowns who love to be in
+                            the middle of everything.</li>
                     </ul>
                 </article>
 
@@ -301,33 +346,36 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- Bernese Mountain Dog -->
-        <a href="BerneseMountainDog.html" class="similar-card">
-            <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/tmAkyLZdQJOaZy5NgH_iHA.webp" alt="Bernese Mountain Dog">
-            <h3>Bernese Mountain Dog</h3>
-            <p>A close Swiss mountain relative known for strength, loyalty, and farm-working ability.</p>
-        </a>
+                    <!-- Bernese Mountain Dog -->
+                    <a href="BerneseMountainDog.html" class="similar-card">
+                        <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/tmAkyLZdQJOaZy5NgH_iHA.webp"
+                            alt="Bernese Mountain Dog">
+                        <h3>Bernese Mountain Dog</h3>
+                        <p>A close Swiss mountain relative known for strength, loyalty, and farm-working ability.</p>
+                    </a>
 
-        <!-- Australian Cattle Dog -->
-        <a href="AustralianCattleDog.html" class="similar-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg" alt="Australian Cattle Dog">
-            <h3>Australian Cattle Dog</h3>
-            <p>A tough, high-energy herding dog with excellent stamina and similar working drive.</p>
-        </a>
+                    <!-- Australian Cattle Dog -->
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg"
+                            alt="Australian Cattle Dog">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A tough, high-energy herding dog with excellent stamina and similar working drive.</p>
+                    </a>
 
-        <!-- Australian Shepherd -->
-        <a href="AustralianShepherd.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg" alt="Australian Shepherd">
-            <h3>Australian Shepherd</h3>
-            <p>A smart, athletic herding breed with strong work ethic and agility like the Appenzeller.</p>
-        </a>
+                    <!-- Australian Shepherd -->
+                    <a href="AustralianShepherd.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg"
+                            alt="Australian Shepherd">
+                        <h3>Australian Shepherd</h3>
+                        <p>A smart, athletic herding breed with strong work ethic and agility like the Appenzeller.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
 
         </main>
 
@@ -433,31 +481,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -44,13 +51,15 @@
             <section class="breed-hero">
                 <div class="breed-hero-image">
                     <span class="paw-stamp"></span>
-                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-standing-in-a-field-in-the-mountains.jpg" alt="Bergamasco Sheepdog standing outdoors">
+                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-standing-in-a-field-in-the-mountains.jpg"
+                        alt="Bergamasco Sheepdog standing outdoors">
                 </div>
 
                 <div class="breed-hero-info">
                     <h1 class="breed-name">Bergamasco Sheepdog</h1>
                     <p class="breed-tagline">
-                        A calm, devoted herding dog famous for its unique, mop-like coat. Bergamascos are steady, patient,
+                        A calm, devoted herding dog famous for its unique, mop-like coat. Bergamascos are steady,
+                        patient,
                         and deeply loyal to their families while remaining observant guardians of home and flock.
                     </p>
 
@@ -136,20 +145,42 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Guarding/Watchdog</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-low">Low once cords mature</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Guarding/Watchdog</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-low">Low once cords mature</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
                         <img src="../images/BergamascoSheepdog.PNG" alt="Bergamasco Sheepdog showing its corded coat">
-                        <figcaption>Bergamasco Sheepdogs have a distinctive coat made of natural flocks that protect them from weather.</figcaption>
+                        <figcaption>Bergamasco Sheepdogs have a distinctive coat made of natural flocks that protect
+                            them from weather.</figcaption>
                     </figure>
 
                 </article>
@@ -159,7 +190,8 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Bergamascos need moderate daily exercise and special coat management. Their coat flocks naturally
+                        Bergamascos need moderate daily exercise and special coat management. Their coat flocks
+                        naturally
                         as they mature, and owners must learn how to separate and maintain these cords to keep the dog
                         clean and comfortable.
                     </p>
@@ -169,10 +201,12 @@
                             <div class="care-icon">🧼</div>
                             <h3>Coat & Grooming</h3>
                             <ul>
-                                <li>As the coat matures, help separate the flocks (cords) by hand so they don’t mat tightly.</li>
+                                <li>As the coat matures, help separate the flocks (cords) by hand so they don’t mat
+                                    tightly.</li>
                                 <li>Keep the coat clean and allow it to dry completely after baths or wet weather.</li>
                                 <li>Check the skin regularly under the flocks for irritation, parasites, or debris.</li>
-                                <li>Expect grooming sessions to be long and detailed, especially during the coat’s “transition” phase.</li>
+                                <li>Expect grooming sessions to be long and detailed, especially during the coat’s
+                                    “transition” phase.</li>
                             </ul>
                         </div>
 
@@ -182,7 +216,8 @@
                             <ul>
                                 <li>Trim nails every few weeks and keep ears clean and dry.</li>
                                 <li>Brush teeth several times per week to support dental health.</li>
-                                <li>Monitor weight and body condition; they should be strong but not heavy or sluggish.</li>
+                                <li>Monitor weight and body condition; they should be strong but not heavy or sluggish.
+                                </li>
                             </ul>
                         </div>
 
@@ -190,7 +225,8 @@
                             <div class="care-icon">🐶</div>
                             <h3>Puppy Care</h3>
                             <ul>
-                                <li>Introduce gentle grooming and handling early so they learn to relax during coat care.</li>
+                                <li>Introduce gentle grooming and handling early so they learn to relax during coat
+                                    care.</li>
                                 <li>Socialise puppies with people, children, other dogs, and new environments.</li>
                                 <li>Provide age-appropriate walks and play; avoid over-exercising growing joints.</li>
                                 <li>Teach calm indoor behaviour—these dogs are naturally thoughtful and observant.</li>
@@ -214,7 +250,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Bergamasco Sheepdogs are intelligent, steady, and thoughtful. They respond best to calm, consistent
+                        Bergamasco Sheepdogs are intelligent, steady, and thoughtful. They respond best to calm,
+                        consistent
                         training that respects their independent problem-solving nature.
                     </p>
 
@@ -225,7 +262,8 @@
                             <ul>
                                 <li>Teach sit, down, stay, recall, and leash manners from a young age.</li>
                                 <li>Use positive reinforcement—praise, treats, and affection—to keep them engaged.</li>
-                                <li>Keep sessions calm and clear rather than loud or harsh; they are sensitive and thoughtful.</li>
+                                <li>Keep sessions calm and clear rather than loud or harsh; they are sensitive and
+                                    thoughtful.</li>
                                 <li>Reinforce good manners with visitors, as they can be reserved with strangers.</li>
                             </ul>
                         </div>
@@ -234,9 +272,11 @@
                             <div class="training-icon">🌄</div>
                             <h3>Exercise & Enrichment</h3>
                             <ul>
-                                <li>Provide daily walks and time to explore; they enjoy moderate but regular exercise.</li>
+                                <li>Provide daily walks and time to explore; they enjoy moderate but regular exercise.
+                                </li>
                                 <li>Herding-style games, obedience, and scent work keep their mind active.</li>
-                                <li>They enjoy being included in family activities and having a “job,” even if it’s just watching over the yard.</li>
+                                <li>They enjoy being included in family activities and having a “job,” even if it’s just
+                                    watching over the yard.</li>
                             </ul>
                         </div>
 
@@ -244,9 +284,11 @@
                             <div class="training-icon">⚠️</div>
                             <h3>Common Challenges</h3>
                             <ul>
-                                <li>May be reserved or aloof with strangers—early, positive socialisation is important.</li>
+                                <li>May be reserved or aloof with strangers—early, positive socialisation is important.
+                                </li>
                                 <li>Independent thinking can look like stubbornness; stay patient and consistent.</li>
-                                <li>Guarding instincts may appear if they think their family or property needs protection.</li>
+                                <li>Guarding instincts may appear if they think their family or property needs
+                                    protection.</li>
                             </ul>
                         </div>
 
@@ -255,8 +297,10 @@
                             <h3>Safety Notes</h3>
                             <ul>
                                 <li>Ensure cords don’t hide injuries, burrs, or parasites after outdoor time.</li>
-                                <li>Be careful in very hot weather; their thick coat can make them overheat if they over-exercise.</li>
-                                <li>Provide non-slip surfaces at home, as heavy coats and large bodies need good footing.</li>
+                                <li>Be careful in very hot weather; their thick coat can make them overheat if they
+                                    over-exercise.</li>
+                                <li>Provide non-slip surfaces at home, as heavy coats and large bodies need good
+                                    footing.</li>
                             </ul>
                         </div>
                     </div>
@@ -267,11 +311,15 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="coat">Their unique coat is made of three hair types that naturally form “flocks” or mats.</li>
+                        <li data-icon="coat">Their unique coat is made of three hair types that naturally form “flocks”
+                            or mats.</li>
                         <li data-icon="mountain">They were developed as hardy mountain herders in the Italian Alps.</li>
-                        <li data-icon="calm">Despite their dramatic coat, they’re known for being calm, steady house companions.</li>
-                        <li data-icon="guardian">Bergamascos are naturally protective and often act as quiet guardians of their home.</li>
-                        <li data-icon="low-shed">Once the flocks have formed, they shed very little compared to many other long-haired breeds.</li>
+                        <li data-icon="calm">Despite their dramatic coat, they’re known for being calm, steady house
+                            companions.</li>
+                        <li data-icon="guardian">Bergamascos are naturally protective and often act as quiet guardians
+                            of their home.</li>
+                        <li data-icon="low-shed">Once the flocks have formed, they shed very little compared to many
+                            other long-haired breeds.</li>
                     </ul>
                 </article>
 
@@ -280,51 +328,54 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsA3HVaYkU63hgMSrzKzAp9j_GBcYVYVF5cA&s" 
-                        alt="Bergamasco Sheepdog standing in a field">
-                        <img src="https://showsightmagazine.com/wp-content/uploads/2023/12/Bergamasco-Sheepdog-head.jpg" 
-                        alt="Bergamasco Sheepdog lying down, showing its flocks">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5bb4e3d80490795c0b4ab5ca/1539124863920-I4890P0MT3YIHQZGHEU6/DSC_9356.jpg" 
-                        alt="Bergamasco Sheepdog with owner outdoors">
-                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-puppy-laying-down-in-the-grass-with-a-treat.jpg" 
-                        alt="Close-up of the Bergamasco’s corded coat">
-                        <img src="https://images.squarespace-cdn.com/content/v1/51bdd41ae4b092e6df7a2971/1547131416871-LRRFK2HUNRAP0U6YF220/IMG_5296_bearbeitet-1.JPG?format=2500w" 
-                        alt="Bergamasco Sheepdog playing or running">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5bb4e3d80490795c0b4ab5ca/1539224318834-7J833L4T675V6YF69YO9/paci.jpg" 
-                        alt="Bergamasco Sheepdog in a snowy or mountain landscape">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsA3HVaYkU63hgMSrzKzAp9j_GBcYVYVF5cA&s"
+                            alt="Bergamasco Sheepdog standing in a field">
+                        <img src="https://showsightmagazine.com/wp-content/uploads/2023/12/Bergamasco-Sheepdog-head.jpg"
+                            alt="Bergamasco Sheepdog lying down, showing its flocks">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bb4e3d80490795c0b4ab5ca/1539124863920-I4890P0MT3YIHQZGHEU6/DSC_9356.jpg"
+                            alt="Bergamasco Sheepdog with owner outdoors">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Bergamasco-Sheepdog-puppy-laying-down-in-the-grass-with-a-treat.jpg"
+                            alt="Close-up of the Bergamasco’s corded coat">
+                        <img src="https://images.squarespace-cdn.com/content/v1/51bdd41ae4b092e6df7a2971/1547131416871-LRRFK2HUNRAP0U6YF220/IMG_5296_bearbeitet-1.JPG?format=2500w"
+                            alt="Bergamasco Sheepdog playing or running">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bb4e3d80490795c0b4ab5ca/1539224318834-7J833L4T675V6YF69YO9/paci.jpg"
+                            alt="Bergamasco Sheepdog in a snowy or mountain landscape">
                     </div>
                 </article>
             </section>
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- Australian Shepherd -->
-        <a href="AustralianShepherd.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg" alt="Australian Shepherd">
-            <h3>Australian Shepherd</h3>
-            <p>A highly intelligent herding dog with strong working instincts and similar energy levels.</p>
-        </a>
+                    <!-- Australian Shepherd -->
+                    <a href="AustralianShepherd.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg"
+                            alt="Australian Shepherd">
+                        <h3>Australian Shepherd</h3>
+                        <p>A highly intelligent herding dog with strong working instincts and similar energy levels.</p>
+                    </a>
 
-        <!-- Anatolian Shepherd Dog -->
-        <a href="AnatolianShepherdDog.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Anatolian-Shepherd-Dog-On-White-01.jpg" alt="Anatolian Shepherd Dog">
-            <h3>Anatolian Shepherd Dog</h3>
-            <p>A powerful livestock guardian with a calm, confident temperament like the Bergamasco.</p>
-        </a>
+                    <!-- Anatolian Shepherd Dog -->
+                    <a href="AnatolianShepherdDog.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Anatolian-Shepherd-Dog-On-White-01.jpg"
+                            alt="Anatolian Shepherd Dog">
+                        <h3>Anatolian Shepherd Dog</h3>
+                        <p>A powerful livestock guardian with a calm, confident temperament like the Bergamasco.</p>
+                    </a>
 
-        <!-- Bernese Mountain Dog -->
-        <a href="BerneseMountainDog.html" class="similar-card">
-            <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/tmAkyLZdQJOaZy5NgH_iHA.webp" alt="Bernese Mountain Dog">
-            <h3>Bernese Mountain Dog</h3>
-            <p>A large, gentle working dog known for loyalty, strength, and a long, heavy coat.</p>
-        </a>
+                    <!-- Bernese Mountain Dog -->
+                    <a href="BerneseMountainDog.html" class="similar-card">
+                        <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/tmAkyLZdQJOaZy5NgH_iHA.webp"
+                            alt="Bernese Mountain Dog">
+                        <h3>Bernese Mountain Dog</h3>
+                        <p>A large, gentle working dog known for loyalty, strength, and a long, heavy coat.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER -->
@@ -429,31 +480,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

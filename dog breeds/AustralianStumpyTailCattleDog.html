@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -44,15 +51,16 @@
             <section class="breed-hero">
                 <div class="breed-hero-image">
                     <span class="paw-stamp"></span>
-                    <img src="https://www.thesprucepets.com/thmb/9WB6SVu46JnKWVbanSaYG6YiVaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-454288321-fa4f3b75dba84944b46d16725e5daf60.jpg" 
-                    alt="Australian Stumpy Tail Cattle Dog standing outdoors">
+                    <img src="https://www.thesprucepets.com/thmb/9WB6SVu46JnKWVbanSaYG6YiVaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-454288321-fa4f3b75dba84944b46d16725e5daf60.jpg"
+                        alt="Australian Stumpy Tail Cattle Dog standing outdoors">
                 </div>
 
                 <div class="breed-hero-info">
                     <h1 class="breed-name">Australian Stumpy Tail Cattle Dog</h1>
                     <p class="breed-tagline">
                         A tough, no-nonsense herding dog with a natural short tail, bred to work long days in harsh
-                        conditions. Stumpy Tails are intensely loyal, energetic, and happiest when they have a job to do.
+                        conditions. Stumpy Tails are intensely loyal, energetic, and happiest when they have a job to
+                        do.
                     </p>
 
                     <dl class="breed-stats">
@@ -137,21 +145,43 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-medium">Medium–High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Trainability</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="../images/AustralianStumpyTailCattle.PNG" 
-                        alt="Australian Stumpy Tail Cattle Dog standing alert">
-                        <figcaption>The Australian Stumpy Tail Cattle Dog is built for stamina, speed, and hard work.</figcaption>
+                        <img src="../images/AustralianStumpyTailCattle.PNG"
+                            alt="Australian Stumpy Tail Cattle Dog standing alert">
+                        <figcaption>The Australian Stumpy Tail Cattle Dog is built for stamina, speed, and hard work.
+                        </figcaption>
                     </figure>
 
                 </article>
@@ -162,7 +192,8 @@
 
                     <p class="care-intro">
                         This is a true working breed that needs plenty of daily activity and structure. Their coat is
-                        fairly low-maintenance, but their energy levels are not—they are best for active, committed homes.
+                        fairly low-maintenance, but their energy levels are not—they are best for active, committed
+                        homes.
                     </p>
 
                     <div class="care-grid">
@@ -193,7 +224,8 @@
                             <h3>Adult Care</h3>
                             <ul>
                                 <li>Needs at least 1.5–2 hours of daily physical activity.</li>
-                                <li>Ideal jobs include herding, running alongside bikes (when fully grown), and farm work.</li>
+                                <li>Ideal jobs include herding, running alongside bikes (when fully grown), and farm
+                                    work.</li>
                                 <li>Secure fencing is essential—they are agile and determined.</li>
                             </ul>
                         </div>
@@ -216,7 +248,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Australian Stumpy Tail Cattle Dogs are extremely intelligent, driven, and independent. They thrive
+                        Australian Stumpy Tail Cattle Dogs are extremely intelligent, driven, and independent. They
+                        thrive
                         with firm, fair, and consistent training and do best when given real work or structured tasks.
                     </p>
 
@@ -256,7 +289,8 @@
                             <div class="training-icon">🩺</div>
                             <h3>Safety Notes</h3>
                             <ul>
-                                <li>Always supervise around small children; teach kids how to interact respectfully.</li>
+                                <li>Always supervise around small children; teach kids how to interact respectfully.
+                                </li>
                                 <li>Use secure fencing—they can slip out if they see something to chase.</li>
                                 <li>Avoid intense impact sports (like hard jumping) until fully grown.</li>
                             </ul>
@@ -273,7 +307,8 @@
                         <li data-icon="cow">They were developed specifically to move cattle over long distances.</li>
                         <li data-icon="flag">They are one of Australia’s original working breeds.</li>
                         <li data-icon="bolt">Known for incredible stamina and determination in tough conditions.</li>
-                        <li data-icon="farm">They are happiest when they have a real job or regular structured work.</li>
+                        <li data-icon="farm">They are happiest when they have a real job or regular structured work.
+                        </li>
                     </ul>
                 </article>
 
@@ -282,18 +317,18 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://ezydog.com.au/cdn/shop/articles/Australian-Stumpy-Tail-Cattle-Dog-breed_748c6625-8ecf-402b-8a52-fdbda83d17ed.webp?v=1746266797&width=1536" 
-                        alt="Australian Stumpy Tail Cattle Dog portrait">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAHiYAcAjIAyAjQS0bxXQjP6IwmjwKfXyjQ&s" 
-                        alt="Australian Stumpy Tail Cattle Dog working cattle">
-                        <img src="https://breed-assets.wisdompanel.com/dog/australian-stumpy-tail-cattle-dog/Australian_Stumpy_Tail_Cattle_Dog1.png" 
-                        alt="Australian Stumpy Tail Cattle Dog standing in field">
-                        <img src="https://cdn.shopify.com/s/files/1/0994/0236/articles/australian-stumpy-tail_1920x.jpg" 
-                        alt="Australian Stumpy Tail Cattle Dog running outdoors">
-                        <img src="https://img2.storyblok.com/810x0/f/92981/8bc001ea0e/australian-stumpy-tail-cattle-dog-primary.jpg" 
-                        alt="Australian Stumpy Tail Cattle Dog puppy">
-                        <img src="https://www.dogster.com/wp-content/uploads/2024/04/Australian-Stumpy-Tail-Cattle-Dog-in-lying-on-the-grass-outdoors_Yana-Tinker_Shutterstock.jpg" 
-                        alt="Close-up of Australian Stumpy Tail Cattle Dog face">
+                        <img src="https://ezydog.com.au/cdn/shop/articles/Australian-Stumpy-Tail-Cattle-Dog-breed_748c6625-8ecf-402b-8a52-fdbda83d17ed.webp?v=1746266797&width=1536"
+                            alt="Australian Stumpy Tail Cattle Dog portrait">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAHiYAcAjIAyAjQS0bxXQjP6IwmjwKfXyjQ&s"
+                            alt="Australian Stumpy Tail Cattle Dog working cattle">
+                        <img src="https://breed-assets.wisdompanel.com/dog/australian-stumpy-tail-cattle-dog/Australian_Stumpy_Tail_Cattle_Dog1.png"
+                            alt="Australian Stumpy Tail Cattle Dog standing in field">
+                        <img src="https://cdn.shopify.com/s/files/1/0994/0236/articles/australian-stumpy-tail_1920x.jpg"
+                            alt="Australian Stumpy Tail Cattle Dog running outdoors">
+                        <img src="https://img2.storyblok.com/810x0/f/92981/8bc001ea0e/australian-stumpy-tail-cattle-dog-primary.jpg"
+                            alt="Australian Stumpy Tail Cattle Dog puppy">
+                        <img src="https://www.dogster.com/wp-content/uploads/2024/04/Australian-Stumpy-Tail-Cattle-Dog-in-lying-on-the-grass-outdoors_Yana-Tinker_Shutterstock.jpg"
+                            alt="Close-up of Australian Stumpy Tail Cattle Dog face">
                     </div>
                 </article>
             </section>
@@ -304,30 +339,30 @@
 
                 <div class="similar-grid">
                     <a href="AustralianCattleDog.html" class="similar-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg" 
-                        alt="Australian Cattle Dog">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg"
+                            alt="Australian Cattle Dog">
                         <h3>Australian Cattle Dog</h3>
                         <p>A closely related herding breed with similar energy and work drive.</p>
                     </a>
 
                     <a href="WorkingKelpie.html" class="similar-card">
-                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1458387729-1-e1695928435188.jpg?w=1024" 
-                        alt="Working Kelpie">
+                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-1458387729-1-e1695928435188.jpg?w=1024"
+                            alt="Working Kelpie">
                         <h3>Working Kelpie</h3>
                         <p>Another intense Australian herding dog bred for serious farm work.</p>
                     </a>
-                 <a href="AustralianKelpie.html" class="similar-card">
-                    <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/07/24185651/australian-kelpie-dog-breed.jpeg" 
-                    alt="Australian Kelpie">
-                    <h3>Australian Kelpie</h3>
-                    <p>A high-energy Australian herder known for intelligence and nonstop drive.</p>
-                 </a>
-            </div>
-         </section>
+                    <a href="AustralianKelpie.html" class="similar-card">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/07/24185651/australian-kelpie-dog-breed.jpeg"
+                            alt="Australian Kelpie">
+                        <h3>Australian Kelpie</h3>
+                        <p>A high-energy Australian herder known for intelligence and nonstop drive.</p>
+                    </a>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER -->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -427,31 +462,33 @@
         <div class="Copyright">
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

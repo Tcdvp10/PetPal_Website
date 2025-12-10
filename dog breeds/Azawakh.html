@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -44,7 +51,8 @@
             <section class="breed-hero">
                 <div class="breed-hero-image">
                     <span class="paw-stamp"></span>
-                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Azawakh_178091272.jpg" alt="Azawakh standing in the desert">
+                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Azawakh_178091272.jpg"
+                        alt="Azawakh standing in the desert">
                 </div>
 
                 <div class="breed-hero-info">
@@ -136,20 +144,43 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-medium">Medium–High (with their people)</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium (with respectful children)</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Stranger Friendliness</td><td><span class="char-chip char-low">Low–Medium (aloof)</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-low">Low</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-medium">Medium–High (with their people)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium (with respectful children)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Stranger Friendliness</td>
+                                    <td><span class="char-chip char-low">Low–Medium (aloof)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-low">Low</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
                         <img src="../images/Azawak.PNG" alt="Azawakh standing in profile">
-                        <figcaption>The Azawakh’s slim, athletic frame was designed for speed and endurance in harsh desert landscapes.</figcaption>
+                        <figcaption>The Azawakh’s slim, athletic frame was designed for speed and endurance in harsh
+                            desert landscapes.</figcaption>
                     </figure>
 
                 </article>
@@ -170,7 +201,8 @@
                             <h3>General Care</h3>
                             <ul>
                                 <li>Coat care is simple: occasional brushing with a soft mitt to remove loose hair.</li>
-                                <li>Because of their thin skin and low body fat, provide soft bedding to prevent pressure sores.</li>
+                                <li>Because of their thin skin and low body fat, provide soft bedding to prevent
+                                    pressure sores.</li>
                                 <li>They feel the cold easily – use coats or sweaters in cool or wet weather.</li>
                                 <li>Check nails regularly and trim as needed, as long nails can affect their gait.</li>
                             </ul>
@@ -180,9 +212,11 @@
                             <div class="care-icon">🐶</div>
                             <h3>Puppy Care</h3>
                             <ul>
-                                <li>Socialise early with people, respectful children, and polite dogs to avoid excessive shyness.</li>
+                                <li>Socialise early with people, respectful children, and polite dogs to avoid excessive
+                                    shyness.</li>
                                 <li>Introduce handling gently: paws, ears, mouth, collars, and harnesses.</li>
-                                <li>Provide short, controlled play sessions rather than long runs to protect growing joints.</li>
+                                <li>Provide short, controlled play sessions rather than long runs to protect growing
+                                    joints.</li>
                                 <li>Build confidence with positive experiences, not overwhelming situations.</li>
                             </ul>
                         </div>
@@ -215,7 +249,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Azawakhs are intelligent but independent and sensitive. They don’t respond well to harsh methods.
+                        Azawakhs are intelligent but independent and sensitive. They don’t respond well to harsh
+                        methods.
                         Use calm, patient, positive training and respect their thoughtful, reserved nature.
                     </p>
 
@@ -237,7 +272,8 @@
                             <ul>
                                 <li>Provide daily walks and regular sprint sessions in secure areas.</li>
                                 <li>Many enjoy lure coursing or similar sighthound sports.</li>
-                                <li>Quiet enrichment like scent games, puzzle feeders, and calm training exercises works well.</li>
+                                <li>Quiet enrichment like scent games, puzzle feeders, and calm training exercises works
+                                    well.</li>
                             </ul>
                         </div>
 
@@ -268,10 +304,14 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="desert">Azawakhs come from nomadic peoples of the Sahel and were used to guard camps and hunt.</li>
-                        <li data-icon="bolt">They’re often called “45 mph couch potatoes” – fast outside, calm inside.</li>
-                        <li data-icon="heart">They form very deep bonds with their own family but stay reserved with strangers.</li>
-                        <li data-icon="slim">Their ultra-lean look is normal for the breed—ribs and muscles are often visible.</li>
+                        <li data-icon="desert">Azawakhs come from nomadic peoples of the Sahel and were used to guard
+                            camps and hunt.</li>
+                        <li data-icon="bolt">They’re often called “45 mph couch potatoes” – fast outside, calm inside.
+                        </li>
+                        <li data-icon="heart">They form very deep bonds with their own family but stay reserved with
+                            strangers.</li>
+                        <li data-icon="slim">Their ultra-lean look is normal for the breed—ribs and muscles are often
+                            visible.</li>
                         <li data-icon="sun">Built for heat, they can be quite sensitive to cold weather.</li>
                     </ul>
                 </article>
@@ -282,54 +322,57 @@
 
                     <div class="photo-grid">
                         <img src="https://www.cuteness.com/cuteness/mltdd328128218a465ca33e94834e5f462c.jpg"
-                        alt="Azawakh standing in the desert">
-                        <img src="https://nationalpurebreddogday.com/wp-content/uploads/2019/06/17264490_737327233101041_8478220235678087783_n.jpg" 
-                        alt="Azawakh running at full speed">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkoUWQXg4m19LWmUZy-wgt9YHkEm_Jt3-BA&s" 
-                        alt="Azawakh resting on a cushion indoors">
-                        <img src="https://cdn-images.vetstreet.com/7e/940ef09e8b11e0a2380050568d634f/file/Azawakh-2-645mk062411.jpg" 
-                        alt="Close-up of Azawakh head and face">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5aCYL91Ynl3IvE6kxzI9ZH-csp_CKyXWYqg&s" 
-                        alt="Azawakh looking into the distance">
-                        <img src="https://cdn.shopify.com/s/files/1/0568/0450/7691/files/Snapinsta.app_459888477_6669820706475143_1022947546362979585_n_1080_600x600.jpg?v=1732892626" 
-                        alt="Azawakh with its family outdoors">
+                            alt="Azawakh standing in the desert">
+                        <img src="https://nationalpurebreddogday.com/wp-content/uploads/2019/06/17264490_737327233101041_8478220235678087783_n.jpg"
+                            alt="Azawakh running at full speed">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkoUWQXg4m19LWmUZy-wgt9YHkEm_Jt3-BA&s"
+                            alt="Azawakh resting on a cushion indoors">
+                        <img src="https://cdn-images.vetstreet.com/7e/940ef09e8b11e0a2380050568d634f/file/Azawakh-2-645mk062411.jpg"
+                            alt="Close-up of Azawakh head and face">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5aCYL91Ynl3IvE6kxzI9ZH-csp_CKyXWYqg&s"
+                            alt="Azawakh looking into the distance">
+                        <img src="https://cdn.shopify.com/s/files/1/0568/0450/7691/files/Snapinsta.app_459888477_6669820706475143_1022947546362979585_n_1080_600x600.jpg?v=1732892626"
+                            alt="Azawakh with its family outdoors">
                     </div>
                 </article>
             </section>
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
-        
-        <!-- Afghan Hound -->
-        <a href="AfghanHound.html" class="similar-card">
-            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26151212/Afghan-Hound-standing-in-a-garden.jpg" alt="Afghan Hound">
-            <h3>Afghan Hound</h3>
-            <p>A fellow sighthound with a graceful, independent nature and a similar slender build.</p>
-        </a>
+                <div class="similar-grid">
 
-        <!-- Doberman Pinscher -->
-        <a href="DobermanPinscher.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Doberman-Pinscher-standing-outdoors.jpg" alt="Doberman Pinscher">
-            <h3>Doberman Pinscher</h3>
-            <p>An athletic, fast, loyal guardian breed known for elegance and high endurance.</p>
-        </a>
+                    <!-- Afghan Hound -->
+                    <a href="AfghanHound.html" class="similar-card">
+                        <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26151212/Afghan-Hound-standing-in-a-garden.jpg"
+                            alt="Afghan Hound">
+                        <h3>Afghan Hound</h3>
+                        <p>A fellow sighthound with a graceful, independent nature and a similar slender build.</p>
+                    </a>
 
-        <!-- Irish Red and White Setter -->
-        <a href="IrishRedAndWhiteSetter.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Irish-Red-and-White-Setter-stalking-in-a-field.jpg" alt="Irish Red and White Setter">
-            <h3>Irish Red and White Setter</h3>
-            <p>A high-energy hunting breed with similar stamina and athletic movement.</p>
-        </a>
+                    <!-- Doberman Pinscher -->
+                    <a href="DobermanPinscher.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Doberman-Pinscher-standing-outdoors.jpg"
+                            alt="Doberman Pinscher">
+                        <h3>Doberman Pinscher</h3>
+                        <p>An athletic, fast, loyal guardian breed known for elegance and high endurance.</p>
+                    </a>
 
-    </div>
-</section>
+                    <!-- Irish Red and White Setter -->
+                    <a href="IrishRedAndWhiteSetter.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Irish-Red-and-White-Setter-stalking-in-a-field.jpg"
+                            alt="Irish Red and White Setter">
+                        <h3>Irish Red and White Setter</h3>
+                        <p>A high-energy hunting breed with similar stamina and athletic movement.</p>
+                    </a>
+
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER -->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -429,32 +472,34 @@
         <div class="Copyright">
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
-t
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        t
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

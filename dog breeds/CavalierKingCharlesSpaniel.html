@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,7 +30,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -321,7 +328,8 @@
                             <ul>
                                 <li>Daily walks plus gentle play sessions (fetch, tug, hide-and-seek) help keep them
                                     fit and happy.</li>
-                                <li>Sniffy walks, food puzzles, and training short tricks provide mental stimulation.</li>
+                                <li>Sniffy walks, food puzzles, and training short tricks provide mental stimulation.
+                                </li>
                                 <li>Many Cavaliers enjoy low-impact dog sports or therapy visits once trained and
                                     assessed.</li>
                                 <li>Monitor their weight; mental games can be a great alternative to extra food
@@ -381,12 +389,18 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://www.thesprucepets.com/thmb/OYbbpJXkkA4EWeQTabE8wZSprSk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Westend61-d735101ab1664899887c2b8a729317d6.jpg" alt="Cavalier King Charles Spaniel standing on grass">
-                        <img src="https://cdn.royalcanin-weshare-online.io/Hud_93oBaPOZra8q0LgZ/v11/bp-lot-1-cavalier-king-charles-spaniel-couleur-outdoor" alt="Cavalier King Charles Spaniel puppy sitting and looking at camera">
-                        <img src="https://image.petmd.com/files/inline-images/cavalier-king-charles-spaniel.jpg?VersionId=Qe5z0VimtZyhCExIns4WN2y1G8f7sQf9" alt="Cavalier King Charles Spaniel running across a lawn">
-                        <img src="https://www.adoptapet.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fscac5p2hkp4h%2F6wVyLDFeOY8N7jpNWSw55g%2F7d1ca90f938641627d0bb9c50fd252a0%2Faap-inline-trainable-dog-breeds-cavalier.jpg&w=2048&q=75" alt="Cavalier King Charles Spaniel relaxing on a couch">
-                        <img src="https://image.petmd.com/files/inline-images/cavalier-king-charles-spaniel-5.jpg?VersionId=wtLFD9x5gILyPdzoAOONz05L_b7tB3TV" alt="Cavalier King Charles Spaniel with Blenheim colouring outdoors">
-                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel_Puppy_Grass.jpg" alt="Cavalier King Charles Spaniel walking on a path with owner">
+                        <img src="https://www.thesprucepets.com/thmb/OYbbpJXkkA4EWeQTabE8wZSprSk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Westend61-d735101ab1664899887c2b8a729317d6.jpg"
+                            alt="Cavalier King Charles Spaniel standing on grass">
+                        <img src="https://cdn.royalcanin-weshare-online.io/Hud_93oBaPOZra8q0LgZ/v11/bp-lot-1-cavalier-king-charles-spaniel-couleur-outdoor"
+                            alt="Cavalier King Charles Spaniel puppy sitting and looking at camera">
+                        <img src="https://image.petmd.com/files/inline-images/cavalier-king-charles-spaniel.jpg?VersionId=Qe5z0VimtZyhCExIns4WN2y1G8f7sQf9"
+                            alt="Cavalier King Charles Spaniel running across a lawn">
+                        <img src="https://www.adoptapet.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fscac5p2hkp4h%2F6wVyLDFeOY8N7jpNWSw55g%2F7d1ca90f938641627d0bb9c50fd252a0%2Faap-inline-trainable-dog-breeds-cavalier.jpg&w=2048&q=75"
+                            alt="Cavalier King Charles Spaniel relaxing on a couch">
+                        <img src="https://image.petmd.com/files/inline-images/cavalier-king-charles-spaniel-5.jpg?VersionId=wtLFD9x5gILyPdzoAOONz05L_b7tB3TV"
+                            alt="Cavalier King Charles Spaniel with Blenheim colouring outdoors">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel_Puppy_Grass.jpg"
+                            alt="Cavalier King Charles Spaniel walking on a path with owner">
                     </div>
                 </article>
             </section>
@@ -397,7 +411,7 @@
 
                 <div class="similar-grid">
 
-                   <!-- CARD 1: Bolognese -->
+                    <!-- CARD 1: Bolognese -->
                     <a href="Bolognese.html" class="similar-card">
                         <img src="https://www.dogster.com/wp-content/uploads/2019/11/bolognese-outdoor.jpg"
                             alt="Bolognese dog with long white coat standing outdoors">
@@ -417,7 +431,8 @@
 
                     <!-- CARD 3: English Springer Spaniel -->
                     <a href="EnglishSpringerSpaniel.html" class="similar-card">
-                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/03/English-Springer-Spaniel-Glucklich-1024x682-1.webp" alt="Havanese dog standing on grass">
+                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/03/English-Springer-Spaniel-Glucklich-1024x682-1.webp"
+                            alt="Havanese dog standing on grass">
                         <h3>English Springer Spaniel</h3>
                         <p>A small, friendly companion breed with a soft coat and a happy, outgoing temperament—another
                             great family lapdog.</p>
@@ -568,6 +583,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

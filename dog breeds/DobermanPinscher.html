@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,7 +30,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -218,7 +225,8 @@
                                 <li><strong>Growth:</strong> Large-breed puppies grow quickly. Use a large-breed puppy
                                     food and avoid forced running or jumping on hard surfaces while joints are
                                     developing.</li>
-                                <li><strong>Activity:</strong> Several short play sessions and short walks each day, with
+                                <li><strong>Activity:</strong> Several short play sessions and short walks each day,
+                                    with
                                     plenty of rest in between. Provide safe chew toys and simple puzzle feeders.</li>
                                 <li><strong>Handling:</strong> Gently practise nail trims, mouth checks, and collar or
                                     harness handling so vet visits and grooming are easy later on.</li>
@@ -382,12 +390,18 @@
                     <h2 class="section-title section-title--left">Photo Gallery</h2>
 
                     <div class="photo-grid">
-                        <img src="https://images.ctfassets.net/nx3pzsky0bc9/5JNIP0KkbMkF8sjyeVFcvt/d2db4e388b752e69935a6001b0259efa/Doberman_feature_image.png?w=804" alt="Doberman Pinscher standing in profile in a field">
-                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2024/04/GettyImages-1451526081-e1713534887441.jpg" alt="Doberman Pinscher sitting and looking at the camera">
-                        <img src="https://image.petmd.com/files/styles/978x550/public/2022-10/doberman-pinscher.jpeg" alt="Doberman Pinscher running across grass">
-                        <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/CJt1JE3RTii9njxJJBbN2w.webp" alt="Doberman Pinscher puppies playing together">
-                        <img src="https://www.dobermanplanet.com/wp-content/uploads/2019/01/All-Colors-Large.jpg" alt="Doberman Pinschers standing alert with rust markings">
-                        <img src="https://www.pethealthnetwork.com/sites/default/files/styles/large/public/article-image-horiz_106.jpg?itok=4VkyS3Js" alt="Doberman Pinscher relaxing at home with owner">
+                        <img src="https://images.ctfassets.net/nx3pzsky0bc9/5JNIP0KkbMkF8sjyeVFcvt/d2db4e388b752e69935a6001b0259efa/Doberman_feature_image.png?w=804"
+                            alt="Doberman Pinscher standing in profile in a field">
+                        <img src="https://dogtime.com/wp-content/uploads/sites/12/2024/04/GettyImages-1451526081-e1713534887441.jpg"
+                            alt="Doberman Pinscher sitting and looking at the camera">
+                        <img src="https://image.petmd.com/files/styles/978x550/public/2022-10/doberman-pinscher.jpeg"
+                            alt="Doberman Pinscher running across grass">
+                        <img src="https://petscare-assets-prod.s3.amazonaws.com/media/original_images/CJt1JE3RTii9njxJJBbN2w.webp"
+                            alt="Doberman Pinscher puppies playing together">
+                        <img src="https://www.dobermanplanet.com/wp-content/uploads/2019/01/All-Colors-Large.jpg"
+                            alt="Doberman Pinschers standing alert with rust markings">
+                        <img src="https://www.pethealthnetwork.com/sites/default/files/styles/large/public/article-image-horiz_106.jpg?itok=4VkyS3Js"
+                            alt="Doberman Pinscher relaxing at home with owner">
                     </div>
                 </article>
             </section>
@@ -399,7 +413,7 @@
                 <div class="similar-grid">
 
                     <!-- CARD 1: Rottweiler -->
-                   <a href="Rottweiler.html" class="similar-card">
+                    <a href="Rottweiler.html" class="similar-card">
                         <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg"
                             alt="Rottweiler standing on grass">
                         <h3>Rottweiler</h3>
@@ -417,9 +431,11 @@
 
                     <!-- CARD 3: American Staffordshire Terrier -->
                     <a href="AmericanStaffordshireTerrier.html" class="similar-card">
-                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/04/AdobeStock_219130672.webp" alt="BAmerican Staffordshire Terrier sitting in a field">
+                        <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/04/AdobeStock_219130672.webp"
+                            alt="BAmerican Staffordshire Terrier sitting in a field">
                         <h3>American Staffordshire Terrier</h3>
-                        <p>High-drive herding and protection breed known for its intelligence, agility, and work ethic.</p>
+                        <p>High-drive herding and protection breed known for its intelligence, agility, and work ethic.
+                        </p>
                     </a>
 
                 </div>
@@ -428,7 +444,7 @@
         </main>
 
         <!--footer-->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -567,6 +583,8 @@
             });
         }
     </script>
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
 
 </html>

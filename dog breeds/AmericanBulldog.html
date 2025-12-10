@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -137,13 +144,34 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection Level</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium–High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Tendency to Bark</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
@@ -192,8 +220,10 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>Provide at least an hour of daily exercise: walks, play, training, or dog sports.</li>
-                                <li>They enjoy tug, fetch, and strength games when rules and impulse control are taught.</li>
+                                <li>Provide at least an hour of daily exercise: walks, play, training, or dog sports.
+                                </li>
+                                <li>They enjoy tug, fetch, and strength games when rules and impulse control are taught.
+                                </li>
                                 <li>Keep up with regular vet care, vaccinations, and parasite prevention.</li>
                             </ul>
                         </div>
@@ -247,7 +277,8 @@
                             <h3>Exercise & Enrichment</h3>
                             <ul>
                                 <li>Daily walks plus playtime or training games.</li>
-                                <li>Use puzzle feeders, nose-work games, and short trick sessions to work their brain.</li>
+                                <li>Use puzzle feeders, nose-work games, and short trick sessions to work their brain.
+                                </li>
                                 <li>They often enjoy tug, flirt pole, or weight-pulling sports when done safely.</li>
                             </ul>
                         </div>
@@ -280,10 +311,14 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="farm">American Bulldogs were originally used as all-purpose farm dogs and hog catchers.</li>
-                        <li data-icon="goofy">Despite their tough look, many are silly goofballs with their families.</li>
-                        <li data-icon="loyal">They form deep bonds and love to be close – often trying to be lap dogs.</li>
-                        <li data-icon="sport">Their strength and athleticism make them great for sports like weight pull or agility.</li>
+                        <li data-icon="farm">American Bulldogs were originally used as all-purpose farm dogs and hog
+                            catchers.</li>
+                        <li data-icon="goofy">Despite their tough look, many are silly goofballs with their families.
+                        </li>
+                        <li data-icon="loyal">They form deep bonds and love to be close – often trying to be lap dogs.
+                        </li>
+                        <li data-icon="sport">Their strength and athleticism make them great for sports like weight pull
+                            or agility.</li>
                         <li data-icon="smile">Many have a big, expressive “bulldog smile.”</li>
                     </ul>
                 </article>
@@ -311,36 +346,39 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- American Staffordshire Terrier -->
-        <a href="AmericanStaffordshireTerrier.html" class="similar-card">
-            <img src="https://cdn.britannica.com/01/198001-050-AC33057E/ancestry-American-Staffordshire-Terrier-bulldogs-Staffie-mastiffs.jpg" alt="American Staffordshire Terrier">
-            <h3>American Staffordshire Terrier</h3>
-            <p>A muscular, confident breed with loyalty and courage similar to the American Bulldog.</p>
-        </a>
+                    <!-- American Staffordshire Terrier -->
+                    <a href="AmericanStaffordshireTerrier.html" class="similar-card">
+                        <img src="https://cdn.britannica.com/01/198001-050-AC33057E/ancestry-American-Staffordshire-Terrier-bulldogs-Staffie-mastiffs.jpg"
+                            alt="American Staffordshire Terrier">
+                        <h3>American Staffordshire Terrier</h3>
+                        <p>A muscular, confident breed with loyalty and courage similar to the American Bulldog.</p>
+                    </a>
 
-        <!-- Rottweiler -->
-        <a href="Rottweiler.html" class="similar-card">
-            <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg" alt="Rottweiler">
-            <h3>Rottweiler</h3>
-            <p>A strong, protective working dog known for devotion and courage.</p>
-        </a>
+                    <!-- Rottweiler -->
+                    <a href="Rottweiler.html" class="similar-card">
+                        <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg"
+                            alt="Rottweiler">
+                        <h3>Rottweiler</h3>
+                        <p>A strong, protective working dog known for devotion and courage.</p>
+                    </a>
 
-        <!-- Boerboel -->
-        <a href="Boerboel.html" class="similar-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Rga2VcA-87hX_jpTQZfqiyNcmv8MYBVZrw&s" alt="Boerboel">
-            <h3>Boerboel</h3>
-            <p>A powerful guardian breed with strength and loyalty similar to the American Bulldog.</p>
-        </a>
+                    <!-- Boerboel -->
+                    <a href="Boerboel.html" class="similar-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Rga2VcA-87hX_jpTQZfqiyNcmv8MYBVZrw&s"
+                            alt="Boerboel">
+                        <h3>Boerboel</h3>
+                        <p>A powerful guardian breed with strength and loyalty similar to the American Bulldog.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
         </main>
         <!--footer-->
-       <footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -466,6 +504,8 @@
             });
         }
     </script>
-
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
+
 </html>

@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -137,20 +144,40 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection Level</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Tendency to Bark/Howl</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark/Howl</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="../images/AmericanFoxHound.PNG"
-                            alt="American Foxhound looking alert in a field">
+                        <img src="../images/AmericanFoxHound.PNG" alt="American Foxhound looking alert in a field">
                         <figcaption>Credit: The Spruce Pets</figcaption>
                     </figure>
 
@@ -192,7 +219,8 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>Plan 1–2 hours of activity daily: walks, jogging, hiking, or safe off-leash runs.</li>
+                                <li>Plan 1–2 hours of activity daily: walks, jogging, hiking, or safe off-leash runs.
+                                </li>
                                 <li>Give chances to sniff and track – they’re scent hounds at heart.</li>
                                 <li>Use enrichment like puzzle toys and varied walking routes.</li>
                             </ul>
@@ -279,10 +307,13 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="history">American Foxhounds are one of the first dog breeds developed in the USA.</li>
+                        <li data-icon="history">American Foxhounds are one of the first dog breeds developed in the USA.
+                        </li>
                         <li data-icon="pack">They were bred to hunt in large packs with riders on horseback.</li>
-                        <li data-icon="song">Their baying voice can carry for long distances across the countryside.</li>
-                        <li data-icon="gentle">Despite being intense hunters, they are usually gentle and sweet at home.</li>
+                        <li data-icon="song">Their baying voice can carry for long distances across the countryside.
+                        </li>
+                        <li data-icon="gentle">Despite being intense hunters, they are usually gentle and sweet at home.
+                        </li>
                         <li data-icon="speed">They are known for their stamina and speed over long distances.</li>
                     </ul>
                 </article>
@@ -321,17 +352,17 @@
                     </a>
 
                     <a href="Beagle.html" class="similar-card">
-                        <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
-                            alt="Beagle">
+                        <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="Beagle">
                         <h3>Beagle</h3>
                         <p>Smaller hound with a similar love of following scents and working in packs.</p>
                     </a>
 
                     <a href="PembrokeWelshCorgi.html" class="similar-card">
-                       <img src="https://images.ctfassets.net/cmiwzf0cmbqh/363e8c30-f8b2-4992-958f-d9b64887f1d9/5aa26b66ea2a6acf4f02a4c89473a52d/corgi-body-1.jpg?fm=webp" alt="Pembroke Welsh Corgi">
-                       <h3>Pembroke Welsh Corgi</h3>
-                    <p>A bright, active companion herder with similar size and lively temperament.</p>
-                   </a>
+                        <img src="https://images.ctfassets.net/cmiwzf0cmbqh/363e8c30-f8b2-4992-958f-d9b64887f1d9/5aa26b66ea2a6acf4f02a4c89473a52d/corgi-body-1.jpg?fm=webp"
+                            alt="Pembroke Welsh Corgi">
+                        <h3>Pembroke Welsh Corgi</h3>
+                        <p>A bright, active companion herder with similar size and lively temperament.</p>
+                    </a>
                 </div>
             </section>
 
@@ -462,6 +493,8 @@
             });
         }
     </script>
-
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
+
 </html>

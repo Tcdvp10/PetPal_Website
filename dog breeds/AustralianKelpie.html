@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -51,7 +58,8 @@
                 <div class="breed-hero-info">
                     <h1 class="breed-name">Australian Kelpie</h1>
                     <p class="breed-tagline">
-                        A highly driven herding dog bred to work sheep all day in tough conditions. Australian Kelpies are
+                        A highly driven herding dog bred to work sheep all day in tough conditions. Australian Kelpies
+                        are
                         energetic, intelligent, and loyal workers who thrive when they have a real job to do.
                     </p>
 
@@ -137,21 +145,42 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Trainability</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="../images/AustralianKelpie.PNG"
-                            alt="Australian Kelpie standing in a field">
-                        <figcaption>Australian Kelpies are famous for working huge flocks of sheep almost single-handedly.</figcaption>
+                        <img src="../images/AustralianKelpie.PNG" alt="Australian Kelpie standing in a field">
+                        <figcaption>Australian Kelpies are famous for working huge flocks of sheep almost
+                            single-handedly.</figcaption>
                     </figure>
 
                 </article>
@@ -161,7 +190,8 @@
                     <h2 class="section-title section-title--left">Care</h2>
 
                     <p class="care-intro">
-                        Australian Kelpies are built for long, hard days of work. Their coat is easy to care for, but they
+                        Australian Kelpies are built for long, hard days of work. Their coat is easy to care for, but
+                        they
                         need a lifestyle that includes plenty of exercise, mental work, and structure. They are not
                         low-maintenance pets.
                     </p>
@@ -193,9 +223,11 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>They need 1.5–2+ hours of daily exercise, ideally including off-leash running in secure areas.</li>
+                                <li>They need 1.5–2+ hours of daily exercise, ideally including off-leash running in
+                                    secure areas.</li>
                                 <li>Provide real jobs: herding, agility, sports, or structured training routines.</li>
-                                <li>They do best in homes where they are involved in daily activities, not left bored.</li>
+                                <li>They do best in homes where they are involved in daily activities, not left bored.
+                                </li>
                             </ul>
                         </div>
 
@@ -217,8 +249,10 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Australian Kelpies are extremely intelligent and eager to work but can be intense and independent.
-                        They thrive with consistent, fair training and clear expectations, especially when given challenging
+                        Australian Kelpies are extremely intelligent and eager to work but can be intense and
+                        independent.
+                        They thrive with consistent, fair training and clear expectations, especially when given
+                        challenging
                         tasks to solve.
                     </p>
 
@@ -228,9 +262,11 @@
                             <h3>Basic Training</h3>
                             <ul>
                                 <li>Start early with sit, down, stay, recall, and loose-leash walking.</li>
-                                <li>Use positive reinforcement – they respond best to rewards and clear communication.</li>
+                                <li>Use positive reinforcement – they respond best to rewards and clear communication.
+                                </li>
                                 <li>Practise impulse control skills such as waiting at doors and relaxing on a mat.</li>
-                                <li>Teach a strong recall before allowing off-leash freedom, especially near livestock.</li>
+                                <li>Teach a strong recall before allowing off-leash freedom, especially near livestock.
+                                </li>
                             </ul>
                         </div>
 
@@ -238,7 +274,8 @@
                             <div class="training-icon">🌿</div>
                             <h3>Exercise & Enrichment</h3>
                             <ul>
-                                <li>Great activities: herding, agility, flyball, obedience, tracking, and long hikes.</li>
+                                <li>Great activities: herding, agility, flyball, obedience, tracking, and long hikes.
+                                </li>
                                 <li>Use puzzle feeders, scent games, and trick training to challenge their minds.</li>
                                 <li>Change up routines so they don’t become bored with repetitive tasks.</li>
                             </ul>
@@ -248,9 +285,11 @@
                             <div class="training-icon">⚠️</div>
                             <h3>Common Challenges</h3>
                             <ul>
-                                <li>Herding behaviours like circling and nipping – redirect and teach appropriate outlets.</li>
+                                <li>Herding behaviours like circling and nipping – redirect and teach appropriate
+                                    outlets.</li>
                                 <li>May become destructive or noisy if under-exercised or left alone too long.</li>
-                                <li>Very clever dogs can learn bad habits just as quickly as good ones – be consistent.</li>
+                                <li>Very clever dogs can learn bad habits just as quickly as good ones – be consistent.
+                                </li>
                             </ul>
                         </div>
 
@@ -258,9 +297,11 @@
                             <div class="training-icon">🩺</div>
                             <h3>Safety Notes</h3>
                             <ul>
-                                <li>Supervise interactions with small children; teach kids calm, respectful behaviour.</li>
+                                <li>Supervise interactions with small children; teach kids calm, respectful behaviour.
+                                </li>
                                 <li>Use secure fencing – Kelpies can jump or climb surprisingly well.</li>
-                                <li>Avoid overworking young dogs on hard surfaces or steep terrain to protect joints.</li>
+                                <li>Avoid overworking young dogs on hard surfaces or steep terrain to protect joints.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -272,10 +313,14 @@
 
                     <ul class="funfacts-list mini-facts icon-facts">
                         <li data-icon="sheep">Kelpies can manage huge flocks of sheep almost single-handedly.</li>
-                        <li data-icon="jump">They’re known for running along the backs of sheep to move through the flock.</li>
-                        <li data-icon="sun">Bred for harsh Australian conditions, they are incredibly hardy and resilient.</li>
-                        <li data-icon="brain">Their intelligence and drive make them stars in dog sports around the world.</li>
-                        <li data-icon="farm">Working Kelpies are often bred separately from show lines, focusing on farm ability.</li>
+                        <li data-icon="jump">They’re known for running along the backs of sheep to move through the
+                            flock.</li>
+                        <li data-icon="sun">Bred for harsh Australian conditions, they are incredibly hardy and
+                            resilient.</li>
+                        <li data-icon="brain">Their intelligence and drive make them stars in dog sports around the
+                            world.</li>
+                        <li data-icon="farm">Working Kelpies are often bred separately from show lines, focusing on farm
+                            ability.</li>
                     </ul>
                 </article>
 
@@ -302,28 +347,32 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <a href="AustralianCattleDog.html" class="similar-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg" alt="Australian Cattle Dog">
-            <h3>Australian Cattle Dog</h3>
-            <p>A rugged, hardworking herding dog with a similar high-energy, tireless nature.</p>
-        </a>
-        <a href="AustralianStumpyTailCattleDog.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2018/07/GettyImages-454288321.jpg" alt="Australian Stumpy Tail Cattle Dog">
-            <h3>Australian Stumpy Tail Cattle Dog</h3>
-            <p>A close relative with the same drive, agility, and strong herding instincts.</p>
-        </a>
-        <a href="WorkingKelpie.html" class="similar-card">
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Working-Kelpie-puppies.jpg" alt="Working Kelpie">
-            <h3>Working Kelpie</h3>
-            <p>The working-line version of the Kelpie, bred for stamina, speed, and long days on the job.</p>
-        </a>
+                    <a href="AustralianCattleDog.html" class="similar-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ACD-blue-spud.jpg"
+                            alt="Australian Cattle Dog">
+                        <h3>Australian Cattle Dog</h3>
+                        <p>A rugged, hardworking herding dog with a similar high-energy, tireless nature.</p>
+                    </a>
+                    <a href="AustralianStumpyTailCattleDog.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2018/07/GettyImages-454288321.jpg"
+                            alt="Australian Stumpy Tail Cattle Dog">
+                        <h3>Australian Stumpy Tail Cattle Dog</h3>
+                        <p>A close relative with the same drive, agility, and strong herding instincts.</p>
+                    </a>
+                    <a href="WorkingKelpie.html" class="similar-card">
+                        <img src="https://www.akc.org/wp-content/uploads/2017/11/Working-Kelpie-puppies.jpg"
+                            alt="Working Kelpie">
+                        <h3>Working Kelpie</h3>
+                        <p>The working-line version of the Kelpie, bred for stamina, speed, and long days on the job.
+                        </p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
 
         </main>
 
@@ -429,31 +478,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>

@@ -13,12 +13,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -26,7 +31,9 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
                     <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -93,7 +100,8 @@
                 <!-- OVERVIEW -->
                 <article class="breed-panel" data-breed-panel="overview">
                     <h2 class="section-title section-title--left">
-                        <svg xmlns="https://www.thesprucepets.com/thmb/oI-wOkKqcpRXbnN1HIvznVaS5vY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/breed-profile-affenpinscher-1117931_FINAL-37e4d5973f7b4ff7aaab08435b2594f3.jpg" viewBox="0 0 640 640">
+                        <svg xmlns="https://www.thesprucepets.com/thmb/oI-wOkKqcpRXbnN1HIvznVaS5vY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/breed-profile-affenpinscher-1117931_FINAL-37e4d5973f7b4ff7aaab08435b2594f3.jpg"
+                            viewBox="0 0 640 640">
                             <path
                                 d="M64 176C80.6 176 94.2 188.6 95.8 204.7L96.1 211.3C97.8 227.4 111.4 240 128 240L307.1 240L448 300.4L448 544C448 561.7 433.7 576 416 576L384 576C366.3 576 352 561.7 352 544L352 412.7C328 425 300.8 432 272 432C243.2 432 216 425 192 412.7L192 544C192 561.7 177.7 576 160 576L128 576C110.3 576 96 561.7 96 544L96 298.4C58.7 285.2 32 249.8 32 208C32 190.3 46.3 176 64 176zM387.8 32C395.5 32 402.7 35.6 407.4 41.8L424 64L476.1 64C488.8 64 501 69.1 510 78.1L528 96L584 96C597.3 96 608 106.7 608 120L608 144C608 188.2 572.2 224 528 224L464 224L457 252L332.3 198.6L363.9 51.4C366.3 40.1 376.2 32 387.8 32zM480 108C469 108 460 117 460 128C460 139 469 148 480 148C491 148 500 139 500 128C500 117 491 108 480 108z" />
                         </svg>
@@ -391,28 +399,32 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
-    <div class="similar-grid">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <div class="similar-grid">
 
-        <a href="BiewerTerrier.html" class="similar-card">
-            <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11164757/202106GettyImages-1569177563-scaled-1.jpg" alt="Biewer Terrier">
-            <h3>Biewer Terrier</h3>
-            <p>A small, cheerful companion breed with a playful terrier attitude.</p>
-        </a>
-        <a href="Chihuahua.html" class="similar-card">
-            <img src="https://apupabove.com/cdn/shop/articles/Chihuahua_2ab3f5c4-9781-48ed-8119-7f780902c133.jpg?v=1742407300&width=1600" alt="Chihuahua">
-            <h3>Chihuahua</h3>
-            <p>Tiny, bold, and confident—known for its big personality like the Affenpinscher.</p>
-        </a>
-        <a href="RussianToy.html" class="similar-card">
-            <img src="https://cdn-images.vetstreet.com/e4/e5/278473644ca7aa3717593f01ceb4/russian-toy-ap-gv7ykw-645.jpg" alt="Russian Toy">
-            <h3>Russian Toy</h3>
-            <p>A delicate but lively toy breed with alertness and spunk similar to toy terriers.</p>
-        </a>
+                    <a href="BiewerTerrier.html" class="similar-card">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11164757/202106GettyImages-1569177563-scaled-1.jpg"
+                            alt="Biewer Terrier">
+                        <h3>Biewer Terrier</h3>
+                        <p>A small, cheerful companion breed with a playful terrier attitude.</p>
+                    </a>
+                    <a href="Chihuahua.html" class="similar-card">
+                        <img src="https://apupabove.com/cdn/shop/articles/Chihuahua_2ab3f5c4-9781-48ed-8119-7f780902c133.jpg?v=1742407300&width=1600"
+                            alt="Chihuahua">
+                        <h3>Chihuahua</h3>
+                        <p>Tiny, bold, and confident—known for its big personality like the Affenpinscher.</p>
+                    </a>
+                    <a href="RussianToy.html" class="similar-card">
+                        <img src="https://cdn-images.vetstreet.com/e4/e5/278473644ca7aa3717593f01ceb4/russian-toy-ap-gv7ykw-645.jpg"
+                            alt="Russian Toy">
+                        <h3>Russian Toy</h3>
+                        <p>A delicate but lively toy breed with alertness and spunk similar to toy terriers.</p>
+                    </a>
 
-    </div>
-</section>
- </main> <footer class="site-footer">
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -509,7 +521,7 @@
                 </div>
             </div>
         </footer>
-        
+
         <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
     </div>
 
@@ -551,6 +563,9 @@
             });
         }
     </script>
+    <script src="/shop-checkout.js"></script>
+    <script src="/breed-search.js"></script>
+
 </body>
 
 </html>

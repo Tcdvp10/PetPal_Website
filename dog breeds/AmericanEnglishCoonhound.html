@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -137,20 +144,40 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection Level</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Tendency to Bark/Howl</td><td><span class="char-chip char-veryhigh">Very High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark/Howl</td>
+                                    <td><span class="char-chip char-veryhigh">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
 
                     <figure class="overview-photo">
-                        <img src="../images/AmericanEnglishCoonHounds.PNG"
-                            alt="American English Coonhound in a field">
+                        <img src="../images/AmericanEnglishCoonHounds.PNG" alt="American English Coonhound in a field">
                         <figcaption>Credit: The Spruce Pets</figcaption>
                     </figure>
 
@@ -172,7 +199,8 @@
                             <ul>
                                 <li>Short coat is low maintenance: weekly brushing is usually enough.</li>
                                 <li>Check long ears regularly for dirt, moisture, or signs of infection.</li>
-                                <li>Trim nails often; active dogs may wear them down naturally but still need checks.</li>
+                                <li>Trim nails often; active dogs may wear them down naturally but still need checks.
+                                </li>
                                 <li>Feed a high-quality diet that matches their activity level.</li>
                             </ul>
                         </div>
@@ -192,7 +220,8 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>Plan for at least 1–2 hours of daily exercise: walks, runs, or off-leash time in secure areas.</li>
+                                <li>Plan for at least 1–2 hours of daily exercise: walks, runs, or off-leash time in
+                                    secure areas.</li>
                                 <li>They love following scents—use nose-work games or tracking-style play.</li>
                                 <li>Keep them mentally challenged with training, puzzle toys, and varied routes.</li>
                             </ul>
@@ -226,7 +255,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        As scent hounds, American English Coonhounds are independent thinkers, but they are also friendly
+                        As scent hounds, American English Coonhounds are independent thinkers, but they are also
+                        friendly
                         and food-motivated. With patience and positive methods, they can be wonderful companions.
                     </p>
 
@@ -279,11 +309,14 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="tree">American English Coonhounds were bred to track and tree raccoons all night long.</li>
-                        <li data-icon="song">They have a loud, musical bay that hunters can recognise from far away.</li>
+                        <li data-icon="tree">American English Coonhounds were bred to track and tree raccoons all night
+                            long.</li>
+                        <li data-icon="song">They have a loud, musical bay that hunters can recognise from far away.
+                        </li>
                         <li data-icon="pack">They often work in packs and usually get along well with other dogs.</li>
                         <li data-icon="speed">Fast and agile, they can cover huge distances when following a scent.</li>
-                        <li data-icon="couch">After a good run, many are big softies who love cuddling on the couch.</li>
+                        <li data-icon="couch">After a good run, many are big softies who love cuddling on the couch.
+                        </li>
                     </ul>
                 </article>
 
@@ -310,33 +343,36 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- American Leopard Hound -->
-        <a href="AmericanLeopardHound.html" class="similar-card">
-            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/08151937/American-Leopard-Hound-On-White-01.jpg" alt="American Leopard Hound">
-            <h3>American Leopard Hound</h3>
-            <p>A spotted American scent hound with similar tracking and treeing instincts.</p>
-        </a>
+                    <!-- American Leopard Hound -->
+                    <a href="AmericanLeopardHound.html" class="similar-card">
+                        <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/08151937/American-Leopard-Hound-On-White-01.jpg"
+                            alt="American Leopard Hound">
+                        <h3>American Leopard Hound</h3>
+                        <p>A spotted American scent hound with similar tracking and treeing instincts.</p>
+                    </a>
 
-        <!-- Foxhound -->
-        <a href="AmericanFoxHound.html" class="similar-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0QSxKFHKYMroBwx9m4jfmbYEa3otBSQWWQ&s" alt="Foxhound">
-            <h3> American Foxhound</h3>
-            <p>A classic, athletic scent hound bred for speed, endurance, and long hunts.</p>
-        </a>
+                    <!-- Foxhound -->
+                    <a href="AmericanFoxHound.html" class="similar-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0QSxKFHKYMroBwx9m4jfmbYEa3otBSQWWQ&s"
+                            alt="Foxhound">
+                        <h3> American Foxhound</h3>
+                        <p>A classic, athletic scent hound bred for speed, endurance, and long hunts.</p>
+                    </a>
 
-        <!-- Beagle -->
-        <a href="Beagle.html" class="similar-card">
-            <img src="https://www.petassure.com/petassure/file-streams/page/Bzri0mHrWA1ULra8W5vPz9beagle.jpg" alt="Beagle">
-            <h3>Beagle</h3>
-            <p>A small, energetic scent hound with strong tracking ability and a friendly nature.</p>
-        </a>
+                    <!-- Beagle -->
+                    <a href="Beagle.html" class="similar-card">
+                        <img src="https://www.petassure.com/petassure/file-streams/page/Bzri0mHrWA1ULra8W5vPz9beagle.jpg"
+                            alt="Beagle">
+                        <h3>Beagle</h3>
+                        <p>A small, energetic scent hound with strong tracking ability and a friendly nature.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
         </main>
         <!--footer-->
         <footer class="site-footer">
@@ -464,6 +500,8 @@
             });
         }
     </script>
-
+    <script src="shop-checkout.js"></script>
+    <script src="breed-search.js"></script>
 </body>
+
 </html>

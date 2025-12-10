@@ -12,12 +12,17 @@
     <div class="box">
         <header>
             <nav class="nav">
-                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/logo-dog.png" alt="pet pal logo">
+                        PetPal
+                    </a>
+                </div>
                 <div class="nav-links">
-                    <a href="../breeds.html">Breeds</a>
-                    <a href="../caretips.html">Caretips & Training</a>
-                    <a href="../shop.html">Shop</a>
-                    <a href="../about.html">About</a>
+                    <a href="breeds.html">Breeds</a>
+                    <a href="caretips.html">Caretips & Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div style="display:flex; align-items:center;">
                     <div class="search-container">
@@ -25,9 +30,11 @@
                             <path
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
-                        <input id="breedSearch" type="text" placeholder="Search..." />
+                        <input type="text" id="breedSearch" placeholder="Search dog breeds...">
+                        <div id="suggestions" class="suggestions-container"></div>
+
                     </div>
-                    <i class="cart-icon" id="cart-button">
+                    <i class="cart-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                             <path
                                 d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
@@ -51,7 +58,8 @@
                 <div class="breed-hero-info">
                     <h1 class="breed-name">Australian Cattle Dog</h1>
                     <p class="breed-tagline">
-                        A tough, tireless herding dog developed to move cattle over long distances. Australian Cattle Dogs
+                        A tough, tireless herding dog developed to move cattle over long distances. Australian Cattle
+                        Dogs
                         are extremely energetic, intelligent, and loyal partners who thrive when they have a job to do.
                     </p>
 
@@ -137,13 +145,34 @@
                         <section class="overview-card">
                             <h3 class="overview-subtitle">Characteristics</h3>
                             <table class="char-table">
-                                <tr><th>Trait</th><th>Level</th></tr>
-                                <tr><td>Affection with Family</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Kid-friendly</td><td><span class="char-chip char-medium">Medium</span></td></tr>
-                                <tr><td>Energy Level</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Exercise Needs</td><td><span class="char-chip char-high">Very High</span></td></tr>
-                                <tr><td>Trainability</td><td><span class="char-chip char-high">High</span></td></tr>
-                                <tr><td>Shedding Level</td><td><span class="char-chip char-medium">Medium–High</span></td></tr>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection with Family</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">Very High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Trainability</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shedding Level</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
                             </table>
                         </section>
                     </div>
@@ -151,7 +180,8 @@
                     <figure class="overview-photo">
                         <img src="../images/AustralianCattleDog.PNG"
                             alt="Australian Cattle Dog standing alert in a field">
-                        <figcaption>Australian Cattle Dogs were bred to drive cattle across long distances in harsh conditions.</figcaption>
+                        <figcaption>Australian Cattle Dogs were bred to drive cattle across long distances in harsh
+                            conditions.</figcaption>
                     </figure>
 
                 </article>
@@ -184,7 +214,8 @@
                             <ul>
                                 <li>Socialise early with people, dogs, livestock, and different environments.</li>
                                 <li>Introduce gentle handling, grooming, and vet-style checks in a positive way.</li>
-                                <li>Provide short, controlled play instead of long, intense exercise while joints develop.</li>
+                                <li>Provide short, controlled play instead of long, intense exercise while joints
+                                    develop.</li>
                                 <li>Redirect nipping behaviour (a herding instinct) to toys and reward calm mouths.</li>
                             </ul>
                         </div>
@@ -193,9 +224,11 @@
                             <div class="care-icon">🐕‍🦺</div>
                             <h3>Adult Care</h3>
                             <ul>
-                                <li>They need 1.5–2+ hours of daily exercise: running, hiking, herding games, or dog sports.</li>
+                                <li>They need 1.5–2+ hours of daily exercise: running, hiking, herding games, or dog
+                                    sports.</li>
                                 <li>Give them real “jobs” like fetch with rules, obedience tasks, or farm work.</li>
-                                <li>A secure, fenced yard is important – they may chase moving things like bikes or cars.</li>
+                                <li>A secure, fenced yard is important – they may chase moving things like bikes or
+                                    cars.</li>
                             </ul>
                         </div>
 
@@ -204,7 +237,8 @@
                             <h3>Common Health Issues</h3>
                             <ul>
                                 <li>Hip and elbow dysplasia in some lines.</li>
-                                <li>Progressive retinal atrophy (PRA) or other eye conditions – regular eye checks help.</li>
+                                <li>Progressive retinal atrophy (PRA) or other eye conditions – regular eye checks help.
+                                </li>
                                 <li>Deafness can occur – responsible breeders screen for this.</li>
                                 <li>Joint strain if they jump or work too hard while still growing or overweight.</li>
                             </ul>
@@ -217,7 +251,8 @@
                     <h2 class="section-title section-title--left">Training Tips</h2>
 
                     <p class="training-intro">
-                        Australian Cattle Dogs are brilliant, hardworking, and sometimes stubborn. With the right training,
+                        Australian Cattle Dogs are brilliant, hardworking, and sometimes stubborn. With the right
+                        training,
                         they become fantastic partners, but they need clear rules, consistent boundaries, and plenty of
                         mental work.
                     </p>
@@ -258,9 +293,11 @@
                             <div class="training-icon">🩺</div>
                             <h3>Safety Notes</h3>
                             <ul>
-                                <li>Supervise around children; teach kids not to run and squeal, which can trigger herding.</li>
+                                <li>Supervise around children; teach kids not to run and squeal, which can trigger
+                                    herding.</li>
                                 <li>Use strong, secure fencing; they may chase cars or bikes if given the chance.</li>
-                                <li>Avoid repetitive high-impact activities (like constant ball chasing) in young dogs to protect joints.</li>
+                                <li>Avoid repetitive high-impact activities (like constant ball chasing) in young dogs
+                                    to protect joints.</li>
                             </ul>
                         </div>
                     </div>
@@ -271,9 +308,12 @@
                     <h2 class="section-title section-title--left">Fun Facts</h2>
 
                     <ul class="funfacts-list mini-facts icon-facts">
-                        <li data-icon="cow">They were developed to herd tough Australian cattle over huge distances.</li>
-                        <li data-icon="speckle">Their blue or red “speckled” coat helps them blend into the landscape.</li>
-                        <li data-icon="heel">They are nicknamed “heelers” because they nip at cattle’s heels to move them.</li>
+                        <li data-icon="cow">They were developed to herd tough Australian cattle over huge distances.
+                        </li>
+                        <li data-icon="speckle">Their blue or red “speckled” coat helps them blend into the landscape.
+                        </li>
+                        <li data-icon="heel">They are nicknamed “heelers” because they nip at cattle’s heels to move
+                            them.</li>
                         <li data-icon="brain">They are considered one of the most intelligent working breeds.</li>
                         <li data-icon="sport">Many excel in high-energy sports like agility, flyball, and rally.</li>
                     </ul>
@@ -302,36 +342,39 @@
 
             <!-- SIMILAR BREEDS -->
             <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
 
-    <div class="similar-grid">
+                <div class="similar-grid">
 
-        <!-- Australian Kelpie -->
-        <a href="AustralianKelpie.html" class="similar-card">
-            <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/07/24185651/australian-kelpie-dog-breed.jpeg" alt="Australian Kelpie">
-            <h3>Australian Kelpie</h3>
-            <p>A highly energetic Australian herding dog with exceptional agility and work drive.</p>
-        </a>
+                    <!-- Australian Kelpie -->
+                    <a href="AustralianKelpie.html" class="similar-card">
+                        <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/07/24185651/australian-kelpie-dog-breed.jpeg"
+                            alt="Australian Kelpie">
+                        <h3>Australian Kelpie</h3>
+                        <p>A highly energetic Australian herding dog with exceptional agility and work drive.</p>
+                    </a>
 
-        <!-- Australian Stumpy Tail Cattle Dog -->
-        <a href="AustralianStumpyTailCattleDog.html" class="similar-card">
-            <img src="https://ezydog.com.au/cdn/shop/articles/Australian-Stumpy-Tail-Cattle-Dog-breed_748c6625-8ecf-402b-8a52-fdbda83d17ed.webp?v=1746266797&width=1536" alt="Australian Stumpy Tail Cattle Dog">
-            <h3>Australian Stumpy Tail Cattle Dog</h3>
-            <p>A close relative with similar toughness, intelligence, and herding ability.</p>
-        </a>
+                    <!-- Australian Stumpy Tail Cattle Dog -->
+                    <a href="AustralianStumpyTailCattleDog.html" class="similar-card">
+                        <img src="https://ezydog.com.au/cdn/shop/articles/Australian-Stumpy-Tail-Cattle-Dog-breed_748c6625-8ecf-402b-8a52-fdbda83d17ed.webp?v=1746266797&width=1536"
+                            alt="Australian Stumpy Tail Cattle Dog">
+                        <h3>Australian Stumpy Tail Cattle Dog</h3>
+                        <p>A close relative with similar toughness, intelligence, and herding ability.</p>
+                    </a>
 
-        <!-- Australian Shepherd -->
-        <a href="AustralianShepherd.html" class="similar-card">
-            <img src="https://ezydog.com.au/cdn/shop/articles/4_5926d8f9-6845-48ca-b1b2-09f0c0ab6341.png?v=1751542886&width=681" alt="Australian Shepherd">
-            <h3>Australian Shepherd</h3>
-            <p>An intelligent, athletic herding breed with strong stamina and similar working instincts.</p>
-        </a>
+                    <!-- Australian Shepherd -->
+                    <a href="AustralianShepherd.html" class="similar-card">
+                        <img src="https://ezydog.com.au/cdn/shop/articles/4_5926d8f9-6845-48ca-b1b2-09f0c0ab6341.png?v=1751542886&width=681"
+                            alt="Australian Shepherd">
+                        <h3>Australian Shepherd</h3>
+                        <p>An intelligent, athletic herding breed with strong stamina and similar working instincts.</p>
+                    </a>
 
-    </div>
-</section>
+                </div>
+            </section>
 
         </main>
-<footer class="site-footer">
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -432,31 +475,33 @@
             <p>&copy; 2025 PetPal - All Rights Reeserved</p>
         </div>
 
-    <!-- JS FOR TABS + CART -->
-    <script>
-        const breedTabs = document.querySelectorAll('[data-breed-tab]');
-        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+        <!-- JS FOR TABS + CART -->
+        <script>
+            const breedTabs = document.querySelectorAll('[data-breed-tab]');
+            const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-        breedTabs.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.breedTab;
+            breedTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.breedTab;
 
-                breedTabs.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                    breedTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                breedPanels.forEach(panel => {
-                    panel.hidden = panel.dataset.breedPanel !== target;
+                    breedPanels.forEach(panel => {
+                        panel.hidden = panel.dataset.breedPanel !== target;
+                    });
                 });
             });
-        });
 
-        const cartButton = document.getElementById('cart-button');
-        if (cartButton) {
-            cartButton.addEventListener('click', () => {
-                window.location.href = '../checkout.html';
-            });
-        }
-    </script>
-
+            const cartButton = document.getElementById('cart-button');
+            if (cartButton) {
+                cartButton.addEventListener('click', () => {
+                    window.location.href = '../checkout.html';
+                });
+            }
+        </script>
+        <script src="shop-checkout.js"></script>
+        <script src="breed-search.js"></script>
 </body>
+
 </html>
