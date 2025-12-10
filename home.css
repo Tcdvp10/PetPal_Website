@@ -26,13 +26,28 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+.logo {
+  display: flex;
+  align-items: center; /* vertically centers img + text */
+  gap: 8px; /* space between the icon and text */
+}
 
 .logo a {
   font-size: 2rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  display: flex; /* make the image + text align in a row */
+  align-items: center; /* vertically center them */
+  gap: 8px;
+}
+
+.logo img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  display: block;
+
 }
 
 .nav-links {
@@ -698,10 +713,10 @@ button a:visited {
   fill: #ffffff;
 }
 
-.footer-intro p {
+.footer-intro blockquote {
   margin: 0 0 6px;
   color: #fffad8;
-  line-height: 1.4;
+  line-height: 2;
 }
 
 .footer-col ul {
