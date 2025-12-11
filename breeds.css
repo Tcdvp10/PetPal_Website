@@ -788,6 +788,151 @@ body {
     padding: 10px;
 }
 
+/* ============================
+   RESPONSIVE: TABLET & PHONE
+   ============================ */
+
+/* 1) Tablets & small laptops (≤ 900px) */
+@media (max-width: 900px) {
+
+    /* Overall container less wide & more breathing room */
+    .container {
+        padding: 0 12px;
+    }
+
+    /* NAV: stack nicely and center */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .logo a {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .search-container {
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    /* Breeds layout: no fixed sidebar column */
+    .breeds-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sidebar becomes slide-in panel from the left (for your toggle button) */
+    .filters-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background: #ffffff;
+        margin-left: 0 !important;
+        transform: translateX(-120%);
+        padding: 20px;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 1500;
+        overflow-y: auto;
+    }
+
+    .filters-sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Cards: 2 per row on tablets */
+    .breeds-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Footer: 2 columns */
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 24px;
+    }
+
+    .footer-brand {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    /* Section containers: reduce margins on smaller screens */
+    .section-container {
+        margin: 24px 12px;
+        padding: 12px;
+    }
+}
+
+/* 2) Phones (≤ 600px) */
+@media (max-width: 600px) {
+
+    /* NAV tighter */
+    .nav {
+        padding: 0.75rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 90%;
+        margin: 4px auto;
+        padding: 0.6rem 0;
+    }
+
+    .search-container input {
+        width: 90%;
+        max-width: none;
+        margin: 6px 0 0;
+    }
+
+    /* Cards: 1 per row on small phones */
+    .breeds-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Breed profile header text smaller */
+    .breed-profile-header h1 {
+        font-size: 2rem;
+    }
+
+    /* Footer: single column */
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .site-footer,
+    .main-footer {
+        padding: 24px 12px 20px;
+    }
+
+    /* Section container margins tighter */
+    .section-container {
+        margin: 16px 10px;
+        padding: 10px;
+    }
+}
+
+
 /* copyright */
 .Copyright {
     text-align: center;
