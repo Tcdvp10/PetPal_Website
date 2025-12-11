@@ -1773,3 +1773,209 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/*EXTRA RESPONSIVE TWEAKS*/
+
+/* ---------- Large tablets / small laptops (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+
+  .care-main {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .hero {
+    background-size: cover;
+    padding-top: 18rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .diseases-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .grooming-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+/* ---------- Tablets / large phones (≤ 768px) ---------- */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  /* NAV: stack logo + search, hide long links */
+  .nav {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .logo a {
+    font-size: 1.6rem;
+  }
+
+  .search-container {
+    order: 3;
+    width: 100%;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .cart-icon {
+    order: 2;
+  }
+
+  .nav-links {
+    display: none; /* simple mobile behaviour */
+  }
+
+  /* HERO: reduce height + padding, center nicely on mobile */
+  .hero {
+    min-height: 80vh;
+    padding-top: 12rem;
+    padding-inline: 1rem;
+    text-align: center;
+  }
+
+  .hero-banner {
+    margin-top: 1rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 1.9rem;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+  }
+
+  .pill-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* CARE GRID / TRAINING / GROOMING: 1 column */
+  .care-grid,
+  .grooming-gallery,
+  .diseases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .training-categories .category-card {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* VACCINE + VET two-column → single column */
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* QUIZ spacing */
+  .section.quiz {
+    padding: 2rem 1.4rem 2.3rem;
+    margin-top: 2.5rem;
+  }
+
+  .quiz-card {
+    padding: 1.4rem 1rem 1.7rem;
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .training-video,
+  .video-section video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* FOOTER: smaller padding */
+  .site-footer {
+    padding: 24px 12px 20px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+}
+
+/* ---------- Small phones (≤ 480px) ---------- */
+@media (max-width: 480px) {
+
+  .nav {
+    padding-inline: 0.75rem;
+  }
+
+  .logo img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding-top: 10rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .pill-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .care-main {
+    padding: 0 1.1rem 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .disease-card img,
+  .groom-item img {
+    height: 210px;
+  }
+
+  .site-footer {
+    padding: 22px 10px 18px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .Copyright {
+    font-size: 0.8rem;
+  }
+}
