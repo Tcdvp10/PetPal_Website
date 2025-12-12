@@ -206,3 +206,135 @@ productBoxes.forEach(box => revealObserver.observe(box));
 // ---------- INIT ----------
 displayCart();
 updateCartIcon();
+
+/* -------------------------------------------
+   EXTRA VALIDATION FOR CHECKOUT FORM
+------------------------------------------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("checkoutForm");
+    if (!form) return;
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const cardInput = document.getElementById("cardNumber");
+    const expiryInput = document.getElementById("expiry");
+    const cvvInput = document.getElementById("cvv");
+
+    // Create a dynamic cart empty warning message element
+    let cartEmptyMsg = document.createElement("div");
+    cartEmptyMsg.style.color = "#dc3545";
+    cartEmptyMsg.style.fontSize = "14px";
+    cartEmptyMsg.style.marginTop = "10px";
+    cartEmptyMsg.textContent = "Your cart is empty. Add items before checking out.";
+    cartEmptyMsg.style.display = "none";
+    form.insertAdjacentElement("beforebegin", cartEmptyMsg);
+
+    // Helper to show/hide message
+    function updateCartMessage() {
+        if (!cart || cart.length === 0) {
+            cartEmptyMsg.style.display = "block";
+        } else {
+            cartEmptyMsg.style.display = "none";
+        }
+    }
+
+    updateCartMessage(); // initial check
+
+    /* ---------- Validation functions ---------- */
+    function setValid(input, isValid, message = "") {
+        input.style.border = isValid ? "2px solid #28a745" : "2px solid #dc3545";
+
+        // Remove old message
+        let oldMsg = input.nextElementSibling;
+        if (oldMsg && oldMsg.classList.contains("validation-msg")) oldMsg.remove();
+
+        if (!isValid && message) {
+            let msg = document.createElement("div");
+            msg.className = "validation-msg";
+            msg.style.color = "#dc3545";
+            msg.style.fontSize = "13px";
+            msg.style.marginTop = "-6px";
+            msg.style.marginBottom = "10px";
+            msg.textContent = message;
+            input.insertAdjacentElement("afterend", msg);
+        }
+    }
+
+    function validateName() {
+        let value = nameInput.value.trim();
+        let valid = /^[A-Za-z]{2,}(?: [A-Za-z]{2,})*$/.test(value);
+        setValid(nameInput, valid, "Enter at least two letters (name must contain only letters).");
+        return valid;
+    }
+
+    function validateEmail() {
+        let value = emailInput.value.trim();
+        let valid = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value);
+        setValid(emailInput, valid, "Enter a valid email (example: name@gmail.com).");
+        return valid;
+    }
+
+    function validateCard() {
+        let value = cardInput.value.replace(/\D/g, "");
+        let valid = /^\d{16}$/.test(value);
+        setValid(cardInput, valid, "Card number must be 16 digits.");
+        return valid;
+    }
+
+    function validateExpiry() {
+        let value = expiryInput.value;
+        if (!value) {
+            setValid(expiryInput, false, "Select an expiry date.");
+            return false;
+        }
+
+        let today = new Date();
+        let selected = new Date(value + "-01");
+
+        let valid = selected >= new Date(today.getFullYear(), today.getMonth(), 1);
+        setValid(expiryInput, valid, "Expiry date cannot be in the past.");
+        return valid;
+    }
+
+    function validateCVV() {
+        let value = cvvInput.value;
+        let valid = /^\d{3}$/.test(value);
+        setValid(cvvInput, valid, "CVV must be 3 digits.");
+        return valid;
+    }
+
+    // Input event listeners for live validation
+    nameInput.addEventListener("input", validateName);
+    emailInput.addEventListener("input", validateEmail);
+    cardInput.addEventListener("input", validateCard);
+    expiryInput.addEventListener("change", validateExpiry);
+    cvvInput.addEventListener("input", validateCVV);
+
+    // Update cart message whenever cart changes
+    const cartObserver = new MutationObserver(updateCartMessage);
+    const cartListEl = document.getElementById("cart-items");
+    if (cartListEl) cartObserver.observe(cartListEl, { childList: true, subtree: true });
+
+    // Form submission validation
+    form.addEventListener("submit", (e) => {
+        if (!cart || cart.length === 0) {
+            e.stopImmediatePropagation(); // prevents original handler (redirect)
+            e.preventDefault();
+            updateCartMessage();
+            return false;
+        }
+
+        let valid =
+            validateName() &
+            validateEmail() &
+            validateCard() &
+            validateExpiry() &
+            validateCVV();
+
+        if (!valid) {
+            e.preventDefault();
+            alert("Please correct the highlighted errors before paying.");
+        }
+    }, true); // capture phase ensures it runs before original submit handler
+});
