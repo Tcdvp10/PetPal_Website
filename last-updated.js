@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     footer.style.left = "0";
     footer.style.width = "100%";
     footer.style.textAlign = "center";
-    footer.style.background = "#0a364e";
+    footer.style.background = "#ffffffff";
     footer.style.color = "#777"; // Change this to any color
     footer.style.fontFamily = "sans-serif";
 
