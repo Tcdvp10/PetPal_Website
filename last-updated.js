@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const footer = document.createElement("div");
 
-    // Base styling
-    footer.style.position = "fixed";
-    footer.style.bottom = "0";
-    footer.style.left = "0";
+    // Normal element at the bottom (NOT fixed or sticky)
     footer.style.width = "100%";
     footer.style.textAlign = "center";
-    footer.style.background = "#ffffffff";
-    footer.style.color = "#777"; // Change this to any color
+    footer.style.background = "#f8f9fa";
+    footer.style.color = "#777"; // Change color here
     footer.style.fontFamily = "sans-serif";
+    footer.style.padding = "8px 0";
+    footer.style.marginTop = "20px"; // space below your existing footer
 
-    // Responsive function
+    // Responsive behavior
     function applyResponsiveStyles() {
         const w = window.innerWidth;
 
@@ -27,19 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Apply on load
     applyResponsiveStyles();
-
-    // Recalculate on window resize
     window.addEventListener("resize", applyResponsiveStyles);
 
-    // Get last modified timestamp
+    // Last updated text
     const lastUpdated = document.lastModified;
     footer.textContent = `Last Updated: ${lastUpdated}`;
 
-    // Add padding to body bottom so content doesn't get covered
-    document.body.style.paddingBottom = "40px";
-
-    // Append footer
+    // Append at the very bottom of the page *after your existing footer*
     document.body.appendChild(footer);
 });
