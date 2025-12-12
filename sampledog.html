@@ -1,253 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>PetPal – Golden Retriever Profile</title>
     <!-- reuse your existing styles -->
     <link rel="stylesheet" href="dogbreeds.css">
 </head>
+
 <body>
-<div class="page">
+    <div class="page">
 
-    <!-- HEADER (same as your other pages) -->
-    <div class="box">
-        <header>
-            <nav class="nav">
-                <div class="logo"><a href="index.html">PetPal</a></div>
+        <!-- HEADER (same as your other pages) -->
+        <div class="box">
+            <header>
+                <nav class="nav">
+                    <div class="logo"><a href="index.html">PetPal</a></div>
 
-                <div class="nav-links">
-                    <a href="breeds.html" class="active">Breeds</a>
-                    <a href="caretips.html">Caretips &amp; Training</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="about.html">About</a>
+                    <div class="nav-links">
+                        <a href="breeds.html" class="active">Breeds</a>
+                        <a href="caretips.html">Caretips &amp; Training</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="header-right">
+                        <form class="search-container" id="breed-search-form">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208z" />
+                            </svg>
+                            <input type="text" placeholder="Search breeds" name="q" />
+                        </form>
+
+                        <button class="cart-icon" id="cart-button" aria-label="Go to cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16z" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <!-- ========= MAIN BREED PROFILE ========= -->
+        <main class="breed-main">
+
+            <!-- HERO: image + summary -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Golden Retriever sitting outside">
                 </div>
 
-                <div class="header-right">
-                    <form class="search-container" id="breed-search-form">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208z" />
-                        </svg>
-                        <input type="text" placeholder="Search breeds" name="q" />
-                    </form>
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Golden Retriever</h1>
+                    <p class="breed-tagline">
+                        Friendly, loyal, and always ready for an adventure with the family.
+                    </p>
 
-                    <button class="cart-icon" id="cart-button" aria-label="Go to cart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <path
-                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16z" />
-                        </svg>
-                    </button>
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Size</dt>
+                            <dd>Medium–Large (55–75 lb / 25–34 kg)</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>10–12 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Temperament</dt>
+                            <dd>Gentle, social, eager to please</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Medium length, double coat, shades of gold</dd>
+                        </div>
+                    </dl>
                 </div>
-            </nav>
-        </header>
-    </div>
+            </section>
 
-    <!-- ========= MAIN BREED PROFILE ========= -->
-    <main class="breed-main">
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Overview</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
 
-        <!-- HERO: image + summary -->
-        <section class="breed-hero">
-            <div class="breed-hero-image">
-                <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                     alt="Golden Retriever sitting outside">
-            </div>
+            <!-- PANELS -->
+            <section class="breed-panels">
 
-            <div class="breed-hero-info">
-                <h1 class="breed-name">Golden Retriever</h1>
-                <p class="breed-tagline">
-                    Friendly, loyal, and always ready for an adventure with the family.
-                </p>
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">Overview</h2>
+                    <p>
+                        Golden Retrievers are one of the world’s most popular family dogs.
+                        They are known for their kind expression, balanced energy, and love
+                        for people of all ages.
+                    </p>
+                    <p>
+                        Originally bred in Scotland as hunting companions, Goldens are
+                        athletic yet easy-going. They thrive in active homes where they
+                        can join walks, hikes, or swims, then relax on the couch afterward.
+                    </p>
+                    <p>
+                        They usually get along well with other dogs and animals, and with
+                        proper socialisation they make excellent companions for children.
+                        Because they are so people-oriented, they don’t enjoy being left
+                        alone for long hours every day.
+                    </p>
 
-                <dl class="breed-stats">
-                    <div class="breed-stat">
-                        <dt>Size</dt>
-                        <dd>Medium–Large (55–75 lb / 25–34 kg)</dd>
+                    <div class="overview-highlight">
+                        <h3>Best home for a Golden Retriever</h3>
+                        <ul>
+                            <li>Families or individuals who enjoy daily walks and playtime.</li>
+                            <li>Homes with space to move – a yard is great but not required.</li>
+                            <li>Owners willing to brush their coat a few times a week.</li>
+                            <li>People who want a soft-natured, affectionate companion.</li>
+                        </ul>
                     </div>
-                    <div class="breed-stat">
-                        <dt>Lifespan</dt>
-                        <dd>10–12 years</dd>
+                </article>
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p>
+                        Golden Retrievers are highly trainable and love to work with their
+                        people. Short, fun sessions are the key to keeping their attention.
+                    </p>
+
+                    <div class="two-column training-grid">
+                        <div class="training-card">
+                            <h3>Puppy &amp; Basic Manners</h3>
+                            <ul>
+                                <li>Start socialisation early – new people, places, and sounds.</li>
+                                <li>Teach sit, down, stay, and recall using treats and praise.</li>
+                                <li>Keep sessions 5–10 minutes and end on a success.</li>
+                                <li>Use puzzle feeders to keep their brain busy indoors.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <h3>Exercise &amp; Enrichment</h3>
+                            <ul>
+                                <li>Plan 60–90 minutes of activity per day for adults.</li>
+                                <li>Mix walks, fetch, swimming, and sniffy exploration.</li>
+                                <li>Avoid long, hard runs until growth plates are closed.</li>
+                                <li>Try activities like obedience, agility, or scent work.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <h3>Common Training Challenges</h3>
+                            <ul>
+                                <li><strong>Mouthing &amp; chewing:</strong> provide safe chew toys,
+                                    redirect gently, and avoid rough play with hands.</li>
+                                <li><strong>Pulling on leash:</strong> reward walking beside you,
+                                    practise in low-distraction areas first.</li>
+                                <li><strong>Jumping up:</strong> ignore jumping and reward
+                                    four paws on the floor.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <h3>Health &amp; Safety Notes</h3>
+                            <ul>
+                                <li>Keep Goldens at a healthy weight to protect their joints.</li>
+                                <li>Ask your vet before starting intense running or sports.</li>
+                                <li>Teach a strong “leave it” to avoid scavenging on walks.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="breed-stat">
-                        <dt>Temperament</dt>
-                        <dd>Gentle, social, eager to please</dd>
-                    </div>
-                    <div class="breed-stat">
-                        <dt>Coat</dt>
-                        <dd>Medium length, double coat, shades of gold</dd>
-                    </div>
-                </dl>
-            </div>
-        </section>
+                </article>
 
-        <!-- TABS -->
-        <section class="breed-tabs">
-            <button class="breed-tab active" data-breed-tab="overview">Overview</button>
-            <button class="breed-tab" data-breed-tab="training">Training Tips</button>
-            <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
-            <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
-        </section>
-
-        <!-- PANELS -->
-        <section class="breed-panels">
-
-            <!-- OVERVIEW -->
-            <article class="breed-panel" data-breed-panel="overview">
-                <h2 class="section-title section-title--left">Overview</h2>
-                <p>
-                    Golden Retrievers are one of the world’s most popular family dogs.
-                    They are known for their kind expression, balanced energy, and love
-                    for people of all ages.
-                </p>
-                <p>
-                    Originally bred in Scotland as hunting companions, Goldens are
-                    athletic yet easy-going. They thrive in active homes where they
-                    can join walks, hikes, or swims, then relax on the couch afterward.
-                </p>
-                <p>
-                    They usually get along well with other dogs and animals, and with
-                    proper socialisation they make excellent companions for children.
-                    Because they are so people-oriented, they don’t enjoy being left
-                    alone for long hours every day.
-                </p>
-
-                <div class="overview-highlight">
-                    <h3>Best home for a Golden Retriever</h3>
-                    <ul>
-                        <li>Families or individuals who enjoy daily walks and playtime.</li>
-                        <li>Homes with space to move – a yard is great but not required.</li>
-                        <li>Owners willing to brush their coat a few times a week.</li>
-                        <li>People who want a soft-natured, affectionate companion.</li>
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+                    <ul class="funfacts-list">
+                        <li>Goldens were developed in Scotland in the late 1800s as
+                            hunting and retrieving dogs.</li>
+                        <li>Their water-repellent double coat helps them stay warm
+                            while swimming in cold lakes.</li>
+                        <li>They are one of the most common breeds used as guide dogs,
+                            therapy dogs, and search-and-rescue partners.</li>
+                        <li>Most Golden Retrievers love carrying toys or objects in their
+                            mouths – it’s literally in their job description.</li>
+                        <li>Despite their fluff, they are usually very tolerant of grooming
+                            and enjoy the extra attention.</li>
                     </ul>
+                </article>
+
+                <!-- PHOTO GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <img src="https://plus.unsplash.com/premium_photo-1661951641996-3685492b78ed?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever close-up">
+                        <img src="https://images.unsplash.com/photo-1612774412771-005ed8e861d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever running">
+                        <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?q=80&w=1014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever with family">
+                        <img src="https://images.unsplash.com/photo-1602241628512-459cdd3234fe?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever by the lake">
+                        <img src="https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever puppy">
+                        <img src="https://plus.unsplash.com/premium_photo-1664303897799-9772870b5c48?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Golden Retriever in field">
+                    </div>
+                </article>
+            </section>
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+
+                    <!-- CARD 1: Labrador -->
+                    <a href="labrador.html" class="similar-card">
+                        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=800&auto=format&fit=crop"
+                            alt="Labrador Retriever">
+                        <h3>Labrador Retriever</h3>
+                        <p>Outgoing, enthusiastic, and another classic family retriever.</p>
+                    </a>
+
+                    <!-- CARD 2: Flat-Coated -->
+                    <a href="flat-coated-retriever.html" class="similar-card">
+                        <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?q=80&w=800&auto=format&fit=crop"
+                            alt="Flat-Coated Retriever">
+                        <h3>Flat-Coated Retriever</h3>
+                        <p>Happy, bouncy dogs with a shiny black or liver coat.</p>
+                    </a>
+
+                    <!-- CARD 3: Nova Scotia Duck Tolling -->
+                    <a href="nova-scotia-duck-tolling-retriever.html" class="similar-card">
+                        <img src="https://images.unsplash.com/photo-1597718378746-922a14b3a4be?q=80&w=800&auto=format&fit=crop"
+                            alt="Nova Scotia Duck Tolling Retriever">
+                        <h3>Nova Scotia Duck Tolling Retriever</h3>
+                        <p>Smaller red retriever with big energy and a playful nature.</p>
+                    </a>
+
                 </div>
-            </article>
+            </section>
+        </main>
 
-            <!-- TRAINING -->
-            <article class="breed-panel" data-breed-panel="training" hidden>
-                <h2 class="section-title section-title--left">Training Tips</h2>
-
-                <p>
-                    Golden Retrievers are highly trainable and love to work with their
-                    people. Short, fun sessions are the key to keeping their attention.
-                </p>
-
-                <div class="two-column training-grid">
-                    <div class="training-card">
-                        <h3>Puppy &amp; Basic Manners</h3>
-                        <ul>
-                            <li>Start socialisation early – new people, places, and sounds.</li>
-                            <li>Teach sit, down, stay, and recall using treats and praise.</li>
-                            <li>Keep sessions 5–10 minutes and end on a success.</li>
-                            <li>Use puzzle feeders to keep their brain busy indoors.</li>
-                        </ul>
-                    </div>
-
-                    <div class="training-card">
-                        <h3>Exercise &amp; Enrichment</h3>
-                        <ul>
-                            <li>Plan 60–90 minutes of activity per day for adults.</li>
-                            <li>Mix walks, fetch, swimming, and sniffy exploration.</li>
-                            <li>Avoid long, hard runs until growth plates are closed.</li>
-                            <li>Try activities like obedience, agility, or scent work.</li>
-                        </ul>
-                    </div>
-
-                    <div class="training-card">
-                        <h3>Common Training Challenges</h3>
-                        <ul>
-                            <li><strong>Mouthing &amp; chewing:</strong> provide safe chew toys,
-                                redirect gently, and avoid rough play with hands.</li>
-                            <li><strong>Pulling on leash:</strong> reward walking beside you,
-                                practise in low-distraction areas first.</li>
-                            <li><strong>Jumping up:</strong> ignore jumping and reward
-                                four paws on the floor.</li>
-                        </ul>
-                    </div>
-
-                    <div class="training-card">
-                        <h3>Health &amp; Safety Notes</h3>
-                        <ul>
-                            <li>Keep Goldens at a healthy weight to protect their joints.</li>
-                            <li>Ask your vet before starting intense running or sports.</li>
-                            <li>Teach a strong “leave it” to avoid scavenging on walks.</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- FUN FACTS -->
-            <article class="breed-panel" data-breed-panel="funfacts" hidden>
-                <h2 class="section-title section-title--left">Fun Facts</h2>
-                <ul class="funfacts-list">
-                    <li>Goldens were developed in Scotland in the late 1800s as
-                        hunting and retrieving dogs.</li>
-                    <li>Their water-repellent double coat helps them stay warm
-                        while swimming in cold lakes.</li>
-                    <li>They are one of the most common breeds used as guide dogs,
-                        therapy dogs, and search-and-rescue partners.</li>
-                    <li>Most Golden Retrievers love carrying toys or objects in their
-                        mouths – it’s literally in their job description.</li>
-                    <li>Despite their fluff, they are usually very tolerant of grooming
-                        and enjoy the extra attention.</li>
-                </ul>
-            </article>
-
-            <!-- PHOTO GALLERY -->
-            <article class="breed-panel" data-breed-panel="gallery" hidden>
-                <h2 class="section-title section-title--left">Photo Gallery</h2>
-
-                <div class="photo-grid">
-                    <img src="https://plus.unsplash.com/premium_photo-1661951641996-3685492b78ed?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever close-up">
-                    <img src="https://images.unsplash.com/photo-1612774412771-005ed8e861d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever running">
-                    <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?q=80&w=1014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever with family">
-                    <img src="https://images.unsplash.com/photo-1602241628512-459cdd3234fe?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever by the lake">
-                    <img src="https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever puppy">
-                    <img src="https://plus.unsplash.com/premium_photo-1664303897799-9772870b5c48?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="Golden Retriever in field">
-                </div>
-            </article>
-        </section>
-
-        <!-- SIMILAR BREEDS -->
-        <section class="similar-section">
-    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
-
-    <div class="similar-grid">
-
-        <!-- CARD 1: Labrador -->
-        <a href="labrador.html" class="similar-card">
-            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=800&auto=format&fit=crop"
-                 alt="Labrador Retriever">
-            <h3>Labrador Retriever</h3>
-            <p>Outgoing, enthusiastic, and another classic family retriever.</p>
-        </a>
-
-        <!-- CARD 2: Flat-Coated -->
-        <a href="flat-coated-retriever.html" class="similar-card">
-            <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?q=80&w=800&auto=format&fit=crop"
-                 alt="Flat-Coated Retriever">
-            <h3>Flat-Coated Retriever</h3>
-            <p>Happy, bouncy dogs with a shiny black or liver coat.</p>
-        </a>
-
-        <!-- CARD 3: Nova Scotia Duck Tolling -->
-        <a href="nova-scotia-duck-tolling-retriever.html" class="similar-card">
-            <img src="https://images.unsplash.com/photo-1597718378746-922a14b3a4be?q=80&w=800&auto=format&fit=crop"
-                 alt="Nova Scotia Duck Tolling Retriever">
-            <h3>Nova Scotia Duck Tolling Retriever</h3>
-            <p>Smaller red retriever with big energy and a playful nature.</p>
-        </a>
-
-    </div>
-</section>
-    </main>
-
-    <!--footer-->
-    <footer class="site-footer">
+        <!--footer-->
+        <footer class="site-footer">
             <div class="footer-inner">
 
                 <!-- Column 1: Tagline -->
@@ -340,46 +342,48 @@
 
         <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
     </div>
-    
-</div>
 
-<!-- SIMPLE JS FOR TABS + SEARCH + CART -->
-<script>
-    // Tabs
-    const breedTabs = document.querySelectorAll('[data-breed-tab]');
-    const breedPanels = document.querySelectorAll('[data-breed-panel]');
+    </div>
 
-    breedTabs.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = btn.dataset.breedTab;
+    <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+    <script>
+        // Tabs
+        const breedTabs = document.querySelectorAll('[data-breed-tab]');
+        const breedPanels = document.querySelectorAll('[data-breed-panel]');
 
-            breedTabs.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        breedTabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.breedTab;
 
-            breedPanels.forEach(panel => {
-                panel.hidden = panel.dataset.breedPanel !== target;
+                breedTabs.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                breedPanels.forEach(panel => {
+                    panel.hidden = panel.dataset.breedPanel !== target;
+                });
             });
         });
-    });
 
-    // Cart button -> checkout
-    const cartButton = document.getElementById('cart-button');
-    if (cartButton) {
-        cartButton.addEventListener('click', () => {
-            window.location.href = 'checkout.html';
-        });
-    }
+        // Cart button -> checkout
+        const cartButton = document.getElementById('cart-button');
+        if (cartButton) {
+            cartButton.addEventListener('click', () => {
+                window.location.href = 'checkout.html';
+            });
+        }
 
-    // Simple breed search: go back to breeds page with ?q=
-    const breedSearchForm = document.getElementById('breed-search-form');
-    if (breedSearchForm) {
-        breedSearchForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const term = breedSearchForm.q.value.trim();
-            if (!term) return;
-            window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
-        });
-    }
-</script>
+        // Simple breed search: go back to breeds page with ?q=
+        const breedSearchForm = document.getElementById('breed-search-form');
+        if (breedSearchForm) {
+            breedSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const term = breedSearchForm.q.value.trim();
+                if (!term) return;
+                window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
+            });
+        }
+    </script>
+    <script src="last-updated.js"></script>
 </body>
+
 </html>
