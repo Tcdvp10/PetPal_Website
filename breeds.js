@@ -220,7 +220,7 @@ const breedsData = [
         care: "They have a short, smooth coat that needs minimal grooming. They require 1–2 hours of daily exercise, mental stimulation, consistent positive training, and thorough socialization with people and other dogs.",
         idealHome: "Best for confident owners who are committed to training, socializing, and providing plenty of exercise and attention.",
         funFact: "Despite their tough appearance, many AmStaffs are big softies with their families and love cuddling.",
-        profileLink: 'AmericanStaffordshireTerrier.html'
+        profileLink: 'AmericanStaffordShireTerrier.html'
     },
 
     {
